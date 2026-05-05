@@ -1,0 +1,20 @@
+type: OverdriveProjector
+size: 3
+health: 360
+range: 70
+speedBoost: 1.1
+hasBoost: false
+baseColor: 3a8f64
+consumes: {
+  power: 0.333333
+  liquid: {
+    liquid: water
+    amount: 0.08333
+  }
+}
+requirements: [
+  graphite/50
+  beryllium/80
+]
+category: effect
+forceTeam : 1

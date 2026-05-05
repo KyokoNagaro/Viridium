@@ -1,0 +1,14 @@
+damage : 7
+permanent : true
+color : 000000
+effect : {
+    type : ParticleEffect
+    colorFrom : d1efff
+    colorTo : 2f2b58
+    particles : 3
+    sizeFrom : 0
+    sizeTo : 1
+    lifetime : 55
+    length : 8
+}
+effectChance : 0.06

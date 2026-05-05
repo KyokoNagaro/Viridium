@@ -1,0 +1,17 @@
+buildSpeedMultiplier : 1.35
+damageMultiplier : 0.7
+speedMultiplier : 0.85
+dragMultiplier : 1.2
+color : 8ca9e8
+effectChance : 0.04
+effect : {
+    type : WaveEffect
+    colorFrom : d1efff
+    colorTo : 8ca9e8
+    sizeFrom : 22
+    sizeTo : 0
+    lifetime : 45
+    strokeFrom : 0
+    strokeTo : 3
+}
+

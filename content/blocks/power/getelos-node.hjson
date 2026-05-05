@@ -1,18 +1,17 @@
-Type : PowerNode
+Type : BeamNode
 squareSprite : false
 size : 3
-laserRange : 26
-maxNodes : 100
-laserColor1 : efd2a2ff
-laserColor2 : fbb137ff
-glowColor : ffcd6672
-health : 600
+range : 100
+laserWidth : 0.7
+health : 680
 laserScale : 0.3
 placeableLiquid: true
+consumesPower : true
+canOverdrive : false
 pulseMag : 0.2
 pulseScl : 22
 consumes : {
-    power : 10000
+    power : 16000
 }
 requirements : [
   lead/1000

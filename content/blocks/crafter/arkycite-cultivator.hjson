@@ -55,3 +55,4 @@ requirements: [
   tungsten/40
 ]
 category : crafting
+forceTeam : 1

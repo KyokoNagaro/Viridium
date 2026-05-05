@@ -1,0 +1,22 @@
+reloadMultiplier: 0.70
+healthMultiplier: 1.15
+damageMultiplier : 1.1
+speedMultiplier: 0.35
+transitionDamage: 1000
+color: dd9ad0
+applyColor : dd9ad0
+effect : {
+    type : ParticleEffect 
+    particles : 1
+    sizeFrom : 4
+    sizeTo : 1
+    colorFrom : ffcbdd
+    colorTo : dd9ad0
+    region : viridium-partreg1
+    lifetime : 55
+    cone : 0
+    length : 0
+}
+effectChance : 0.07
+affinities: [shocked, channeling]
+transitionDamage : 1200

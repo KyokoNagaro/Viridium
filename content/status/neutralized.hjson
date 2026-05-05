@@ -1,0 +1,17 @@
+reloadMultiplier : 0.4
+buildSpeedMultiplier : 0
+color : 92dd7e
+effectChance : 0.05
+opposites : [channeling, overclock]
+effect : {
+    type : ParticleEffect
+    particles : 5
+    lifetime : 10
+    line : true
+    lenFrom : 5
+    lenTo : 0
+    colorFrom : f2d096
+    colorTo : cf780c
+    cone : 360
+    length : 35
+}

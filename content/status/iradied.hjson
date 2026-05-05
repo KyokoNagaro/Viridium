@@ -1,0 +1,23 @@
+reloadMultiplier : 0.95
+buildSpeedMultiplier : 0.95
+healthMultiplier : 0.95
+damageMultiplier : 0.95
+buildSpeedMultiplier : 0.95
+speedMultiplier : 0.95
+reloadMultiplier : 0.95
+dragMultiplier : 1.1
+color : 92dd7e
+damage : 0.1
+permanent : true
+effectChance : 0.04
+effect : {
+    type : WaveEffect
+    colorFrom : edf3a9
+    colorTo : 9cb664
+    sizeFrom : 0
+    sizeTo : 18
+    lifetime : 15
+    strokeFrom : 3
+    strokeTo : 0
+    interp : pow10Out
+}

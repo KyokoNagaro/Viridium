@@ -1,0 +1,6 @@
+healthMultiplier : 0.45
+color : 92c9fc
+show : true
+effect : regenParticle
+affinities: [blasted, channeling]
+transitionDamage : 4200

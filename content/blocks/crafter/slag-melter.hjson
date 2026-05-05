@@ -1,0 +1,40 @@
+type: GenericCrafter
+size : 2
+squareSprite : false
+health : 440
+outputLiquid : slag/1.334
+craftTime : 60
+hasLiquids : true
+liquidCapacity : 20
+hasPower : true
+drawer : {
+  type : DrawMulti
+  drawers : [
+    {
+      type : DrawRegion
+      suffix : -bottom
+    }
+    {
+      type : DrawLiquidTile
+      padding : 2
+      drawLiquid : slag
+      suffix : -bottom
+    }
+    {
+      type : DrawDefault
+    }
+  ]
+}
+consumes : {
+  power : 1
+  items : [
+    thorium/1
+  ]
+}
+requirements : [
+  beryllium/40
+  tungsten/60
+  thorium/20
+]
+category : crafting
+forceTeam : 1

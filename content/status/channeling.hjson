@@ -1,0 +1,19 @@
+healthMultiplier: 1.3
+damageMultiplier : 1.5
+speedMultiplier: 0
+color : 667ee9
+opposites : [neutralized]
+effect : {
+    type : ParticleEffect
+    region : viridium-sutaru
+    colorFrom : c2eeec
+    colorTo : 5ec1be
+    spin : 0.5
+    particles : 1
+    sizeFrom : 6
+    sizeTo : 1
+    lifetime : 55
+}
+effectChance : 0.045
+affinities: [exposed, incapacitated]
+damage : -7

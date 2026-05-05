@@ -1,0 +1,23 @@
+reloadMultiplier : 1.1
+buildSpeedMultiplier : 1.1
+healthMultiplier : 1.1
+damageMultiplier : 1.1
+buildSpeedMultiplier : 1.1
+speedMultiplier : 1.1
+reloadMultiplier : 1.1
+dragMultiplier : 0.8
+color : 92dd7e
+damage : -0.1
+effectChance : 0.05
+permanent : true
+effect : {
+    type : ParticleEffect
+    region : viridium-sutaru
+    colorFrom : ffffa3
+    colorTo : f8c266
+    spin : 0.5
+    particles : 1
+    sizeFrom : 6
+    sizeTo : 1
+    lifetime : 55
+}

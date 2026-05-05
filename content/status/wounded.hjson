@@ -1,0 +1,22 @@
+healthMultiplier: 0.8
+reloadMultiplier : 0.6
+color : f15454
+damage : 1
+affinities: [freezing]
+transitionDamage : 400
+effectChance : 0.05
+opposites : [starfield]
+effect : {
+    type : ParticleEffect
+    particles : 1
+    lifetime : 90
+    sizeFrom : 5
+    sizeTo : 0
+    colorFrom : f15454
+    colorTo : e01f1f
+    cone : 0
+    length : 0
+    offset : 45
+    useRotation : false
+    region : viridium-partreg1
+}
