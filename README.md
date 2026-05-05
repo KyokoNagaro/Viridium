@@ -1,4 +1,4 @@
-# Greater PVP (Hopefully)
+# Faction PVP
 
 A HJSON (at least for now) mod that make tech trees separated and unique to a team.
  - Sharded (yellow) : Erekir
