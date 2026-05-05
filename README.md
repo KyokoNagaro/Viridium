@@ -7,12 +7,12 @@ A HJSON (at least for now) mod that make tech trees separated and unique to a te
  - Malis (violet) :
  - Blue :
 
-You have to join on the right team, for 1v1 it easy but for more than that, you might need to use console (press F8)
+You have to join on the right team, for 1v1 it's easy but for more than that, you might need to use console (press F8)
 A nice memo : "Vars.player.team(Team.derelict)" (derelict is the team's name, and don't use it, it can't be played)
 
-Unfortunately, only a single player can get to play a tech tree for now.
+Unfortunately, only a single player can gets to play a tech tree for now.
 
-A little bit of balancing has been made to make avery faction playable (mainly through adding block, not changing value that could break schematics)
+A little bit of balancing has been made to make avery faction playable (mainly through adding block, not changing value that could breaks schematics)
 
 You shouldn't need **specific map building** to play a faction, just follow these rules when creating your map :
  - Beryllium in the wall (only)
@@ -22,6 +22,6 @@ You shouldn't need **specific map building** to play a faction, just follow thes
  - No scrap
  - Normal ore generation (including modded ones)
 
-Right now, I am planning to add some tech trees first, and make it simpler to chose team and stuff like that.
+Right now, I am planning to add some tech trees first, and make it simpler to chose your team and stuff like that.
 In a distant future, those tech trees will be added with their own campaign too.
 
