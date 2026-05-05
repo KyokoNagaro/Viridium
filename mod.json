@@ -1,5 +1,4 @@
 name : Viridium
-displayName : Viridium
 author : Choco Same
 description : 
   '''
@@ -19,6 +18,6 @@ In the future, I plan to release those tech tree in dedicated campaign on their 
 
 In 0.1, Serpulo and Erekir tech trees are separated. Curently working on creating a new one.
   '''
-version : 0.1-dev
+version : 0.1
 minGameVersion : 154
 

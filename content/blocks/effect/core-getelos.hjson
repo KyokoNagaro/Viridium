@@ -1,0 +1,12 @@
+squareSprite: false
+health: 120000
+armor: 20
+itemCapacity: 60000
+size: 4
+category: effect
+unitType: mega
+unitCapModifier: 20
+requirements: [
+  plastanium/200
+]
+buildVisibility : sandboxOnly

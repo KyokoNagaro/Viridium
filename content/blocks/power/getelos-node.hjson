@@ -1,0 +1,21 @@
+Type : PowerNode
+squareSprite : false
+size : 3
+laserRange : 26
+maxNodes : 100
+laserColor1 : efd2a2ff
+laserColor2 : fbb137ff
+glowColor : ffcd6672
+health : 600
+laserScale : 0.3
+placeableLiquid: true
+pulseMag : 0.2
+pulseScl : 22
+consumes : {
+    power : 10000
+}
+requirements : [
+  lead/1000
+]
+category : power
+buildVisibility : sandboxOnly

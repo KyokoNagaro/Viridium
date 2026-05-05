@@ -1,0 +1,57 @@
+type : GenericCrafter
+size : 3
+health : 860
+squareSprite : false
+hasLiquid : true
+liquidCapacity : 172
+ambientSound : loopHum
+ambientSoundVolume : 0.12
+craftEffect : turbinegenerate
+outputLiquid : arkycite/1.334
+craftTime : 15
+drawer: {
+  type: DrawMulti
+  iconOverride: [
+    -icon
+  ]
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type : DrawGlowRegion
+      suffix : -glow
+      color : a3b9ff
+    }
+    {
+      type : DrawRegion
+      suffix : -middle
+    }
+    {
+      type : DrawBlurSpin
+      suffix : -rotator
+      rotateSpeed : 6
+    }
+    {
+      type: DrawRegion
+      suffix: -middle
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes : {
+    power : 2
+    liquids: [
+      hydrogen/0.1
+    ]
+}
+requirements: [
+  graphite/30
+  silicon/20
+  beryllium/80
+  tungsten/40
+]
+category : crafting
