@@ -1,14 +1,14 @@
-type: flying
-controller: BuilderAI
-template: ErekirUnitType
-flying: true
-itemCapacity: 10
-buildSpeed: 0.3
-mineSpeed: 0.5
-mineTier: 1
-armor: 6
-hitSize: 9
-health: 250
+type : flying
+controller : BuilderAI
+template : ErekirUnitType
+flying : true
+itemCapacity : 10
+buildSpeed : 0.3
+mineSpeed : 0.5
+mineTier : 3
+armor : 6
+hitSize : 9
+health : 250
 range : 60
 faceTarget : true
 lowAltitude : false
@@ -44,7 +44,7 @@ weapons : [
     widthSinMag: 0.1
     x: 0
     y: 6.5
-    laserColor: ffcd66
+    laserColor: ffdb90
     mirror: false
     type: RepairBeamWeapon
     rotate: false

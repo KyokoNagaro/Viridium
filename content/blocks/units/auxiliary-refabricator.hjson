@@ -1,0 +1,23 @@
+type : Reconstuctor
+size : 3
+consumes : {
+    power : 2
+    items : {
+        items :[
+            tungsten/140
+            oxyde/40
+        ]
+    }
+    liquid : {
+        liquid : hydrogen
+        amount : 0.05
+    }
+}
+upgrades : [
+    [
+        comet
+        atlas
+    ]
+]
+category : units
+shownPlanets : [erekir]

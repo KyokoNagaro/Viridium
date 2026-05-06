@@ -1,0 +1,33 @@
+type : flying
+controller : MinerAI
+mineTier : 5
+mineSpeed : 3
+buildSpeed : 0.1
+armor : 6
+speed : 1.2
+rotateSpeed : 2
+accel : 0.04
+drag : 0.02
+faceTarget : true
+lowAltitude : true
+flying : true
+circleTarget : true
+engineSize : 0
+itemCapacity : 120
+hitSize : 16.05
+payloadCapacity : 324
+engines : [
+    {
+        x : 6
+        y : -10
+        radius : 3
+        rotation : -90
+    }
+    {
+        x : -6
+        y : -10
+        radius : 3
+        rotation : -90
+    }
+]
+weapons : 
