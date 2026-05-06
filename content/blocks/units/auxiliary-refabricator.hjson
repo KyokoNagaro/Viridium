@@ -1,11 +1,12 @@
-type : Reconstuctor
+type : Reconstructor
 size : 3
+health : 860
 consumes : {
     power : 2
     items : {
         items :[
             tungsten/140
-            oxyde/40
+            oxide/40
         ]
     }
     liquid : {
@@ -18,6 +19,12 @@ upgrades : [
         comet
         atlas
     ]
+]
+constructTime : 2400
+requirements : [
+    silicon/120
+    beryllium/250
+    tungsten/120
 ]
 category : units
 shownPlanets : [erekir]

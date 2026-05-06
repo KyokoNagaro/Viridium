@@ -1,9 +1,11 @@
-type : flying
+type : payload
+outlineColor : 1d1d23
 controller : MinerAI
 mineTier : 5
 mineSpeed : 3
 buildSpeed : 0.1
 armor : 6
+health : 540
 speed : 1.2
 rotateSpeed : 2
 accel : 0.04
@@ -16,18 +18,62 @@ engineSize : 0
 itemCapacity : 120
 hitSize : 16.05
 payloadCapacity : 324
+range : 60
+buildBeamOffset : 10
+pickupUnits : false
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : f15454
+        colorTo : f15454
+        outline : false
+        progress : warmup
+    }
+]
 engines : [
     {
         x : 6
-        y : -10
-        radius : 3
+        y : -11
+        radius : 2.5
         rotation : -90
     }
     {
         x : -6
-        y : -10
-        radius : 3
+        y : -11
+        radius : 2.5
         rotation : -90
     }
 ]
-weapons : 
+weapons : [
+    {
+    name : atlas-point-laser
+    mirror : false
+    rotate : false
+    continuous : true
+    alwaysContinuous : true
+    recoil : 0
+    x : 0
+    y : 10
+    cooldownTime : 90
+    targetMissiles : false
+    predictTarget : false
+    targetSwitchInterval : 60
+    targetInterval : 20
+    shootCone : 360
+    shootWarmupSpeed : 0.08
+    shootSound : none
+    scaleDamageEfficiency : true
+    loopSound : laserbeam
+    loopSoundVolume : 1
+    aimChangeSpeed : 1.26
+    bullet : {
+      type : PointLaserBulletType
+      damage : 42
+      buildingDamageMultiplier : 0.2
+      length : 60
+      maxRange : 60
+    }
+  }
+]
