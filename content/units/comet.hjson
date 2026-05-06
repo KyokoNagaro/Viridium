@@ -1,8 +1,9 @@
 type: flying
-controller: RepairAI
+controller: BuilderAI
+template: ErekirUnitType
 flying: true
 itemCapacity: 10
-buildSpeed: 0.8
+buildSpeed: 0.3
 mineSpeed: 0.5
 mineTier: 1
 armor: 6
@@ -17,49 +18,51 @@ drag : 0.08
 speed : 5.5
 rotateSpeed : 7
 accel : 0.09
-pickupUnits : false
+engineSize : 0
 engines : [
   {
-    x : -6
+    x : -5
     y : -5
     radius : 2
     rotation : -85
   }
   {
-    x : 6
+    x : 5
     y : -5
     radius : 2
     rotation : -95
   }
   {
     x : 0
-    y : -5
+    y : -5.6
     radius : 2
     rotation : -90
   }
 ]
 weapons : [
   {
-    name : magicalhaelinglaser
-    type : RepairBeamWeapon
-    widrhSinMag : 0.11
-    reload : 20
-    x : 0
-    y : 6
-    rotate : false
-    shootY : 0
-    beamWidth : 0.7
-    repairSpeed : 2.6
-    fractionRepairSpeed : 0.05
-    aimDst : 0
-    shootCome : 15
+    widthSinMag: 0.1
+    x: 0
+    y: 6.5
+    laserColor: ffcd66
+    mirror: false
+    type: RepairBeamWeapon
+    rotate: false
+    targetBuildings: true
+    targetUnits: false
+    autoTarget: false
+    controllable: true
+    reload: 20
+    shootY: 0
+    shootCone: 15
+    beamWidth: 0.8
+    repairSpeed: 0.9
+    fractionRepairSpeed: 0.06
     mirror : false
-    targetUnits : false
-    targetBuildings : true
-    controllable : true
-    bullet : {
-      maxRange : 60
-    }
+    bullet: {
+      type: BulletType
+      maxRange: 60
+      }
   }
 ]
 
