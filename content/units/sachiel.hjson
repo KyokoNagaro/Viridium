@@ -1,0 +1,104 @@
+type : flying
+controller : BuilderAI
+lowAltitude : false
+flying : true
+speed : 1.5
+rotateSpeed : 2
+accel : 0.05
+drag : 0.017
+engineSize : 6
+engineOffset : 13
+hitSize : 35
+buildSpeed : 8
+buildBeamOffset : 23
+range : 140
+targetAir : false
+faceTarget : false
+autoDropBomb : true
+circleTarget : true
+loopSound : loopHover
+health : 1600
+weapons : [
+    {
+    name : sachiel-bomb
+    x : 0
+    y : 0
+    mirror : false
+    reload : 180
+    minShootVelocity : 0
+    soundPitchMin : 0.01
+    shootSound : shootQuad
+    bullet : {
+        type : BasicBulletType
+        sprite : large-bomb
+        width : 30
+        height : 30
+        ignoreRotation : true
+        backColor : ffd574
+        frontColor : ffffff
+        mixColorTo : ffffff
+        hitSound : explosionQuad
+        shootCone : 360
+        ejectEffect : none
+        hitShake : 4
+        colidesAir : false
+        lifetime : 80
+        despawnEffect : {
+            type : multiEffect 
+            effects : [
+                {
+                    type : ParticleEffect
+                    particles : 1
+                    sizeFrom : 60
+                    sizeTo : 20
+                    length : 0
+                    lightColor : fff6b7
+                    lifetime : 50
+                    layer : 109
+                    region : viridium-sutarux
+                    colorFrom : ffe18f
+                    colorTo : ffcd66
+                    useRotation : false
+                    offset : 45
+                }
+                {
+                    type : ParticleEffect
+                    particles : 1
+                    sizeFrom : 24
+                    sizeTo : 0
+                    length : 0
+                    lightColor : fff6b7
+                    lifetime : 30
+                    layer : 109
+                    region : viridium-sutarux
+                    colorFrom : ffe18f
+                    colorTo : ffe18f
+                    useRotation : false
+                    offset : 45
+                }
+                {
+                    type : WaveEffect
+                    sizeFrom : 4
+                    sizeTo : 60
+                    strokeFrom : 4
+                    strokeTo : 0
+                    lifetime : 120
+                    colorFrom : ffe18f
+                    colorTo : ffcd66
+                    interp : pow10Out
+                }
+            ]
+        }
+        hitEffect : massiveExplosion
+        keepVelocity : false
+        spin : 2
+        shrinkX : 0.65
+        shrinkY : 0.65
+        speed : 0
+        collides : false
+        spalshDamage : 180
+        splashDamageRadius : 80
+        damage : 120
+        }
+    }
+]
