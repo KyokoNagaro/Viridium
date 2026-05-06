@@ -21,6 +21,8 @@ payloadCapacity : 324
 range : 60
 buildBeamOffset : 10
 pickupUnits : false
+mineFloor : true
+mineWall : true
 parts : [
     {
         type : RegionPart
