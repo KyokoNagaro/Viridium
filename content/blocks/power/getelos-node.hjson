@@ -14,7 +14,7 @@ consumes : {
     power : 16000
 }
 requirements : [
-  lead/1000
+  titanium/300
 ]
 category : power
 buildVisibility : sandboxOnly

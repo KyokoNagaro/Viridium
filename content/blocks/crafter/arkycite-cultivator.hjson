@@ -56,3 +56,4 @@ requirements: [
 ]
 category : crafting
 forceTeam : 1
+shownPlanets : [erekir]

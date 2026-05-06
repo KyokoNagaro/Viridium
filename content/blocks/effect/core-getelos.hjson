@@ -1,12 +1,14 @@
 squareSprite: false
-health: 120000
-armor: 20
-itemCapacity: 60000
-size: 4
+health: 4400
+armor: 2
+itemCapacity: 15000
+size: 5
 category: effect
 unitType: mega
-unitCapModifier: 20
+unitCapModifier: 10
+isFirstTier : true
 requirements: [
-  plastanium/200
+  titanium/6000
+  aster/1000
 ]
 buildVisibility : sandboxOnly

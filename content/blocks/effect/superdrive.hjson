@@ -18,3 +18,4 @@ requirements: [
 ]
 category: effect
 forceTeam : 1
+shownPlanets : [erekir]

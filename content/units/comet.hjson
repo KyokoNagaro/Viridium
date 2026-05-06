@@ -1,0 +1,65 @@
+type: flying
+controller: RepairAI
+flying: true
+itemCapacity: 10
+buildSpeed: 0.8
+mineSpeed: 0.5
+mineTier: 1
+armor: 6
+hitSize: 9
+health: 250
+range : 60
+faceTarget : true
+lowAltitude : false
+mineFloor : false
+mineHardnessSacaling : false
+drag : 0.08
+speed : 5.5
+rotateSpeed : 7
+accel : 0.09
+pickupUnits : false
+engines : [
+  {
+    x : -6
+    y : -5
+    radius : 2
+    rotation : -85
+  }
+  {
+    x : 6
+    y : -5
+    radius : 2
+    rotation : -95
+  }
+  {
+    x : 0
+    y : -5
+    radius : 2
+    rotation : -90
+  }
+]
+weapons : [
+  {
+    name : magicalhaelinglaser
+    type : RepairBeamWeapon
+    widrhSinMag : 0.11
+    reload : 20
+    x : 0
+    y : 6
+    rotate : false
+    shootY : 0
+    beamWidth : 0.7
+    repairSpeed : 2.6
+    fractionRepairSpeed : 0.05
+    aimDst : 0
+    shootCome : 15
+    mirror : false
+    targetUnits : false
+    targetBuildings : true
+    controllable : true
+    bullet : {
+      maxRange : 60
+    }
+  }
+]
+
