@@ -22,6 +22,6 @@ You shouldn't need **specific map building** to play a faction, just follow thes
  - No scrap
  - Normal ore generation (including modded ones)
 
-Right now, I am planning to add some tech trees first, and make it simpler to chose your team and stuff like that.
+Right now, I am planning to add some tech trees first, and make it simpler to chose your team and stuff like that. The idea is that you can join a match where you don't know what your opponnent play, have to scout through fog.
 In a distant future, those tech trees will be added with their own campaign too.
 
