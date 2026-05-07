@@ -1,4 +1,5 @@
 type : flying
+hidden : true
 template : ErekirUnitType
 controller : BuilderAI
 lowAltitude : false
@@ -26,7 +27,6 @@ weapons : [
     y : 0
     mirror : false
     reload : 180
-    minShootVelocity : 0
     soundPitchMin : 0.01
     shootSound : shootQuad
     bullet : {
