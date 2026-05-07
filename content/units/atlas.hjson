@@ -12,7 +12,7 @@ rotateSpeed : 2
 accel : 0.04
 drag : 0.02
 faceTarget : true
-lowAltitude : true
+lowAltitude : false
 flying : true
 circleTarget : true
 engineSize : 0
