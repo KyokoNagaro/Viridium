@@ -22,7 +22,7 @@ range : 60
 buildBeamOffset : 10
 pickupUnits : false
 mineFloor : true
-mineWall : true
+mineWalls : true
 parts : [
     {
         type : RegionPart
