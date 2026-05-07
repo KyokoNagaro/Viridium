@@ -1,4 +1,5 @@
 type : payload
+template : errkirUniteType
 outlineColor : 1d1d23
 controller : MinerAI
 mineTier : 5
