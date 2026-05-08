@@ -20,6 +20,13 @@ autoDropBomb : true
 circleTarget : true
 loopSound : loopHover
 health : 1600
+itemCapacity : 120
+mineSpeed : 10
+mineTier : 3
+deathShake : 2
+fallSpeed : 0.012
+wreckHealthMultiplier : 0.5
+crashDamageMultiplier : 1.2
 weapons : [
     {
     name : sachiel-bomb

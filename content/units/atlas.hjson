@@ -24,6 +24,7 @@ buildBeamOffset : 10
 pickupUnits : false
 mineFloor : true
 mineWalls : true
+mineRange : 100
 parts : [
     {
         type : RegionPart
@@ -80,3 +81,4 @@ weapons : [
     }
   }
 ]
+shownPlanets : [erekir]

@@ -54,6 +54,6 @@ requirements: [
   beryllium/80
   tungsten/40
 ]
-category : crafting
+category : production
 forceTeam : 1
 shownPlanets : [erekir]
