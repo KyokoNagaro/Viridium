@@ -1,0 +1,15 @@
+{
+  "name": "Consuming Node",
+  "description": "Simpul tenaga yang juga mengonsumsi energi untuk beroperasi.",
+  "size": 1,
+  "health": 150,
+  "laserRange": 10,
+  "maxNodes": 15,
+  "hasPower": true,
+  "outputsPower": true,
+  "requirements": [
+    { "item": "lead", "amount": 10 },
+    { "item": "copper", "amount": 10 }
+  ],
+  "category": "power"
+}

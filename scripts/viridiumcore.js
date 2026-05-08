@@ -4,6 +4,10 @@ const coreGetelos = extend(CoreBlock, "core-getelos", {
     hasPower: true,
     outputsPower: true,
     consumesPower: false,
+    autolink: true,
+    drawRange: true,
+    maxNodes: 100,
+    laserRange: 60,
     setStats() {
         this.super$setStats();
         this.stats.add(generationType, powerProduction * 60, StatUnit.powerSecond);
