@@ -1,0 +1,48 @@
+type : ItemTurret
+squareSprite : false
+size : 2
+health : 780
+range : 140 
+shake : 0.7
+ammoPerShot : 1
+shootSound : shootScatter
+rotateSpeed : 2
+outlineColor : 2e2f34
+reload : 20
+shootY : -1
+ammoTypes : {
+    beryllium : {
+        type : BasicBulletType
+        speed : 6
+        damage : 35
+        width : 8
+        hitSize : 7
+        height : 14
+        shootEffects : [
+            shootBigColor
+            colorSparkBig
+        ]
+        smokeEffect : shootBigSmoke
+        buildingDamageMultiplier : 0.4
+        hitColor : e8895c
+        backColor : e8895c
+        trailColor : e8895c
+        frontColor : ffffff
+        trailWidth : 2
+        trailLength : 4
+        hitEffect : hitBulletColor
+        despawnEffect : hitBulletColor
+        lifetime : 25
+    }
+}
+requirements: [
+  beryllium/40
+]
+coolantMultiplier : 15
+coolant : {
+    type : ConsumeLiquid
+    liquid : water
+    amount : 0.083333
+}
+category : turret
+shownPlanets : [erekir]

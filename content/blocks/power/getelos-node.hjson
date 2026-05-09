@@ -1,5 +1,6 @@
 health : 600
-laserRange : 40
+laserRange : 44
+size : 3
 maxNodes : 100
 hasPower : true
 outputsPower : true
