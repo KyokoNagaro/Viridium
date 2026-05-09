@@ -1,4 +1,4 @@
-type : payload
+type : flying
 template : ErekirUnitType
 outlineColor : 1d1d23
 controller : MinerAI
@@ -68,7 +68,7 @@ weapons : [
     targetSwitchInterval : 60
     targetInterval : 20
     shootCone : 360
-    shootWarmupSpeed : 0.08
+    minShootVelocity : 0
     shootSound : none
     scaleDamageEfficiency : true
     loopSound : laserbeam

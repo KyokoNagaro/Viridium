@@ -14,7 +14,7 @@ ammoTypes : {
     beryllium : {
         type : BasicBulletType
         speed : 6
-        damage : 35
+        damage : 28
         width : 8
         hitSize : 7
         height : 14

@@ -1,18 +1,17 @@
 type : flying
-hidden : true
 template : ErekirUnitType
 controller : BuilderAI
-lowAltitude : false
+lowAltitude : true
 flying : true
 speed : 1.5
 rotateSpeed : 2
 accel : 0.05
 drag : 0.017
-engineSize : 6
-engineOffset : 13
-hitSize : 35
+engineSize : 4
+engineOffset : 12
+hitSize : 20
 buildSpeed : 8
-buildBeamOffset : 23
+buildBeamOffset : 10
 range : 140
 targetAir : false
 faceTarget : false
@@ -25,62 +24,118 @@ mineSpeed : 10
 mineTier : 3
 deathShake : 2
 fallSpeed : 0.012
+createWreck : true
 wreckHealthMultiplier : 0.5
 crashDamageMultiplier : 1.2
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        layer : -1
+        blending : additive
+        color : 6f80e8
+        clorTo : 6f80e8
+        outline : false
+        progress : warmup
+    }
+    {
+        type : flarePart
+        color1 : 8ca9e8ff   
+        color2 : ffffff
+        y : 10
+        stroke : 2
+        radius : 8
+        layer : 110
+    }
+    {
+        type : shapePart
+        hollow : true
+        circle : true
+        y : -9.5
+        color : a7bff4
+        stroke : 1
+        strokeTo : 1
+        radius : 6
+        radiusTo : 6
+        layer : 110
+    }
+    {
+        type : HaloPart
+        y : -9.5
+        radius : 3
+        tri : true
+        layer : 110
+        color : a7bff4
+        haloRadius : 6
+        haloRadiusTo : 6
+        haloRotateSpeed : 1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 2
+        triLength : 6
+        triLengthTo : 6
+    }
+]
 weapons : [
     {
     name : sachiel-bomb
     x : 0
-    y : 0
+    y : -4
     mirror : false
     reload : 180
     soundPitchMin : 0.01
     shootSound : shootQuad
+    shootEffect : none
     bullet : {
         type : BasicBulletType
         sprite : large-bomb
-        width : 30
-        height : 30
+        width : 20
+        height : 20
         ignoreRotation : true
-        backColor : ffd574
+        backColor : 8ca9e8
         frontColor : ffffff
         mixColorTo : ffffff
         hitSound : explosionQuad
         shootCone : 360
+        shootEffect : none
+        smokeEffect : none
         ejectEffect : none
         hitShake : 4
         colidesAir : false
         lifetime : 80
+        layer : 89
         despawnEffect : {
             type : multiEffect 
             effects : [
                 {
                     type : ParticleEffect
                     particles : 1
-                    sizeFrom : 60
-                    sizeTo : 20
+                    sizeFrom : 48
+                    sizeTo : 18
                     length : 0
-                    lightColor : fff6b7
+                    lightColor : 88a4ff
                     lifetime : 50
-                    layer : 109
+                    layer : 110
                     region : viridium-sutarux
-                    colorFrom : ffe18f
-                    colorTo : ffcd66
+                    colorFrom : d1efff
+                    colorTo : 8ca9e8
                     useRotation : false
                     offset : 45
                 }
                 {
                     type : ParticleEffect
                     particles : 1
-                    sizeFrom : 24
+                    sizeFrom : 22
                     sizeTo : 0
                     length : 0
                     lightColor : fff6b7
                     lifetime : 30
-                    layer : 109
+                    layer : 110
                     region : viridium-sutarux
-                    colorFrom : ffe18f
-                    colorTo : ffe18f
+                    colorFrom : d1efff
+                    colorTo : d1efff
                     useRotation : false
                     offset : 45
                 }
@@ -91,8 +146,8 @@ weapons : [
                     strokeFrom : 4
                     strokeTo : 0
                     lifetime : 120
-                    colorFrom : ffe18f
-                    colorTo : ffcd66
+                    colorFrom : d1efff
+                    colorTo : d1efff
                     interp : pow10Out
                 }
             ]
@@ -104,7 +159,7 @@ weapons : [
         shrinkY : 0.65
         speed : 0
         collides : false
-        spalshDamage : 180
+        splashDamage : 180
         splashDamageRadius : 80
         damage : 120
         }
