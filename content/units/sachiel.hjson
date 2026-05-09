@@ -84,10 +84,11 @@ weapons : [
     x : 0
     y : -4
     mirror : false
-    reload : 180
+    reload : 90
     soundPitchMin : 0.01
     shootSound : shootQuad
     shootEffect : none
+    minShootVelocity : 0.001
     bullet : {
         type : BasicBulletType
         sprite : large-bomb

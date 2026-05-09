@@ -1,0 +1,17 @@
+type : BurstDrill
+squareSprite : false
+shake : 3
+drillTime : 42
+size : 3
+hasPower : true
+itemCapacity : 30
+tier : 5
+blockedItems : [copper, coal, thorium, tungsten, beryllium, lead, scrap]
+liquidCapacity : 0
+consumes : {
+    power : 1
+}
+requirements : [
+    titanium/20
+]
+category : production

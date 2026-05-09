@@ -1,0 +1,21 @@
+type : GenericCrafter
+hasLiquid : true
+size : 3
+squareSprite : false
+outputItem : neodymium/4
+craftTime : 120
+ambiantSound : loopPulse
+ambientSoundVolume : 0.08
+consumes : {
+    power : 1
+    items : [
+        sand/24
+    ]
+    liquids : [
+        water/0.3333
+    ]
+}
+requirements : [
+    titanium/225
+]
+category : crafting

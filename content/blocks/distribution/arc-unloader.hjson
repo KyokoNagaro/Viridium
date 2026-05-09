@@ -1,0 +1,8 @@
+type : Unloader
+speed : 2
+squareSprite : false
+size : 1
+requirements : [
+    titanium/40
+    neodymium/20
+]
