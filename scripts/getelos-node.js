@@ -1,6 +1,6 @@
-const powerUsage = 30.0; // Value for Consumtion
+const powerUsage = 900000; // Value for Consumtion
 
-const verNode = extend(PowerNode, "consuming-node", {
+const verNode = extend(PowerNode, "getelos-node", {
     
     setBars() {
         this.super$setBars();

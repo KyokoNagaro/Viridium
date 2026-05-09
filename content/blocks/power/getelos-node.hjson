@@ -1,18 +1,8 @@
-Type : BeamNode
-squareSprite : false
-size : 3
-range : 100
-laserWidth : 0.7
-health : 680
-laserScale : 0.3
-placeableLiquid: true
-consumesPower : true
-canOverdrive : false
-pulseMag : 0.2
-pulseScl : 22
-consumes : {
-    power : 16000
-}
+health : 600
+laserRange : 40
+maxNodes : 100
+hasPower : true
+outputsPower : true
 requirements : [
   titanium/300
 ]

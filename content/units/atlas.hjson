@@ -25,6 +25,8 @@ pickupUnits : false
 mineFloor : true
 mineWalls : true
 mineRange : 100
+commands: [move, mine]
+mineItems: [thorium, beryllium, tungsten]
 parts : [
     {
         type : RegionPart
