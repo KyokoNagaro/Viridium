@@ -1,8 +1,12 @@
 type : Unloader
-speed : 2
+speed : 3
 squareSprite : false
 size : 1
+underBullet : true
+health : 90
 requirements : [
     titanium/40
     neodymium/20
 ]
+category : distribution
+buildVisibility : sandboxOnly

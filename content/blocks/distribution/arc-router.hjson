@@ -1,0 +1,8 @@
+type : Router
+squareSprite : false
+speed : 3
+requirement : [
+    titanium/4
+]
+category : distribution
+buildVisibility : sandboxOnly

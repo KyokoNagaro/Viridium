@@ -1,0 +1,8 @@
+type : junction
+speed : 40 
+squareSprite : false
+requirement : [
+    titanium/4
+]
+category : distribution
+buildVisibility : sandboxOnly
