@@ -1,0 +1,10 @@
+type : StorageBlock
+size : 3
+itemCapacity : 960
+health : 580
+requirements : [
+    titanium/450
+    neodymium/50
+]
+category : effect
+buildVisibility : sandboxOnly

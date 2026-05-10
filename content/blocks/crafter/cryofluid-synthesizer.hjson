@@ -1,0 +1,66 @@
+type : GenericCrafter
+squareSprite : false
+size : 3
+outputLiquid : cryofluid/0.4
+ambiantSound : loopSmelter
+ambientSoundVolume : 0.1
+craftTime : 180
+liquidCapacity : 40
+itemCapacity : 10
+craftEffect : {
+    type : WaveEffect
+    colorFrom : efb3e3
+    colorTo : efb3e3
+    rotation : 45
+    sides : 4
+    sizeTo: 20
+    lifetime : 30
+}
+drawer : {
+    type : DrawMulti
+    drawers : [
+        {
+            type : DrawRegion
+            suffix : -bottom
+        }
+        {
+            type : DrawLiquidTile
+            padding : 2
+            drawLiquid : cryofluid
+            suffix : -bottom
+        }
+        {
+            type : DrawDefault
+        }
+        {
+            type : DrawGlowRegion
+            suffix : -glow
+            color : efb3e3
+            blending : additive
+        }
+                {
+            type : DrawGlowRegion
+            suffix : -rotator1
+            color : efb3e3
+            blending : additive
+            rotate : true
+            rotateSpeed : 1
+            useWarmupRadius : true
+        }
+    ]
+}
+consumes : {
+    power : 1
+    items : [
+        titanium/1
+    ]
+    liquids : [
+        water/0.4
+    ]
+}
+requirements : [
+    titanium/125
+    neodymium/50
+]
+category : crafting
+buildVisibility : sandboxOnly

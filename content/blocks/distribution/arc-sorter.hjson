@@ -1,8 +1,6 @@
-type : junction
-speed : 40 
-squareSprite : false
+type : Sorter
 requirements : [
-    titanium/4
+    titanium/5
 ]
 category : distribution
 buildVisibility : sandboxOnly

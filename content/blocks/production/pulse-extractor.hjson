@@ -3,8 +3,15 @@ size : 3
 squareSprite : false
 hasLiquid : true
 liquidCapacity : 20
-outputLiquid : water/0.1667
-updtateEffect : pulverize
+outputLiquid : water/0.2
+craftEffect : {
+    type : WaveEffect
+    colorFrom : 8ca9e8
+    colorTo : 8ca9e8
+    sides : 4
+    sizeTo: 20
+    lifetime : 30
+}
 drawer : {
   type : DrawMulti
   drawers : [
@@ -12,10 +19,9 @@ drawer : {
             type : DrawDefault
         }
         {
-            type : DrawRegion
-            suffix : -rotator
-            spinSprite : true
-            rotateSpeed : 5
+            type : DrawGlowRegion
+            suffix : -glow
+            color : a3b9ff
         }
     ]
 }

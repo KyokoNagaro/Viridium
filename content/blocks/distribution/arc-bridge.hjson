@@ -1,0 +1,12 @@
+type : ItemBridge
+range : 12
+transportTime : 4
+arrowPeriod : 0.9
+arrowTimeScl : 2.75
+pulse : true
+requirements : [
+    titanium/25
+    neodymium/5
+]
+category : distribution
+buildVisibility : sandboxOnly

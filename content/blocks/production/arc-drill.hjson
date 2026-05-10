@@ -5,9 +5,27 @@ drillTime : 68
 size : 3
 hasPower : true
 itemCapacity : 30
+arrows : 1
 tier : 5
+baseArrowColor : 8ca9e8
+arrowColor : 8ca9e8
+glowColor : d1efff
 blockedItems : [copper, coal, thorium, tungsten, beryllium, lead, scrap]
 liquidCapacity : 0
+drillEffect : [
+  drillSteam
+  {
+    type : ParticleEffect
+    particles : 1
+    cone : 360
+    length : 0
+    region : viridium-sutarux
+    colorFrom : d1efff
+    colorTo : 6f80e8
+    sizeFrom : 25
+    sizeTo : 5
+  }
+]
 consumes : {
     power : 1
 }

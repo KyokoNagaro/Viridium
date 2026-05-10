@@ -12,3 +12,4 @@ requirements: [
   aster/1000
 ]
 buildVisibility : sandboxOnly
+category : effect

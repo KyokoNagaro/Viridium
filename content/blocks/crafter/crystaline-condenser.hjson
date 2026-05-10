@@ -1,0 +1,47 @@
+type : AttributeCrafter
+squareSprite : false
+minEfficiency : 9
+baseEfficiency : 0
+attribute : steam
+displayEfficiency : false
+size : 3
+itemCapacity : 20
+liquidCapacity : 20
+craftTime : 60
+outputItem : aster/1
+envEnabled: -1
+envDisabled: 4
+craftEffect: turbinegenerate
+updateEffect: turbinegenerate
+regionRotated1: 3
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+    type: DrawBlurSpin
+    suffix: -rotator
+    spinSprite: false
+    rotateSpeed: 100
+    blurThresh: 0.25
+  }
+  {
+    type: DrawGlowRegion
+    suffix: -glow
+    color: 3a8f64
+  }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes : {
+    liquids : [
+        cryofluid/0.2
+    ]
+}
+category : crafting
+buildVisibility : sandboxOnly

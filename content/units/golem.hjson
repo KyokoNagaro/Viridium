@@ -1,0 +1,36 @@
+type : mech
+outlineColor : 1d1d23
+mechLegColor : 6e7080
+armor : 2
+health : 540
+hitsize : 8
+flying : false
+range : 180
+weapons : [
+    {
+        name : golem-missile
+        rotate : false
+        recoil : 0
+        mirror : false
+        reload : 120
+        x  : 0
+        y : 0
+        shootSound : shootLancer
+        bullet : {
+            shootEffect : {
+                type : ParticleEffect
+                colorFrom : ffe18f
+                colorTo : f8c266
+                line : true
+                particle : 6
+                randLegnth : true
+                cone : 10
+                lenFrom : 3
+                lenTo : 0
+                lifetime : 30
+            }
+            smokeEffect : none
+            spawnUnit : viridium-stary-missile
+        }
+    }
+]

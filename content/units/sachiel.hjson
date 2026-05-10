@@ -88,7 +88,6 @@ weapons : [
     soundPitchMin : 0.01
     shootSound : shootQuad
     shootEffect : none
-    minShootVelocity : 0.001
     bullet : {
         type : BasicBulletType
         sprite : large-bomb

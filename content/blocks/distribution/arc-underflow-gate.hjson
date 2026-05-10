@@ -1,8 +1,7 @@
-type : junction
-speed : 40 
-squareSprite : false
+type : OverflowGate
+invert : true
 requirements : [
-    titanium/4
+    titanium/5
 ]
 category : distribution
 buildVisibility : sandboxOnly

@@ -12,7 +12,7 @@ consumes : {
         sand/24
     ]
     liquids : [
-        water/0.3333
+        water/0.4
     ]
 }
 requirements : [

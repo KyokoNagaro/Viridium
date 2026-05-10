@@ -1,0 +1,118 @@
+  type : missile
+  controller : MissileAI
+  template : MissileUnitType
+  hidden : true
+  health : 660
+  hitSize : 4
+  engineColor : 80a9ff
+  trailColor : 80a9ff
+  trailWidth : 1.5
+  trailLength : 6.5
+  trailEffect : missileTrail
+  outlineRadius : 0
+  engineSize : 2
+  engineLayer : 110
+  drawCell : false
+
+  lowAltitude : false
+  isEnemy : false
+  allowedIOnPayloads : false
+  playerControllable : false
+  physics : false
+  useUnitCap : false
+  createWreck : false
+  createScorch : false
+  drawSoftShadow : true
+  targetMissiles : false
+  flying : true
+  rotateSpeed : 3.65
+  lifetime : 150
+  maxRange : 5
+  speed : 5.5
+  targetAir : true
+
+  parts : [
+    {
+      type : FlarePart
+      progress : {
+        type : life
+        op : curve
+        interp : pow3Out
+      }
+      color1 : 80a9ff
+      stroke : 4.3
+      radius : 0
+      radiusTo : 33
+    }
+  ]
+
+  weapons : [
+    {
+      name : i-want-you-in-my-room
+      shootCone : 360
+      shootOnDeath : true
+      controllable : true
+      shootSound : none
+      bullet : {
+      targetMissiles : false
+      status : freezing
+      statusDuration : 60
+        killShooter : true
+        hitEffect : {
+          type : multiEffect
+          effects : [
+            {
+              type : ParticleEffect
+              particles : 1
+              sizeFrom : 32
+              sizeTo : 15
+              length : 0
+              lightColor : 8deebb
+              lifetime : 50
+              layer : 109
+              region : viridium-sutaru
+              colorFrom : d1efff
+              colorTo : 4982fb
+            }
+            {
+              type : ParticleEffect
+              particles : 1
+              sizeFrom : 12
+              sizeTo : 0
+              length : 0
+              lightColor : 8deebb
+              lifetime : 30
+              layer : 109
+              region : viridium-sutaru
+              colorFrom : d1efff
+              colorTo : d1efff
+            }
+            {
+              type : WaveEffect
+              sizeFrom : 4
+              sizeTo : 32
+              strokeFrom : 3
+              strokeTo : 0
+              lifetime : 35
+              colorFrom : d1efff
+              colorTo : 4982fb
+            }
+          ]
+        }
+        type : BulletType
+        status : freezing
+        statusDuration : 60
+        damage : 100
+        speed : 0
+        width : 0
+        height : 0
+        keepVelocity : false
+        splashDamageRadius : 35
+        splashDamage : 420
+        lifeTime : 0
+      }
+    }
+  ]
+
+
+
