@@ -9,8 +9,9 @@ pulseMag : 0.2
 pulseScl : 22
 laser : viridium-getelos-node-beam
 laserEnd : viridium-getelos-node-beam-end
+squareSprite : false
 requirements : [
-  titanium/300
+  titanium/60
 ]
 category : power
 buildVisibility : sandboxOnly

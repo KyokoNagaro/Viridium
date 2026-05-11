@@ -1,6 +1,6 @@
 type : BurstDrill
 squareSprite : false
-shake : 2
+shake : 1
 drillTime : 68
 size : 3
 hasPower : true

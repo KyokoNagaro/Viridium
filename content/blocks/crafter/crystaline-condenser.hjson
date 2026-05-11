@@ -14,11 +14,13 @@ envDisabled: 4
 craftEffect: turbinegenerate
 updateEffect: turbinegenerate
 regionRotated1: 3
+craftEffect : turbinegenerate
 drawer: {
   type: DrawMulti
   drawers: [
     {
-      type: DrawDefault
+      type: DrawRegion
+      suffix : -bottom
     }
     {
     type: DrawBlurSpin
@@ -28,14 +30,13 @@ drawer: {
     blurThresh: 0.25
   }
   {
+    type : DrawDefault
+  }
+  {
     type: DrawGlowRegion
     suffix: -glow
-    color: 3a8f64
+    color: ffe3ad
   }
-    {
-      type: DrawRegion
-      suffix: -top
-    }
   ]
 }
 consumes : {

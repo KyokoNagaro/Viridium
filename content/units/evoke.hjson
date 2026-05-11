@@ -1,2 +1,3 @@
 mineSpeed : 8
 mineRange : 110
+mineFloor : true
