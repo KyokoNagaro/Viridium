@@ -1,9 +1,14 @@
 health : 600
 laserRange : 44
 size : 3
-maxNodes : 100
+maxNodes : 200
 hasPower : true
 outputsPower : true
+laserScale : 0.6
+pulseMag : 0.2
+pulseScl : 22
+laser : viridium-getelos-node-beam
+laserEnd : viridium-getelos-node-beam-end
 requirements : [
   titanium/300
 ]
