@@ -1,3 +1,2 @@
-mineSpeed : 8
-mineRange : 110
 mineFloor : true
+buildSpeed : 1

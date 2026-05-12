@@ -26,6 +26,7 @@ mineFloor : true
 mineWalls : true
 mineRange : 100
 commands: [move, mine]
+defaultCommand : mine
 mineItems: [thorium, beryllium, tungsten]
 parts : [
     {

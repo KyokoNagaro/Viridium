@@ -5,7 +5,10 @@ armor : 2
 health : 540
 hitsize : 8
 flying : false
+speed : 0.43
 range : 180
+canBoost : true
+boostMultiplier : 2.2
 weapons : [
     {
         name : golem-missile

@@ -3,7 +3,7 @@ controller : BuilderAI
 template : ErekirUnitType
 flying : true
 itemCapacity : 10
-buildSpeed : 0.3
+buildSpeed : 0.35
 mineSpeed : 0.5
 mineTier : 3
 armor : 6
@@ -14,6 +14,7 @@ faceTarget : true
 lowAltitude : false
 mineFloor : false
 mineHardnessSacaling : false
+defaultCommand : assist
 drag : 0.08
 speed : 5.5
 rotateSpeed : 7

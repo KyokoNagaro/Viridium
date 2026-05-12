@@ -8,7 +8,7 @@ size : 3
 itemCapacity : 20
 liquidCapacity : 20
 craftTime : 60
-outputItem : aster/1
+outputItem : aster/2
 envEnabled: -1
 envDisabled: 4
 craftEffect: turbinegenerate
