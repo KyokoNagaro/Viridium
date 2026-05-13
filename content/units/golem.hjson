@@ -1,6 +1,6 @@
 type : mech
 outlineColor : 1d1d23
-mechLegColor : 6e7080
+mechLegColor : d4816b
 armor : 2
 health : 540
 hitsize : 8
@@ -9,9 +9,13 @@ speed : 0.43
 range : 180
 canBoost : true
 boostMultiplier : 2.2
+stepSoundVolume : 0.4
+mechFrontSway : 0.55
 weapons : [
     {
         name : golem-missile
+        shootStatus : slow
+        shootStatusDuration : 130
         rotate : false
         recoil : 0
         mirror : false

@@ -28,7 +28,7 @@
   rotateSpeed : 3.65
   lifetime : 45
   maxRange : 5
-  speed : 3.5
+  speed : 2.3
   targetAir : true
 
   parts : [
