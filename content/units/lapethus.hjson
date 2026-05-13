@@ -16,16 +16,18 @@ weapons : [
     mirror : true
     x : 10
     y : 0
-    alternate : false
-    reload : 90
+    alternate : true
+    reload : 45
     targetMissile : false
     rotate : true
     shake : 1
     shootSound : shootBreachCarbide
+    shootSoundVolume : 0.4
+    rotateSpeed : 1.8
     bullet : {
       type : BasicBulletType
       speed : 6 
-      damage : 120
+      damage : 100
       width : 9
       heigth : 14
       hitSize : 7
@@ -62,7 +64,7 @@ weapons : [
         pierceCap : 3
         trailLength : 5
         trailWidth : 1.8
-        damage : 120
+        damage : 130
         frontColor : ffffff
         trailColor : ab8ec5
         backColor : ab8ec5
