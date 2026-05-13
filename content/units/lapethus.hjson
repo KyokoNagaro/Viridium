@@ -10,6 +10,7 @@ lowAltitude : true
 range : 140
 payloadCapacity : 486
 itemCapacity : 80
+hidden : true
 weapons : [
   {
     name : lapethus-rail

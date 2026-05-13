@@ -1,0 +1,25 @@
+type : UnitFactory
+size : 3
+configurable : true
+fogRadius : 3
+consumes : {
+    power : 1
+    liquids : [
+        cryofluid/0.2
+    ]
+}
+category : units
+requirements : [
+    titanium/250
+    aster/100
+]
+plans : [
+    {
+        unit : golem
+        requirements : [
+            titanium/40
+            aster/12
+        ]
+        time : 1800
+    }
+]
