@@ -1,1 +1,8 @@
 forceTeam : 1
+requirements : [
+  graphite/400
+  silicon/450
+  tungsten/650
+  oxide/200
+  carbide/400
+]

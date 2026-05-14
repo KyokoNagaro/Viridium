@@ -22,4 +22,20 @@ plans : [
         ]
         time : 1800
     }
+    {
+        unit : sofiel
+        requirements : [
+            titanium/60
+            aster/20
+        ]
+        time : 2100
+    }
+    {
+        unit : chthonian
+        requirements : [
+            titanium/30
+            aster/10
+        ]
+        900
+    }
 ]

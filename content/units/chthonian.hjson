@@ -1,0 +1,75 @@
+type : mech
+outlineColor : 1d1d23
+mechLegColor : 2e2f34
+armor : 1
+health : 620
+hitSize : 9
+flying : false
+speed : 0.39
+range : 100
+canBoost : true
+boostMultiplier : 10
+stepSoundVolume : 0.4
+itemCapacity : 40
+defaultCommand : mine
+mineItems: [titanium, platinum]
+mineFloor : true
+mineWalls : true
+mineRange : 100
+engineSize : 0
+mineSpeed : 4
+buildSpeed : 0.05
+mineTier : 6
+faceTarget : false
+engines : [
+    {
+        x : 6
+        y : -11
+        radius : 2
+        rotation : -90
+    }
+    {
+        x : -6
+        y : -11
+        radius : 2
+        rotation : -90
+    }
+]
+weapons : [
+    {
+        name : chthonian-mount
+        reload : 15
+        x : 6
+        mirror : true
+        alternate : true
+        rotate : true
+        shootSound : shootAlpha
+        inaccuracy : 3
+        shoot : {
+            type : ShootSpread
+            shots : 2
+            shotDelay : 3
+            spread : 1
+        }
+        bullet : {
+            type : LaserBoltBulletType
+            width : 1.5
+            heigth : 5
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            trailWidth : 1.2
+            trailLength : 4
+            shootEffect : shootSmallColor
+            smokeEffect : hitLaserColor
+            backColor : ffd37f
+            trailColor : ffd37f
+            hitColor : ffd37f
+            frontColor : ffffff
+            ligthColor : ffd37f
+            lifetime : 30
+            hommingPower : 0.02
+            speed : 6
+            damage : 10
+        }
+    }
+]

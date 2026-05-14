@@ -68,7 +68,7 @@ weapons : [
     predictTarget : false
     targetSwitchInterval : 60
     targetInterval : 20
-    shootCone : 360
+    shootCone : 160
     minShootVelocity : 0
     shootSound : none
     scaleDamageEfficiency : true

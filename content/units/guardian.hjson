@@ -1,0 +1,88 @@
+type : mech
+health : 2400
+amror : 10
+hitSize : 18
+speed : 0.4
+range : 240
+outlineColor : 1d1d23
+mechLegColor : d4816b
+canBoost : true
+boostMultiplier : 2.5
+stepSoundVolume : 0.4
+flying : false
+faceTarget : true
+weapons : [
+  {
+  name : guardian-rail
+  mirror : false
+  rotate : true
+  rotateSpeed : 1.7
+  reload : 150
+  x : 0
+  y : -5
+  predictTarget : false
+  targetMissile : false
+  rotationLimit : 80
+  unitSort : strongest
+  shootSoundVolume : 0.5
+  shootSound : shootForeshadow
+  shootStatus : slow
+  shootStatusDuration : 130
+  bullet : {
+    type : RailBulletType
+    damage : 60
+    pierceCap : 3
+    pierce : true
+    pierceBuilding : true
+    status : consume
+    statusDuration : 59940
+    shootEffect : {
+      type : MultiEffect
+      effects : [
+        {
+        type : ParticleEffect
+        region : viridium-shootinstantrail
+        length : 0
+        lifetime : 10
+        sizeFrom : 45
+        sizeTo : 10
+        colorFrom : ffefca
+        colorTo : ffd37f
+        useRotation : true
+        cone : 0
+        offset : 0
+        }
+        {
+        type : ParticleEffect
+        region : viridium-losange1
+        length : 0
+        lifetime : 15
+        sizeFrom : 33
+        sizeTo : 7
+        colorFrom : ffefca
+        colorTo : ffd37f
+        useRotation : true
+        offset : 0
+        cone : 0
+        }
+      ]
+    }
+    hitEffect : instHit
+    pierceEffect : railHit
+    smokeEffect : none
+    pointEffect : instTrail
+    despawnEffect : {
+      type : WaveEffect
+      sizeTo : 45
+      colorFrom : ffefca
+      colorTo : ffd37f
+      lifetime : 20
+      interp : pow10Out
+    }
+    pointEffectSpace : 20
+    length : 240
+    hitShake : 3
+    }
+  }
+]
+hidden : true

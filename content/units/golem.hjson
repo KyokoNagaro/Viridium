@@ -7,7 +7,6 @@ hitsize : 8
 flying : false
 speed : 0.43
 range : 100
-commands: [move, attack]
 canBoost : true
 boostMultiplier : 2.2
 stepSoundVolume : 0.4

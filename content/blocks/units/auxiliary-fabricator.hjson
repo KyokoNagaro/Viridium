@@ -4,10 +4,10 @@ configurable : false
 plans : [
     {
         unit : comet
-        time : 600
+        time : 900
         requirements : [
             silicon/20
-            beryllium/40
+            beryllium/60
         ]
     }
 ]
@@ -15,7 +15,7 @@ consumes : {
     power : 1
 }
 requirements : [
-    silicon/150
+    silicon/175
     beryllium/200
 ]
 category : units
