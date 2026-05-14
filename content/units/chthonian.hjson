@@ -49,7 +49,7 @@ weapons : [
             type : ShootSpread
             shots : 2
             shotDelay : 3
-            spread : 1
+            spread : 2
         }
         bullet : {
             type : LaserBoltBulletType

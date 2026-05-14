@@ -36,6 +36,6 @@ plans : [
             titanium/30
             aster/10
         ]
-        900
+        time : 900
     }
 ]
