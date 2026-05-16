@@ -15,6 +15,7 @@ craftEffect: turbinegenerate
 updateEffect: turbinegenerate
 regionRotated1: 3
 craftEffect : turbinegenerate
+scaledHealth : 65
 drawer: {
   type: DrawMulti
   drawers: [
@@ -45,4 +46,8 @@ consumes : {
     ]
 }
 category : crafting
+requirements : [
+  titanium/200
+  neodymium/50
+]
 buildVisibility : sandboxOnly

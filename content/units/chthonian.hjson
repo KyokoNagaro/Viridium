@@ -8,7 +8,7 @@ flying : false
 speed : 0.39
 range : 100
 canBoost : true
-boostMultiplier : 10
+boostMultiplier : 9
 stepSoundVolume : 0.4
 itemCapacity : 40
 defaultCommand : mine
@@ -21,16 +21,17 @@ mineSpeed : 4
 buildSpeed : 0.05
 mineTier : 6
 faceTarget : false
+buildBeamOffset : 8
 engines : [
     {
-        x : 6
-        y : -11
+        x : 3.4
+        y : -5
         radius : 2
         rotation : -90
     }
     {
-        x : -6
-        y : -11
+        x : -3.4
+        y : -5
         radius : 2
         rotation : -90
     }
@@ -39,12 +40,14 @@ weapons : [
     {
         name : chthonian-mount
         reload : 15
-        x : 6
+        x : 2.7
+        y : -0.3
         mirror : true
         alternate : true
         rotate : true
         shootSound : shootAlpha
         inaccuracy : 3
+        recoil : 0.07
         shoot : {
             type : ShootSpread
             shots : 2

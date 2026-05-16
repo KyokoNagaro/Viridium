@@ -4,3 +4,4 @@ requirements : [
 ]
 category : distribution
 buildVisibility : sandboxOnly
+health : 80

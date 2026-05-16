@@ -5,4 +5,5 @@ requirements : [
     titanium/4
 ]
 category : distribution
+health : 80
 buildVisibility : sandboxOnly

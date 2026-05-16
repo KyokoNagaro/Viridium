@@ -1,9 +1,12 @@
 type : ItemBridge
-range : 12
+range : 7
+health : 80
 transportTime : 4
 arrowPeriod : 0.9
 arrowTimeScl : 2.75
 pulse : true
+underBullet : true
+hasPower : false
 requirements : [
     titanium/25
     neodymium/5

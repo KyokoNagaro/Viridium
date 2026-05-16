@@ -1,5 +1,6 @@
 type : junction
-speed : 40 
+speed : 10
+health : 80
 squareSprite : false
 requirements : [
     titanium/4
