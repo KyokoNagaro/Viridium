@@ -1,3 +1,4 @@
 forceTeam : 1
 coreMerge : true
+itemCapacity : 400
 description : Stores a small amount of items. Contents can be retrieved via unloaders.
