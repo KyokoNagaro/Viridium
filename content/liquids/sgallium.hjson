@@ -1,0 +1,10 @@
+hidden : false
+collant : true
+color : 9a9dbf
+viscosity : 0.85
+flammability : 0
+temperature : 0.4
+boilPoint : 1
+explosiveness : 0
+heatCapacity : 1
+incinerable : false

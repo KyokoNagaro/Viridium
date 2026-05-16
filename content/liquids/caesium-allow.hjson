@@ -1,0 +1,19 @@
+type : CellLiquid
+temperature : 0.35
+heatCapacity : 1.25
+viscosity : 0.8
+explosiveness :  1.5
+flammability : 0
+color : f8c266
+incinerable : false
+effect : sage
+capPuddles : true
+cells: 1
+spreadDamage : 2
+maxSpread : 0.5
+moveThroughBlocks : true
+spreadTarget : gallium
+colorFrom : f8c266
+colorTo : f8c266
+removeScaling : 0.05
+spreadConversion : 0.3
