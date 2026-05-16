@@ -1,0 +1,36 @@
+type : tether
+controller : CargoAI
+template : ErekirUnitType
+isEnemy : false
+allowedInPayloads : false
+logicControllable : false
+playerControllable : false
+outlineColor : 1d1d23
+envDisabled : 0
+payloadCapacity : 0
+lowAltitude : false
+flying : true
+drag : 0.06
+speed : 2.7
+rotateSpeed : 9
+accel : 0.1
+itemCapacity : 160
+health : 210
+hitSize : 11
+engineSize : 0
+hidden : true
+engines : [
+    {
+        x : 3.2
+        y : -8.3
+        radius : 1.8
+        rotation : -90
+    }
+    {
+        x : -3.2
+        y : -8.3
+        radius : 1.8
+        rotation : -90
+    }
+]
+unloadTarger : flux-unloader

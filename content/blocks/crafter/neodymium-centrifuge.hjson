@@ -29,11 +29,9 @@ drawer : {
     {
       type : DrawGlowRegion
       suffix : -glow
-      color : ffadc9
       glowIntensity : 0.4
       glowScale : 5
       spinSprite : true
-      suffix : -glow
       rotateSpeed : 6
     }
     {

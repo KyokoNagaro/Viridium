@@ -1,4 +1,4 @@
-type : duct
+type : Duct
 speed : 5
 health : 90
 underBullet : true

@@ -1,0 +1,20 @@
+type : UnitCargoLoader
+size : 3
+scaledHealth : 70
+requirements : [
+    titanium/200
+    neodymium/40
+    aster/40
+]
+unitType : flux
+polyColor : 8ca9e8ff
+polySides : 4
+polyRadius : 8.4
+itemCapacity : 400
+squareSprite : false
+consumes : {
+    power : 1
+    liquids : [
+        water/0.2
+    ]
+}

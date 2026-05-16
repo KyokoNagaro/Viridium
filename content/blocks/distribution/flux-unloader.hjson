@@ -1,0 +1,8 @@
+type : UnitCargoUnloadPoint
+size : 2
+itemCapacity : 400
+requirements : [
+    titanium/200
+]
+squareSprite : false
+scaledHealth : 60

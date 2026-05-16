@@ -17,11 +17,12 @@ mineFloor : true
 mineWalls : true
 mineRange : 100
 engineSize : 0
-mineSpeed : 4
+mineSpeed : 5.5
 buildSpeed : 0.05
 mineTier : 6
 faceTarget : false
 buildBeamOffset : 8
+mineBeamOffset : 6
 engines : [
     {
         x : 3.4

@@ -10,6 +10,9 @@ pulseScl : 22
 laser : viridium-getelos-node-beam
 laserEnd : viridium-getelos-node-beam-end
 squareSprite : false
+consumes : {
+  power : 15000
+}
 requirements : [
   titanium/60
 ]
