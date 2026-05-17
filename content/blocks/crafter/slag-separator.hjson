@@ -1,0 +1,50 @@
+type : GenericCrafter
+squareSprite  : false
+customShadow : true
+requirements : [
+    titanium/200
+    platinum/150
+    neodymium/75
+    aster/50
+]
+scaledHealth : 85
+size : 3
+liquidCapacity : 60
+invertFlip : true
+rotate : true
+regionRotated1 : 3
+liquidOutputDirections : [1, 3]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type : DrawRegion
+      suffix : -bottom
+    }
+    {
+      type : DrawRegion
+      buildingRotate : false
+      suffix : -mainl
+    }
+    {
+      type : DrawLiquidOutputs
+    }
+    {
+      type : DrawGlowRegion
+      color : ffffff
+      suffix : -glow
+    }
+  ]
+}
+consumes : {
+    power : 1
+    liquids : [
+        slag/0.2
+    ]
+}
+outputLiquids : [
+    sgallium/0.05
+    plasma/0.15
+]
+category : crafting
+buildVisibility : sandboxOnly

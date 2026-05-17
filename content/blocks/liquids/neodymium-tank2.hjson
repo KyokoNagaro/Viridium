@@ -1,0 +1,13 @@
+type: LiquidRouter
+squareSprite : false
+size : 2
+scaledHealth : 85
+liquidCapacity : 1260
+placeableLiquid : true
+liquidPadding : 2
+requirements : [
+  neodymium/25
+  platinum/125
+]
+category : liquid
+

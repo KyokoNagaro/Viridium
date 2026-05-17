@@ -1,0 +1,15 @@
+type: Conduit
+health: 460
+requirements: [
+  neodymium/5
+  platinum/5
+]
+liquidCapacity: 140
+placeableLiquid : true
+leaks : true
+category: liquid
+botColor : 2e2f34
+buildCostMultiplier : 0.35
+underBullets : false
+junctionReplacement : neodymium-junction
+bridgeReplacement : neodymium-bridge

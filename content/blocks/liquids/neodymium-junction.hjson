@@ -1,0 +1,13 @@
+type: LiquidJunction
+health: 300
+squareSprite : false
+requirements: [
+  neodymium/5
+  platinum/5
+]
+placeableLiquid : true
+category: liquid
+botColor : 2e2f34
+buildCostMultiplier : 0.35
+underBullets : false
+

@@ -1,0 +1,8 @@
+gas : true
+temperature : 10
+flammability : 0.9
+coolant : false
+explosiveness : 10
+color : ae92ff
+gasColor : ae92ff
+viscosity : 0.7

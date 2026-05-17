@@ -1,0 +1,187 @@
+type : ItemTurret
+size : 4
+targetAir : true
+health : 1890
+reload : 320
+cooldownTime : 180
+shootCone : 40
+shootSound : shootLancer
+ammoUseEffect : none
+outlineColor : 2e2f34
+shootY : 10
+recoil : 0
+range : 220
+shootEffect : {
+    type : ParticleEffect
+    region : viridium-shootinstantrail
+    length : 0
+    lifetime : 10
+    sizeFrom : 24
+    sizeTo : 0
+    colorFrom : d1efff
+    colorTo : 8ca9e8
+  }
+smokeEffect : none
+ammoTypes : {
+  neodymium : {
+    type : BulletType
+    rangeChange : 100
+    lifetime : 270
+    hittable : false
+    absorbable : false
+    collides : false
+    damage : 1
+    despawnEffect : lightningShoot
+    shootEffect : {
+      type : ParticleEffect
+      region : viridium-shootinstantrail
+      length : 0
+      lifetime : 10
+      sizeFrom : 40
+      sizeTo : 0
+      colorFrom : ff83ae
+      colorTo : e13671
+    }
+    speed : 10
+    drag : 0.04
+    parts : [
+      {
+        type : shapePart
+        circle : true
+        hollow : false
+        layer : 110
+        color : ff83ae
+        radius : 0
+        radiusTo : 13
+        progress : {
+          type : life
+          op : curve
+          interp : pow3Out
+        }
+      }
+    ]
+    intervalBullets : 25
+    intervalRandomSpread : -360
+    bulletInterval : 45
+    intervalBullet : {
+      type : BulletType
+        damage : 25
+        lifetime : 16
+        speed : 3
+        status : shocked
+        statusDuration : 30
+        collidesAir : true
+        shootSound : spark
+        despawnEffect : sparkShoot
+        despawnSound : shootArc
+        knockback : -6
+        hitColor : ff83ae
+        lightColor : ff83ae
+        trailColor : ff83ae
+        status : sage
+        statusDuration : 45
+        pierce : true
+        pierceCap : 10
+    }
+    fragBullets : 25
+    fragRandomSpread : -360
+    fragBullet : {
+      type : BulletType
+      lifetime : 16
+      speed : 3
+      damage : 25
+      status : shocked
+      statusDuration : 30
+      despawnEffect : sparkShoot
+      despawnSound : shootArc
+      collidesAir : true
+      knockback : -7
+      hitColor : ff83ae
+      lightColor : ff83ae
+      trailColor : ff83ae
+      status : sage
+      statusDuration : 45
+    }
+  }
+  surge-alloy : {
+    type : BulletType
+    lifetime : 270
+    hittable : false
+    absorbable : false
+    collides : false
+    damage : 1
+    despawnEffect : lightningShoot
+    shootEffect : {
+      type : ParticleEffect
+      region : viridium-shootinstantrail
+      length : 0
+      lifetime : 10
+      sizeFrom : 24
+      sizeTo : 0
+      colorFrom : d1efff
+      colorTo : 8ca9e8
+    }
+    speed : 5
+    drag : 0.044
+    parts : [
+      {
+        type : shapePart
+        circle : true
+        hollow : false
+        layer : 110
+        color : d1efff
+        radius : 0
+        radiusTo : 13
+        progress : {
+          type : life
+          op : curve
+          interp : pow3Out
+        }
+      }
+    ]
+    intervalBullets : 25
+    intervalRandomSpread : -360
+    bulletInterval : 45
+    intervalBullet : {
+      type : LightningBulletType
+          lightningLength : 15
+          lightningLengthRand : 6
+          damage : 50
+          status : shocked
+          statusDuration : 30
+          collidesAir : true
+          shootSound : spark
+          despawnEffect : sparkShoot
+          despawnSound : shootArc
+    }
+    fragBullets : 25
+    fragRandomSpread : -360
+    fragBullet : {
+      type : LightningBulletType
+      lightningLength : 15
+      lightningLengthRand : 6
+      damage : 50
+      status : shocked
+      statusDuration : 30
+      despawnEffect : sparkShoot
+      despawnSound : shootArc
+      collidesAir : true
+    }
+  }
+}
+consumes : {
+  power : 1
+  liquids : [
+    slag/0.1
+  ]
+}
+requirements : [
+  lead/600
+  silicon/300
+  surge-alloy/200
+  oxide/400
+  platinum/140
+  aster/200
+]
+category : turret
+buildVisibility : sandboxOnly

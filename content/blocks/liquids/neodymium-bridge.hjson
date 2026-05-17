@@ -1,0 +1,16 @@
+type: LiquidBridge
+hasPower : false
+health: 300
+liquidCapacity : 140
+squareSprite : false
+range : 8
+placeableLiquid : true
+requirements: [
+  neodymium/5
+  platinum/5
+]
+category: liquid
+botColor : 2e2f34
+buildCostMultiplier : 0.35
+underBullets : false
+

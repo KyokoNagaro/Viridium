@@ -1,1 +1,6 @@
 forceTeam : 1
+requirements : [
+    graphite/225
+    silicon/100
+    beryllium/300
+]

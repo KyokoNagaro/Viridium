@@ -1,3 +1,7 @@
 forceTeam : 1
 allowCoreUnload : true
 description : Unloads the selected item from the block behind it. 
+requirements : [
+    graphite/15
+    beryllium/30
+]

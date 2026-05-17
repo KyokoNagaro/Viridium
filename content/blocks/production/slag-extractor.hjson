@@ -3,7 +3,7 @@ size : 3
 squareSprite : false
 hasLiquid : true
 liquidCapacity : 20
-outputLiquid : slag/0.15
+outputLiquid : slag/0.1
 drawer : {
   type : DrawMulti
   drawers : [
