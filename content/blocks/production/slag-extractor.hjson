@@ -3,15 +3,7 @@ size : 3
 squareSprite : false
 hasLiquid : true
 liquidCapacity : 20
-outputLiquid : water/0.2
-craftEffect : {
-    type : WaveEffect
-    colorFrom : 8ca9e8
-    colorTo : 8ca9e8
-    sides : 4
-    sizeTo: 20
-    lifetime : 30
-}
+outputLiquid : slag/0.15
 drawer : {
   type : DrawMulti
   drawers : [
@@ -29,7 +21,9 @@ consumes : {
     power : 1
 }
 requirements : [
-    titanium/150
+    titanium/200
+    aster/75
+    platinum/100
 ]
 category : production
 buildVisibility : sandboxOnly
