@@ -1,0 +1,1325 @@
+type: legs
+template : LegsUnitType
+controller: GroundAI
+speed: 0.6
+drag : 0.3
+hitSize : 90
+health : 1000000
+armor : 340
+stepShake : 4.4
+rotateSpeed : 0.7
+drownTimeMultiplier : 10
+outlineColor : 1d1d23
+
+legCount : 10
+legPairOffset : 2
+legLength : 173
+legExtension : -18
+legBaseOffset : 38
+legMovespace : 0.4
+legForwardScl : 0.9
+hovering : true
+legLenghtScl : 0.7
+legSpeed: 0.1
+rippleScale : 7
+legContinuousMove : true
+legMaxLength : 40
+legSplashRange : 60
+legSplashDamage : 780
+groundLayer : 87
+itemCapacity : 430
+
+immunities : [
+  shocked,
+  electrified,
+  sapped,
+  blasted
+]
+
+parts : [
+    {
+      type : RegionPart
+      name : viridium-bouclifeur
+      outline : false
+      blending : additive
+      color : bb68c375
+      layer : 95
+      xScl : 4
+      yScl : 4
+    }
+    {
+      type : shapePart
+      circle : true
+      hollow : true
+      layer : 110
+      color : bb68c3
+      stroke : 0
+      strokeTo : 4
+      radius : 270
+      radiusTo : 300
+    }
+    {
+      type : HaloPart
+      shapes : 3
+      haloRadius : 285
+      stroke : 0
+      strokeTo : 12
+      haloRadiusTo : 315
+      color : bb68c3
+      side : 3
+      radius : 24
+      hollow : true
+      layer : 110
+      haloRotateSpeed : 0
+      useRotation : false
+    }
+    {
+      type : HaloPart
+      shapes : 3
+      haloRadius : 500
+      stroke : 0
+      strokeTo : 22
+      haloRadiusTo : 400
+      shapeRotation : 180
+      color : bb68c3
+      side : 3
+      radius : 48
+      hollow : true
+      layer : 110
+      haloRotateSpeed : 0
+      haloRotation : 60
+    }
+    {
+      type : HaloPart
+      shapes : 32
+      haloRadius : 250
+      stroke : 0
+      strokeTo : 5
+      haloRadiusTo : 250
+      color : bb68c3
+      tri : true
+      triLength : 0
+      triLengthTo : 40
+      hollow : true
+      layer : 110
+      haloRotateSpeed : 0.08
+    }
+    {
+      type : shapePart 
+      circle : true
+      hollow : true
+      layer : 110
+      lightColor : bb68c3
+      color : bb68c3
+      radius : 120
+      radiusTo : 120
+      stroke : 0
+      strokeTo : 2
+    }
+    {
+      type : shapePart 
+      circle : false
+      sides : 4
+      hollow : true
+      layer : 110
+      lightColor : bb68c3
+      color : bb68c3
+      radius : 119
+      radiusTo : 119
+      stroke : 0
+      strokeTo : 1.3
+      rotateSpeed : -0.2
+    }
+    {
+      type : shapePart 
+      circle : false
+      sides : 4
+      hollow : true
+      layer : 110
+      lightColor : bb68c3
+      color : bb68c3
+      radius : 119
+      radiusTo : 119
+      stroke : 0
+      strokeTo : 1.3
+      rotateSpeed : 0.2
+    }
+    {
+    type : HaloPart
+    tri : true
+    layer : 110
+    color : bb68c3
+    stroke : 0
+    strokeTo : 24
+    radius : 4
+    haloRotateSpeed : 0.2
+    haloRadius : 135
+    haloRadiusTo : 135
+    shapes : 2
+    triLengthTo : 62
+    triLength : 0
+  }
+  {
+    type : HaloPart
+    tri : true
+    layer : 110
+    color : bb68c3
+    stroke : 0
+    strokeTo : 24
+    radius : 4
+    haloRotateSpeed : 0.2
+    haloRadius : 135
+    haloRadiusTo : 135
+    shapes : 2
+    triLengthTo : 14
+    triLength : 0
+    shapeRotation : 180
+  }
+  {
+    type : HaloPart
+    tri : true
+    layer : 110
+    color : bb68c3
+    stroke : 0
+    strokeTo : 18
+    radius : 4
+    haloRotateSpeed : -0.2
+    haloRadius : 120
+    haloRadiusTo : 120
+    shapes : 2
+    triLengthTo : 40
+    triLength : 0
+  }
+    {
+      type : shapePart 
+      circle : true
+      layer : 110
+      lightColor : bb68c3
+      color : bb68c3
+      radius : 13
+      radiusTo : 13
+    }
+    {
+      type : shapePart 
+      circle : true
+      layer : 115
+      color : ffffff
+      radius : 8.5
+      radiusTo : 8.5
+    }
+    {
+      type : shapePart
+      circle : true
+      hollow : true
+      stroke : 1
+      strokeTo : 1
+      radius : 21
+      radiusTo : 21
+      color : bb68c3
+      lightColor : bb68c3
+      layer : 110
+    }
+    {
+      type : shapePart
+      circle : true
+      hollow : true
+      stroke : 2
+      strokeTo : 2
+      radius : 250
+      radiusTo : 250
+      color : bb68c3
+      lightColor : bb68c3
+      layer : 110
+    }
+    {
+      type : HaloPart
+      shapes : 3
+      haloRadius : 244.8
+      stroke : 4
+      strokeTo : 4
+      haloRadiusTo : 244.8
+      shapeRotation : 180
+      color : bb68c3
+      side : 3
+      radius : 8
+      hollow : true
+      layer : 110
+      haloRotateSpeed : -0.1
+    }
+    {
+      type : HaloPart
+      shapes : 2
+      haloRadius : 8.5
+      triLength : 3
+      triLengthTo : 3
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 8.5
+      color : ffffff
+      tri : true
+      layer : 115
+      haloRotateSpeed : -0.7
+    }
+    {
+      type : HaloPart
+      shapes : 4
+      haloRadius : 21
+      shapeRotation : 180
+      triLength : 8
+      triLengthTo : 8
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 21
+      color : bb68c3
+      tri : true
+      layer : 110
+      haloRotateSpeed : 1
+    }
+    {
+      type : HaloPart
+      shapes : 4
+      haloRadius : 21
+      triLength : 25
+      triLengthTo : 25
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 21
+      color : bb68c3
+      tri : true
+      layer : 110
+      haloRotateSpeed : 1
+    }
+    {
+      type : HaloPart
+      shapes : 4
+      haloRadius : 21
+      triLength : 16
+      triLengthTo : 16
+      haloRotation : 45
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 21
+      color : bb68c3
+      tri : true
+      layer : 110
+      haloRotateSpeed : 1
+    }
+    {
+      type : HaloPart
+      shapes : 4
+      haloRadius : 21
+      triLength : 5
+      triLengthTo : 5
+      haloRotation : 45
+      shapeRotation : 180
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 21
+      color : bb68c3
+      tri : true
+      layer : 110
+      haloRotateSpeed : 1
+    }
+    {
+      type : HaloPart
+      shapes : 8
+      haloRadius : 21
+      triLength : 5
+      triLengthTo : 5
+      haloRotation : 22.5
+      stroke : 0
+      strokeTo : 3
+      haloRadiusTo : 21
+      color : bb68c3
+      tri : true
+      layer : 110
+      haloRotateSpeed : 1
+    }
+]
+
+weapons : [
+  {
+    name : malis-magic-turret
+    rotate : true
+    mirror : true
+    alternate : false
+    rotateSpeed : 2
+    x : 35
+    y : -13
+    minWarmup : 0.98
+    shootWarmupSpeed : 0.08
+    shake : 2.7
+    recoil : 0.5
+    recoilTime : 30
+    reload : 3.5
+    shootSound : malignShoot
+    loopSound : spellLoop
+    shootCone : 100
+    cooldownTime : 120
+    shootY : 13
+    shoot : {
+        type : ShootSummon
+        radius : 11
+        spread : 47
+        shootY : 7
+      }
+      parts : [
+       {
+        type : FlarePart
+        progress : heat
+        color1 : bb68c3
+        radius : 20
+        radiusTo : 0
+        stroke : 2.6
+        spinSprite : false
+        rotation : 45
+        y : 10
+      }
+      {
+        type : shapePart
+        circle : true
+        hollow : true
+        radius : 8
+        radiusTo : 8
+        stroke : 0
+        strokeTo : 1
+        layer : 110
+        y : 10
+        color : bb68c3
+      }
+      {
+       type : shapePart
+        circle : false
+        sides : 4
+        hollow : true
+        layer : 110
+        color : bb68c3
+        stroke : 0
+        strokeTo : 0.7
+        radius : 8
+        radiusTo : 8
+        y : 10
+        rotateSpeed : 0.8
+      }
+      {
+       type : shapePart
+        circle : false
+        sides : 4
+        hollow : true
+        layer : 110
+        color : bb68c3
+        stroke : 0
+        strokeTo : 0.7
+        radius : 8
+        radiusTo : 8
+        y : 10
+        rotateSpeed : -0.8
+      }
+      {
+       type : shapePart
+        circle : false
+        sides : 4
+        hollow : true
+        layer : 110
+        color : bb68c3
+        stroke : 0
+        strokeTo : 0.7
+        radius : 2.5
+        radiusTo : 2.5
+        y : 10
+        rotateSpeed : 0
+        rotation : 45
+      }
+      ]
+    bullet : {
+      type : FlakBulletType
+      srpite : missile-large
+      lifetime : 45
+      width : 12
+      height : 22
+      hitSize : 7
+      speed : 2.9
+      backColor : bb68c3
+      frontColor : ffcbdd
+      shootEffect : {
+        type : multiEffect
+        effects : [
+          {
+            type : ParticleEffect
+            particles : 5
+            line : true
+            lifetime : 24
+            interp : pow2Out
+            cone  : 30
+            length : 20
+            strokeFrom : 8
+            strokeTo : 3
+            lenFrom : 4
+            lenTo : 1.5
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            lightOpacity : 0.25
+          }
+          {
+            type : ParticleEffect
+            particles : 5
+            line : true
+            lifetime : 30
+            interp : pow2Out
+            cone  : 30
+            length : 25
+            strokeFrom : 8
+            strokeTo : 3
+            lenFrom : 4
+            lenTo : 1.5
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            lightOpacity : 0.25
+          }
+          {
+            type : ParticleEffect
+            particles : 5
+            line : true
+            lifetime : 20
+            interp : pow2Out
+            cone  : 30
+            length : 15
+            strokeFrom : 9
+            strokeTo : 4
+            lenFrom : 4.5
+            lenTo : 2
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            lightOpacity : 0.25
+          }
+          {
+            type : ParticleEffect
+            particles : 7
+            lifetime : 20
+            cone  : 35
+            length : 20
+            sizeFrom : 10
+            sizeTo : 0
+            colorFrom : dd9ad0
+            colorTo : bb68c3
+            lightOpacity : 0.25
+          }
+        ]
+      }
+      trailWidth : 3
+      trailLength : 12
+      trailColor : bb68c3
+      lightColor : bb68c3
+      hitEffect : {
+        lightOpacity : 0.25
+        ligthScl : 1
+        type : ParticleEffect
+        liftime : 4
+        particles : 1
+        length : 0
+        baseLength : 27
+        randLength : false
+        sizeFrom : 10
+        sizeTo : 0
+        interp : pow3In
+        sizeInterp : linear
+        colorFrom : bb68c3
+        colorTo : bb68c3
+        region : viridium-railhit2
+        cone : 0
+        offsetX : -10
+      }
+      despawnEffect : {
+        lightOpacity : 0.25
+        ligthScl : 1
+        type : ParticleEffect
+        liftime : 4
+        particles : 1
+        length : 0
+        baseLength : 27
+        randLength : false
+        sizeFrom : 20
+        sizeTo : 0
+        interp : pow3In
+        sizeInterp : linear
+        colorFrom : bb68c3
+        colorTo : bb68c3
+        region : viridium-railhit2
+        cone : 0
+        offsetX : -10
+      }
+      color : bb68c3
+      trailEffect : colorSpark
+      trailRotation : true
+      trailInterval : 3
+      lightning : 1
+      lightningCone : 15
+      lightningLength : 10
+      lightningLengthRand : 25
+      lightningDamage : 50
+      lightningColor : bb68c3
+      homingPower : 0.17
+      homingDelay : 19
+      homingRange : 160
+      explodeRange : 160
+      explodeDelay : 0
+      flakInterval : 20
+      despawnShake : 3
+      splashDamage : 0
+      collidesGround : true
+      fragSpread : 0
+      fragRandomSpread : 0
+      damage : 20
+      velocityRnd : 0.15
+      fragBullet : {
+        type : LaserBulletType
+        colors : [
+          bb68c3,
+          dd9ad0,
+          ffcbdd
+        ]
+        width : 19
+        hitEffect : hitLancer
+        sideAngle : 175
+        sideLength : 40
+        sideWidth : 1
+        lifeTime : 22
+        drawSize : 400
+        length : 180
+        pierceCap : 4
+        damage : 90
+      }
+    }
+  }
+  {
+    name : malis-anti-projectile
+    mirror : true
+    rotate : true
+    x : 31
+    y : 41
+    type : PointDefenseWeapon
+    reload : 10
+    targetInterval : 10
+    targetSwitchInterval : 12
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 150
+      damage : 150
+    }
+  }
+  {
+    name : malis-anti-projectile
+    mirror : true
+    rotate : true
+    x : 43
+    y : 29
+    type : PointDefenseWeapon
+    reload : 10
+    targetInterval : 10
+    targetSwitchInterval : 12
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 150
+      damage : 150
+    }
+  }
+  {
+    name : malis-anti-projectile
+    mirror : true
+    rotate : true
+    x : 55
+    y : 17
+    type : PointDefenseWeapon
+    reload : 10
+    targetInterval : 10
+    targetSwitchInterval : 12
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 150
+      damage : 150
+    }
+  }
+    {
+    name : malis-point-laser
+    mirror : true 
+    rotate : true
+    rotationLimit : 90
+    alternate : false
+    rotateSpeed :  1.7
+    continuous : true
+    alwaysContinuous : true
+    recoil : 1
+    recoilTime : 90
+    x : 33
+    y : 12
+    cooldownTime : 90
+    targetMissiles : false
+    predictTarget : false
+    targetSwitchInterval : 180
+    targetInterval : 180
+    shootCone : 360
+    shootWarmupSpeed : 0.08
+    shootSound : none
+    scaleDamageEfficiency : true
+    loopSound : laserbeam
+    loopSoundVolume : 1
+    aimChangeSpeed : 1.26
+    pierce : false
+    parts : [
+     {
+      type : FlarePart
+      progress : heat
+      radius : 0
+      radiusTo : 20
+      rotation : 45
+      stroke : 2.3
+      color1 : bb68c3
+      y : 4
+     }
+    ]
+    bullet : {
+      type : PointLaserBulletType
+      sprite : viridium-point-laser-true
+      beamEffectSize : 1
+      damage : 160
+      color : dd9ad0
+      lightColor : ffcbdd
+      lightOpacity : 0.3
+      length : 130
+      maxRange : 430
+      beamEffectSize : 3
+      speed : 0.7
+      status : incapacitated
+      statusDuration : 60      
+    }
+  }
+  {
+    name : malis-point-laser
+    mirror : true 
+    rotate : true
+    rotationLimit : 90
+    alternate : false
+    rotateSpeed :  1.7
+    continuous : true
+    alwaysContinuous : true
+    recoil : 1
+    recoilTime : 90
+    x : 18
+    y : 27
+    cooldownTime : 90
+    targetMissiles : false
+    predictTarget : false
+    targetSwitchInterval : 180
+    targetInterval : 180
+    shootCone : 360
+    shootWarmupSpeed : 0.08
+    shootSound : none
+    scaleDamageEfficiency : true
+    loopSound : laserbeam
+    loopSoundVolume : 1
+    aimChangeSpeed : 1.26
+    pierce : false
+    parts : [
+     {
+      type : FlarePart
+      progress : heat
+      radius : 0
+      radiusTo : 20
+      rotation : 45
+      stroke : 2.3
+      color1 : bb68c3
+      y : 4
+     }
+    ]
+    bullet : {
+      type : PointLaserBulletType
+      sprite : viridium-point-laser-true
+      damage : 160
+      color : dd9ad0
+      lightColor : ffcbdd
+      lightOpacity : 0.3
+      length : 130
+      maxRange : 430
+      beamEffectSize : 3
+      speed : 0.7
+      status : incapacitated
+      statusDuration : 60      
+    }
+  }
+  {
+    name : malis-mount
+    rotate : false
+    mirror : false
+    x : 0
+    y : 0
+    recoil : 0
+    recoilTime : 35
+    shake : 6
+    shootSound : bigLaserSound
+    chargeSound : lasercharge
+    reload : 1800
+    shootSound : bigLaserShoot
+    shootStatus : channeling
+    shootStatusDuration : 320
+    shoot : {
+      type : ShootHelix
+      scl : 11
+      mag : 1.9
+      shots : 1
+      firstShotDelay : 200
+    }
+    parts : [
+        {
+          type : FlarePart
+          progress : charge
+          color1 : bb68c3
+          radius : 0
+          radiusTo : 160
+          stroke : 28
+          spinSprite : false
+          rotation : 45
+        }
+      ]
+    bullet : {
+      type : EmpBulletType
+      sprite : viridium-helix1
+      targetMissiles : false
+      width : 44
+      height : 44
+      hittable : false
+      frontColor : ffe4ed
+      backColor : e5aad9
+      lifetime : 140
+      scaleLife : true
+      collidesGround : true
+      collidesTiles : true
+      collideAir : true
+      speed : 3.8
+      status : channeling
+      statusDuration : 120
+      timeIncrease : 3
+      powerDamageScl : 2
+      powerSclDecrease : 0.5
+      trailRotation : true
+      spin : 10
+      shrinkY : 0 
+      shrinkX : 0
+      radius : 60
+      damage : 3200
+      splashDamage : 16000
+      trailLength : 11
+      trailWidth : 9
+      trailColor : e5aad9
+      splashDamageRadius : 180
+      scaledSplashDamage : true
+      //splashDamagePierce : true
+      pierceArmor : true
+      hitShake : 10
+      despawnShake : 10
+      unitDamageScl : 0.4
+      lightning : 10
+      lightningLength : 5
+      lightningLengthRand : 10
+      lightningDamage : 120
+      shootEffect : {
+        type : MultiEffect 
+        effects : [
+          {
+            type : ParticleEffect
+            region : viridium-sutarux
+            particles : 1
+            cone : 0
+            length : 0
+            sizeFrom : 180
+            sizeTo : 0
+            lifetime : 35
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            useRotation : false
+          }
+          {
+            type : WaveEffect
+            lifetime : 180
+            strokeFrom : 13
+            strokeTo : 0
+            sizeFrom : 0
+            sizeTo : 220
+            interp : pow10Out
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+          }
+          {
+            type : ParticleEffect
+            particles : 11
+            lifetime : 50
+            length : -220
+            baseLength : -220
+            interp : pow3In
+            sizeInterp : linear
+            cone : -360
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+            region : viridium-sutaru
+            spin : 2.6
+            sizeFrom : 26
+            sizeTo : 0
+          }
+          {
+            type : ParticleEffect
+            particles : 9
+            lifetime : 40
+            length : -180
+            baseLength : -180
+            interp : pow3In
+            sizeInterp : linear
+            cone : -360
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+            region : viridium-sutaru
+            spin : 3
+            sizeFrom : 24
+            sizeTo : 0
+          }
+        ]
+      }
+      chargeEffect : {
+        lifetime : 200
+        type : MultiEffect 
+        effects : [
+          {
+            type : ParticleEffect
+            particles : 8
+            line : true
+            lifetime : 160
+            length : 160
+            baseLength : -160
+            interp : pow3In
+            sizeInterp : pow10Out
+            strokeFrom : 0
+            strokeTo : 2
+            lenFrom : 0
+            lenTo : 14
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+          }
+          {
+            type : ParticleEffect
+            particles : 8
+            line : true
+            lifetime : 180
+            length : 140
+            baseLength : -140
+            interp : pow3In
+            sizeInterp : pow10Out
+            strokeFrom : 0
+            strokeTo : 2
+            lenFrom : 0
+            lenTo : 12
+            colorFrom : bb68c3
+            colorTo : ffcbdd
+          }
+          {
+            type : ParticleEffect
+            particles : 8
+            line : true
+            lifetime : 170
+            length : 165
+            baseLength : -165
+            interp : pow3In
+            sizeInterp : pow10Out
+            strokeFrom : 0
+            strokeTo : 2
+            lenFrom : 0
+            lenTo : 16
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+          }
+          {
+            type : ParticleEffect
+            particles : 8
+            line : true
+            lifetime : 155
+            length : 155
+            baseLength : -155
+            interp : pow3In
+            sizeInterp : pow10Out
+            strokeFrom : 0
+            strokeTo : 3
+            lenFrom : 0
+            lenTo : 18
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+          }
+          {
+            type : ParticleEffect
+            particles : 8
+            line : true
+            lifetime : 160
+            length : 150
+            baseLength : -150
+            interp : pow3In
+            sizeInterp : pow10Out
+            strokeFrom : 0
+            strokeTo : 2
+            lenFrom : 0
+            lenTo : 14
+            colorFrom : bb68c3
+            colorTo : ffcbdd
+          }
+          {
+            type : ParticleEffect
+            particles : 11
+            lifetime : 200
+            length : 220
+            baseLength : -220
+            interp : pow3In
+            sizeInterp : linear
+            cone : -360
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+            region : viridium-sutaru
+            spin : 2
+            sizeFrom : 10
+            sizeTo : 26
+            sizeChangeStart : 10
+          }
+          {
+            type : ParticleEffect
+            particles : 9
+            lifetime : 170
+            length : 180
+            baseLength : -180
+            interp : pow3In
+            sizeInterp : linear
+            cone : -360
+            colorFrom : bb68c3
+            colorTo : dd9ad0
+            region : viridium-sutaru
+            spin : 1.3
+            sizeFrom : 12
+            sizeTo : 22
+            sizeChangeStart : 20
+          }
+          {
+            type : WaveEffect
+            lifetime : 200
+            sizeFrom : 120
+            sizeTo : 10
+            interp : pow3In
+            strokeFrom : 0
+            strokeTo : 12
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+          }
+          {
+            type : WaveEffect
+            lifetime : 200
+            sizeFrom : 145
+            sizeTo : 10
+            interp : pow3In
+            strokeFrom : 0
+            strokeTo : 12
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+          }
+          {
+            type : WaveEffect
+            lifetime : 200
+            sizeFrom : 280
+            sizeTo : 10
+            interp : pow3In
+            strokeFrom : 0
+            strokeTo : 6
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+          }
+        ]
+      }
+      intervalBullets : 1
+      intervalRandomSpread : 60
+      bulletInterval : 10
+      intervalBullet : {
+        type : EmpBulletType
+        radius : 140
+        hitPowerEffect : none
+        despawnHit  :true
+        collides : false
+        instantDisappear : true
+        shootSound : none
+        fragBullets : 1
+        fragLifeMin : 0.5
+        fragBullet : {
+          type : BasicBulletType
+          trailColor : bb68c3
+          trailLength : 9
+          hitSound : explosion
+          trailWidth : 2
+          weaveMag : 3
+          weaveScale : 7
+          homingPower : 0.001
+          homingRange : 100
+          speed : 5
+          damage : 230
+          drag : 0.019
+          lifetime : 60
+          smokeEffect : none
+          despawnHit : true
+          width : 1
+          height : 1
+          trailSinScl : 2.4
+          trailSinMag : 0.8
+          pierce : true
+          pierceBuilding : true
+          sprite : viridium-helix1
+          width : 6
+          height : 6
+          frontColor : ffe4ed
+          backColor : e5aad9
+          hitEffect : {
+            type : multiEffect
+            effects : [
+              {
+                type : WaveEffect 
+                sizeFrom : 2
+                sizeTo : 24
+                strokeFrom : 3
+                strokeTo : 0
+                lifetime : 35
+                colorFrom : ffcbdd
+                colorTo : bb68c3
+              }
+              {
+                type : ParticleEffect
+                particles : 1
+                region : viridium-sutaru
+                lifetime : 30
+                interp : pow10Out
+                sizeFrom : 16
+                sizeTo : 8
+                length : 0
+                lightColor : bb68c3
+                layer : 109
+                lightOpacity : 0.25
+                colorFrom : ffcbdd
+                colorTo : bb68c3
+              }
+              {
+                type : ParticleEffect
+                particles : 1
+                region : viridium-sutaru
+                lifetime : 30
+                interp : pow10Out
+                sizeFrom : 8
+                sizeTo : 22
+                length : 0
+                lightColor : bb68c3
+                layer : 109
+                lightOpacity : 0.25
+                colorFrom : ffcbdd
+                colorTo : bb68c3
+              }
+            ]
+          }
+        }
+        shootEffect : {
+          type : multiEffect
+          effects : [
+            {
+            type : ParticleEffect
+            particles : 1
+            region : viridium-sutaru
+            lifetime : 35
+            sizeFrom : 12
+            sizeTo : 5
+            length : 0
+            lightColor : bb68c3
+            layer : 109
+            lightOpacity : 0.25
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            }
+            {
+            type : ParticleEffect
+            particles : 1
+            region : viridium-sutaru
+            lifetime : 35
+            sizeFrom : 8
+            sizeTo : 18
+            length : 0
+            lightColor : bb68c3
+            layer : 109
+            lightOpacity : 0.25
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            }
+          ]
+        }
+      }
+      hitColor : bb68c3
+      hitPowerEffect : {
+        type : ParticleEffect
+        line : true
+        particles : 7
+        lifetime : 22
+        length : 80
+        cone : -360
+        lenFrom : 10
+        lenTo : 10
+        lightColor : bb68c3
+        colorTo : bb68c3
+        colorFrom : ffcbdd
+      }
+      hitEffect : {
+        type : multiEffect
+        effects : [
+          {
+            type : ParticleEffect
+            particles : 30
+            length : 160
+            baseLength : 30
+            lifetime : 200
+            interp : circleOut
+            sizeInterp : pow5In
+            sizeFrom : 27
+            sizeTo : 1
+            lightColor : bb68c3
+            lightOpacity : 0.45
+            colorFrom : bb68c3
+            colorTo : bb68c3
+          }
+          {
+            type : ParticleEffect
+            particles : 30
+            length : 220
+            baseLength : 30
+            lifetime : 80
+            interp : circleOut
+            sizeInterp : pow5In
+            sizeFrom : 15
+            sizeTo : 1
+            lightColor : bb68c3
+            lightOpacity : 0.45
+            colorFrom : bb68c3
+            colorTo : bb68c3
+          }
+          {
+            type : ParticleEffect
+            particles : 30
+            length : 140
+            baseLength : 30
+            lifetime : 160
+            interp : circleOut
+            sizeInterp : pow5In
+            sizeFrom : 20
+            sizeTo : 1
+            lightColor : bb68c3
+            lightOpacity : 0.45
+            colorFrom : bb68c3
+            colorTo : bb68c3
+          }
+          {
+            type : ParticleEffect
+            particles : 30
+            layer : 99
+            length : 180
+            baseLength : 30
+            lifetime : 190
+            interp : circleOut
+            sizeInterp : pow5In
+            sizeFrom : 23
+            sizeTo : 10
+            lightColor : 7d7d7d
+            lightOpacity : 0.20
+            colorFrom : 7d7d7d
+            colorTo : 7d7d7d
+          }
+          {
+            type : ParticleEffect
+            particles : 35
+            layer : 99
+            length : 210
+            baseLength : 30
+            lifetime : 160
+            interp : circleOut
+            sizeInterp : pow5In
+            sizeFrom : 27
+            sizeTo : 16
+            lightColor : 7d7d7d
+            lightOpacity : 0.20
+            colorFrom : 7d7d7d
+            colorTo : 7d7d7d
+          }
+          {
+            type : ParticleEffect
+            line : true
+            particles : 35
+            lifetime : 66
+            length : 330
+            offset : 40
+            strokeFrom : 6
+            strokeTo : 0
+            lenFrom : 20
+            lenTo : 10
+            colorFrom : ffcbdd
+            colorTo : bb68c3
+            lightColor : bb68c3
+          }
+          {
+            type : WaveEffect
+            lifetime : 340
+            interp : pow10Out
+            sizeFrom : 60
+            sizeTo : 300
+            strokeFrom : 26
+            strokeTo : 0
+            colorFrom : ffcbdd
+            colorTo : dd9ad0
+          }
+          {
+            type : WaveEffect
+            lifetime : 50
+            interp : circleOut
+            sizeFrom : 0
+            sizeTo : 220
+            strokeFrom : 20
+            strokeTo : 0
+            colorFrom : ffcbdd
+            colorTo : dd9ad0
+          }
+        ]
+      }
+    }
+  }
+]
+abilities : [
+  {
+    type : ShieldArcAbility
+    angle : 380
+    radius : 120
+    max : 118000
+    regen : 36
+    cooldown : 60
+    whenShooting : false
+    width : 250
+    color : dd9ad0
+    drawArc : false
+    lightOpacity : 0.2
+  }
+//  {
+//    type : StatusFieldAbility
+//    effect : viridium-starfield
+//    parentizeEffects : true
+//    activeEffect : none
+//    reload : 5
+//    dutation : 6
+//    range : 240
+//  }
+]
+
+

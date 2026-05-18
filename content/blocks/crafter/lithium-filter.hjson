@@ -1,4 +1,4 @@
-type : GenericCreafter
+type : GenericCrafter
 size : 3
 squareSprite : false
 requirements : [
@@ -11,7 +11,7 @@ requirements : [
    sand/4
    lithium/2
 ]
-consummes :{
+consumes :{
   power : 1
   liquids : [
     slag/0.2
