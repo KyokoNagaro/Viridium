@@ -10,4 +10,4 @@ requirements : [
   platinum/125
 ]
 category : liquid
-
+buildVisibility : sandboxOnly

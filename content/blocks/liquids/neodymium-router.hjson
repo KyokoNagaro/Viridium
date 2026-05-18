@@ -11,4 +11,4 @@ requirements : [
 ]
 category : liquid
 buildCostMultiplier : 0.35
-
+buildVisibility : sandboxOnly

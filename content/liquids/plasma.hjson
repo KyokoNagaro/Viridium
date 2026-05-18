@@ -1,3 +1,4 @@
+type : Liquid
 gas : true
 temperature : 10
 flammability : 0.9

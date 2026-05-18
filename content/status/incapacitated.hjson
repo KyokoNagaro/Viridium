@@ -1,7 +1,6 @@
 reloadMultiplier: 0.70
 healthMultiplier: 1.15
-damageMultiplier : 1.1
-speedMultiplier: 0.35
+speedMultiplier: 0.60
 transitionDamage: 1000
 color: dd9ad0
 applyColor : dd9ad0
@@ -18,5 +17,5 @@ effect : {
     length : 0
 }
 effectChance : 0.07
-affinities: [shocked, channeling]
-transitionDamage : 1200
+affinities: [shocked]
+transitionDamage : 10

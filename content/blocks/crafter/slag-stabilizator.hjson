@@ -12,8 +12,8 @@ hasLiquid : true
 liquidCapacity : 60
 itemCapacity : 40
 outputItems : [
-    sand/4
     titanium/3
+    platinum/1
 ]
 consumes : {
     liquids : [

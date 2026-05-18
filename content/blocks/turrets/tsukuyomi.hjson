@@ -1,16 +1,14 @@
 type: PowerTurret
 squareSprite: false
 size: 4
-heatRequirement : 130
-maxHeatEfficiency : 5
 shake : 3
 shootSound : shootMalign
 loopSound : loopMalign
 loopSoundVolume : 1.5
 outlineColor : 2e2f34
-canOverdrive : false
-range : 380
-reload : 320
+canOverdrive : true
+range : 300
+reload : 270
 recoil : 0
 shootWarmupSpeed: 0.06
 minWarmup : 0.98
@@ -150,7 +148,7 @@ shootType : {
   // there is an error in the type and/or sprite but it's cool and i cant reproduce it 
   type : BasicBulletType
   sprite : viridium-large-orb
-  lifetime : 120
+  lifetime : 75
   targetMissile : false
   frontColor : ffffffff
   backColor : 88c1f7b2
@@ -162,7 +160,7 @@ shootType : {
   splashDamage : 1
   splashDamageRadius : 100
   trailEffect : none
-  homingPower : 0.23
+  homingPower : 0.08
   homingDelay : 18
   homingRange : 150
   hitShake : 0
@@ -269,18 +267,18 @@ shootType : {
   fragBullets : 1
 }
 consumes : {
-  power : 32
+  power : 1
+  liquids : [
+    sgallium/0.05
+  ]
 }
-health : 8000
+health : 2600
 shootY : 20.5
 category: turret
 requirements: [
-  tungsten/500
-  silicon/280
-  oxide/100
-  carbide/120
-  platinum/200
-  aster/400
-  neodymium/80
+  titanium/550
+  aster/200
+  platinum/300
+  surge-alloy/275
 ]
 buildVisibility : sandboxOnly

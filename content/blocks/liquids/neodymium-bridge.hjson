@@ -1,7 +1,7 @@
 type: LiquidBridge
 hasPower : false
 health: 300
-liquidCapacity : 140
+liquidCapacity : 80
 squareSprite : false
 range : 8
 placeableLiquid : true
@@ -13,4 +13,4 @@ category: liquid
 botColor : 2e2f34
 buildCostMultiplier : 0.35
 underBullets : false
-
+buildVisibility : sandboxOnly

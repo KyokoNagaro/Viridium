@@ -8,10 +8,11 @@ effect : {
     type : WaveEffect
     colorFrom : d1efff
     colorTo : 8ca9e8
-    sizeFrom : 22
+    sizeFrom : 13
     sizeTo : 0
     lifetime : 45
     strokeFrom : 0
     strokeTo : 3
+    interp : pow10In
 }
 

@@ -3,4 +3,4 @@ color : 92c9fc
 show : true
 effect : regenParticle
 affinities: [blasted, channeling]
-transitionDamage : 4200
+transitionDamage : 80
