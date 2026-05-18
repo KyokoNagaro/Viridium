@@ -1,0 +1,22 @@
+type : GenericCreafter
+size : 3
+squareSprite : false
+requirements : [
+  titanium/150
+  aster/150
+  platinum/200
+ ]
+ craftTime : 90
+ outputItems : [
+   sand/4
+   lithium/2
+]
+consummes :{
+  power : 1
+  liquids : [
+    slag/0.2
+    cryofluid/0.2
+  ]
+}
+category : crafting
+buildVisibility : sandboxOnly
