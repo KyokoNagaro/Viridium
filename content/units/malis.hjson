@@ -4,8 +4,8 @@ controller: GroundAI
 speed: 0.6
 drag : 0.3
 hitSize : 90
-health : 1000000
-armor : 340
+health : 999999
+armor : 99
 stepShake : 4.4
 rotateSpeed : 0.7
 drownTimeMultiplier : 10
@@ -587,7 +587,7 @@ weapons : [
         drawSize : 400
         length : 180
         pierceCap : 4
-        damage : 90
+        damage : 60
       }
     }
   }
@@ -687,7 +687,7 @@ weapons : [
       type : PointLaserBulletType
       sprite : viridium-point-laser-true
       beamEffectSize : 1
-      damage : 160
+      damage : 40
       color : dd9ad0
       lightColor : ffcbdd
       lightOpacity : 0.3
@@ -740,7 +740,7 @@ weapons : [
     bullet : {
       type : PointLaserBulletType
       sprite : viridium-point-laser-true
-      damage : 160
+      damage : 40
       color : dd9ad0
       lightColor : ffcbdd
       lightOpacity : 0.3
@@ -811,18 +811,18 @@ weapons : [
       shrinkY : 0 
       shrinkX : 0
       radius : 60
-      damage : 3200
-      splashDamage : 16000
+      damage : 1000
+      splashDamage : 1800
       trailLength : 11
       trailWidth : 9
       trailColor : e5aad9
-      splashDamageRadius : 180
+      splashDamageRadius : 120
       scaledSplashDamage : true
-      //splashDamagePierce : true
+      splashDamagePierce : true
       pierceArmor : true
       hitShake : 10
       despawnShake : 10
-      unitDamageScl : 0.4
+      unitDamageScl : 0.7
       lightning : 10
       lightningLength : 5
       lightningLengthRand : 10
@@ -1048,7 +1048,7 @@ weapons : [
         type : EmpBulletType
         radius : 140
         hitPowerEffect : none
-        despawnHit  :true
+        despawnHit : true
         collides : false
         instantDisappear : true
         shootSound : none
@@ -1302,24 +1302,15 @@ abilities : [
     type : ShieldArcAbility
     angle : 380
     radius : 120
-    max : 118000
-    regen : 36
-    cooldown : 60
+    max : 9999
+    regen : 5
+    cooldown : 600
     whenShooting : false
     width : 250
     color : dd9ad0
     drawArc : false
     lightOpacity : 0.2
   }
-//  {
-//    type : StatusFieldAbility
-//    effect : viridium-starfield
-//    parentizeEffects : true
-//    activeEffect : none
-//    reload : 5
-//    dutation : 6
-//    range : 240
-//  }
 ]
 
 

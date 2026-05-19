@@ -1,0 +1,10 @@
+type : MessageBlock
+health : 60
+size : 1
+requirements : [
+    graphite/10
+    beryllium/5
+]
+category : logic
+forceTeam : 1
+squareSprite : false

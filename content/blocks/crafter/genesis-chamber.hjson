@@ -1,0 +1,25 @@
+type : GenericCrafter
+size : 4
+squareSprite : false
+itemCapacity : 40
+liquidCapacity : 60
+scaledHealth : 95
+requirements : [
+    titanium/350
+    surge-alloy/300
+    platinum/500
+]
+craftTime : 150
+outputItem : crest/2
+consumes : {
+    power : 1
+    items : [
+        sand/24
+    ]
+    liquids : [
+        cryofluid/1.6
+        plasma/0.3
+    ]
+}
+category : crafting
+buildVisibility : sandboxOnly

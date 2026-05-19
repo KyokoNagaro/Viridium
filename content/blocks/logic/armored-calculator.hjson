@@ -1,0 +1,11 @@
+type : LogicBlock
+requirements : [
+    graphite/40
+    graphite/40
+    beryllium/100
+]
+size : 1
+instructionPerTick : 2
+health : 60
+category : logic
+forceTeam : 1

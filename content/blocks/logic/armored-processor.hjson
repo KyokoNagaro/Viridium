@@ -1,0 +1,13 @@
+type : LogicBlock
+requirements : [
+    graphite/120
+    silicon/60
+    beryllium/200
+    tungsten/60
+]
+health : 250
+instructionPerTick : 8
+range : 176
+size : 2
+category : logic
+forceTeam : 1
