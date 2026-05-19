@@ -694,7 +694,7 @@ weapons : [
       lightColor : ffcbdd
       lightOpacity : 0.3
       length : 130
-      maxRange : 430
+      maxRange : 380
       beamEffectSize : 3
       speed : 0.7
       status : incapacitated
@@ -747,7 +747,7 @@ weapons : [
       lightColor : ffcbdd
       lightOpacity : 0.3
       length : 130
-      maxRange : 430
+      maxRange : 380
       beamEffectSize : 3
       speed : 0.7
       status : incapacitated
@@ -797,7 +797,7 @@ weapons : [
       hittable : false
       frontColor : ffe4ed
       backColor : e5aad9
-      lifetime : 140
+      lifetime : 90
       scaleLife : true
       collidesGround : true
       collidesTiles : true

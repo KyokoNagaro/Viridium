@@ -1,7 +1,7 @@
 type : flying
 health : 2100
 armor : 7
-speed : 1.1
+speed : 0.9
 accel : 0.04
 drag : 0.04
 rotateSpeed : 1.8
@@ -45,44 +45,85 @@ weapons : [
     x : 10
     y : 0
     alternate : true
-    reload : 45
+    reload : 55
     targetMissile : false
     rotate : true
     shake : 1
     shootSound : shootBreachCarbide
     shootSoundVolume : 0.4
+    drawCell : false
     rotateSpeed : 1.8
+    cooldownTime : 60
     bullet : {
+      shootEffect : {
+        type : ParticleEffect
+        colorFrom : 468464
+        colorTo : 77bd7a
+        line : true
+        particle : 6
+        randLegnth : true
+        cone : 10
+        lenFrom : 3
+        lenTo : 0
+        lifetime : 30
+      }
       type : BasicBulletType
       speed : 6 
-      damage : 100
-      width : 9
-      heigth : 14
+      damage : 50
+      width : 16
+      heigth : 28
       hitSize : 7
       smokeEffect : shootBigSmoke
-      hitColor : ab8ec5
-      backColor : ab8ec5
-      trailColor : ab8ec5
+      hitColor : 77bd7a
+      backColor : 77bd7a
+      trailColor : 77bd7a
       frontColor : ffffff
-      trailWidth : 2 
-      trailLength : 5
+      trailWidth : 2.8
+      trailLength : 12
+      hommingPower : 0.2
+      weaveMag : 7
+      weaveScale : 2
       shootEffects : [
         shootBigColor
         colorSparkBig
       ]
       hitEffect : hitBulletColor
       despawnEffect : hitBulletColor
-      lifetime: 25
+      lifetime: 29
+      intervalBullet : 1
+      intervalRandomSpread : 60
+      bulletInterval : 3
+      intervalBullet : {
+        type : LightningBulletType
+        lightningLength : 3
+        lightningLengthRand : 7
+        lightningDamage : 15
+        damage : 15
+        lightningColor : 77bd7a
+      }
       fragBullets : 3
       fragRandomSpread : 0
       fragSpread : 25
       fragVelocityMin : 1
       fragBullet : {
-        lifetime : 12
-        width : 9
-        height : 14
+        lifetime : 18
+        width : 12
+        height : 25
         hitSize : 7
         speed : 6
+        weaveMag : 7
+        weaveScale : 2
+        intervalBullet : 1
+        intervalRandomSpread : 60
+        bulletInterval : 3
+        intervalBullet : {
+          type : LightningBulletType
+          lightningLength : 3
+          lightningLengthRand : 7
+          lightningDamage : 15
+          damage : 15
+          lightningColor : 77bd7a
+        }
         shootEffects : [
           shootBigSmoke
           colorSparkBig
@@ -90,13 +131,13 @@ weapons : [
         pierce : true
         pierceBuilding : true
         pierceCap : 3
-        trailLength : 5
-        trailWidth : 1.8
-        damage : 130
+        trailLength : 9
+        trailWidth : 2.4
+        damage : 80
         frontColor : ffffff
-        trailColor : ab8ec5
-        backColor : ab8ec5
-        hitColor : ab8ec5
+        trailColor : 77bd7a
+        backColor : 77bd7a
+        hitColor : 77bd7a
         hitEffect : hitBulletColor
         despawnEffect : hitBulletColor
         buildingDamageMultiplier : 0.8
@@ -104,3 +145,4 @@ weapons : [
     }
   }
 ]
+shownPlanets : [erekir]
