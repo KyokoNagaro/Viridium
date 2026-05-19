@@ -1,0 +1,64 @@
+type : flying
+outlineColor : 1d1d23
+hitSize : 36
+health : 7400
+armor : 16
+speed : 1.75
+accel : 0.04
+drag : 0.04
+rotateSpeed : 1
+lowAltitude : true
+itemCapacity : 100
+flying : true
+range : 160
+faceTarget : true
+outlineColor : 1d1d23
+targetAir : false
+weapons : [
+  {
+    name : mirovia-laser
+    shootStatus : slow
+    shootStatusDuration : 130
+    miror : true
+    rotate : true
+    rotateSpeed : 1.5
+    alternate : false
+    x : 10
+    y : 0
+    continuous : true
+    alwaysContinuous : true
+    cooldownTime : 90
+    targetMissile : false
+    predictTarget : false
+    targetSwitchInterval : 60
+    targetInterval : 20
+    shootCone : 160
+    shootSound : none
+    loopSound : laserbeam
+    aimChangeSpeed : 1.26
+    bullet : {
+      type : PointLaserBulletType
+      damage : 17
+      length : 160
+      maxRange : 160
+      color : da9595
+    }
+  }
+  {
+    name : mirovia-missile-launcher
+    reload : 100
+    rorate : false
+    miror : false
+    under : true
+    x : 0
+    y : 0
+    predictTarget : false
+    bullet : {
+      spawnUnit : mirovia-missile
+      shootEffect : shootBig
+      hitColor : da9595
+      smokeEffect : shootSmokeMissileColor
+    }
+    
+  }
+]

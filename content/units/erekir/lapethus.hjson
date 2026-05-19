@@ -5,12 +5,39 @@ speed : 1.1
 accel : 0.04
 drag : 0.04
 rotateSpeed : 1.8
-hitsize : 22
+hitSize : 24
+flying : true
 lowAltitude : true
 range : 140
 payloadCapacity : 486
 itemCapacity : 80
-hidden : true
+outlineColor : 1d1d23
+engines : [
+  {
+    x : 13
+    y : -10
+    radius : 2.5
+    rotation : -90
+  }
+    {
+    x : -13
+    y : -10
+    radius : 2.5
+    rotation : -90
+  }
+    {
+    x : 5
+    y : -12
+    radius : 3
+    rotation : -90
+  }
+    {
+    x : -5
+    y : -12
+    radius : 3
+    rotation : -90
+  }
+]
 weapons : [
   {
     name : lapethus-rail

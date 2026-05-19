@@ -1,0 +1,110 @@
+type : missile
+controller : MissileAI
+template : MissileUnitType
+hidden : true
+health : 860
+speed : 3.4
+rotateSpeed : 1.5
+outlineColor : 1d1d23
+outlineRadius : 2
+loopSound : loopMissileTrail
+loopSoundVolume : 0.5
+deathSound : explosionMissile
+deathExplosionEffect: massiveExplosion
+targetAir : false
+targetUnderBlocks : false
+lifetime : 85
+useUnitCap : false
+homingDelay : 10
+hitSize : 10
+engineColor : ffcd66
+trailColor : fc8e6c
+trailWidth : 2
+trailLength : 5
+trailEffect : missileTrail
+engineSize : 2
+engineLayer : 110
+drawCell : false
+drawSoftShadow : true
+flying : true
+lowAltitude : true
+abilities : [
+    {
+      type : MoveEffectAbility
+      chance : 0.85
+      rangeLengthMin : 0.3
+      rangeLengthMax : 3.7
+      y : -7
+      effect : {
+        type : multiEffect
+        effects : [
+         {
+          type : ParticleEffect
+          particles : 3
+          baseLength : 0
+          length : 3.5
+          lifetime : 32
+          colorFrom : 7b7b7b
+          colorTo : 907f77
+          sizeFrom : 3
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 5
+          lifetime : 40
+          colorFrom : 7b6761
+          colorTo : 463835
+          sizeFrom : 4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 2.8
+          lifetime : 35
+          colorFrom : 88766e
+          colorTo : 4c4644
+          sizeFrom : 3.4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        ]
+      }
+      rotation : 180
+      interval : 2
+    }
+  ]
+   weapons : [
+    {
+      shootCone : 360
+      shootOnDeath : true
+      predictTarget : false
+      targetMissiles : false
+      shootSound : none
+      deathExplosionEffect : massiveExplosion
+      reload : 1
+      mirror : false
+      useAttackRange : false
+      bullet : {
+        type : ExplosionBulletType
+        splashDamageRadius : 35
+        targetMissiles : false
+        shootEffect : massiveExplosion
+        splashDamage : 220
+        ammoMultiplier : 24
+        status : blasted
+        statusDuration : 30
+        puddles : 8
+        puddleRange : 35
+        puddleAmount : 40
+        puddleLiquid : neoplasm
+        collidesAir : false
+      }
+    }
+  ]

@@ -25,9 +25,11 @@ rippleScale : 7
 legContinuousMove : true
 legMaxLength : 40
 legSplashRange : 60
-legSplashDamage : 780
+legSplashDamage : 510
 groundLayer : 87
 itemCapacity : 430
+
+maxRange : 380
 
 immunities : [
   shocked,
