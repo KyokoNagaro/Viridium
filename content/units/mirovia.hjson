@@ -62,3 +62,24 @@ weapons : [
     
   }
 ]
+abilities : [
+  {
+    type : EnergyFieldAbility
+    range : 130
+    shootSound : none
+    status : electrified
+    statusDuration : 360
+    targetAir : true
+    maxTargets : 30
+    healPercent : 4
+    damage : 60
+    reload : 120
+    hitBuildings : false
+    color : c33e2b
+    sectorRad : 0.14
+    sectors : 4
+    blinkScl : 80
+    effectRadius : 4.1
+    sameTypeHealMult : 0.5
+  }
+]
