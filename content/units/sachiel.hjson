@@ -27,6 +27,7 @@ fallSpeed : 0.012
 createWreck : true
 wreckHealthMultiplier : 0.5
 crashDamageMultiplier : 1.2
+drawSoftShadow : false
 parts : [
     {
         type : RegionPart

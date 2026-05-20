@@ -6,14 +6,66 @@ armor : 16
 speed : 1.75
 accel : 0.04
 drag : 0.04
-rotateSpeed : 1
+rotateSpeed : 1.7
 lowAltitude : true
 itemCapacity : 100
 flying : true
 range : 160
 faceTarget : true
 outlineColor : 1d1d23
+wreckHealthMultiplier : 0.2
+crashDamageMultiplier : 0.2
 targetAir : false
+drawSoftShadow : false
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : f15454
+        colorTo : f15454
+        outline : false
+        progress : warmup
+    }
+]
+engines : [
+  {
+    x : 9
+    y : -11.2
+    radius : 2.5
+    rotation : -90
+  }
+    {
+    x : -9
+    y : -11.2
+    radius : 2.5
+    rotation : -90
+  }
+  {
+    x : 14.2
+    y : -12
+    radius : 2
+    rotation : -90
+  }
+    {
+    x : -14.2
+    y : -12
+    radius : 2
+    rotation : -90
+  }
+    {
+    x : 3.3
+    y : -11.8
+    radius : 3.85
+    rotation : -90
+  }
+    {
+    x : -3.3
+    y : -11.8
+    radius : 3.85
+    rotation : -90
+  }
+]
 weapons : [
   {
     name : mirovia-laser
@@ -21,10 +73,11 @@ weapons : [
     shootStatusDuration : 130
     miror : true
     rotate : true
-    rotateSpeed : 1.5
+    rotateSpeed : 1
     alternate : false
-    x : 10
-    y : 0
+    recoil : 0.5
+    x : 12
+    y : 4.5
     continuous : true
     alwaysContinuous : true
     cooldownTime : 90
@@ -41,7 +94,8 @@ weapons : [
       damage : 17
       length : 160
       maxRange : 160
-      color : da9595
+      color : a3ec99
+      sprite : viridium-point-laser-true
     }
   }
   {
@@ -49,7 +103,10 @@ weapons : [
     reload : 100
     rorate : false
     miror : false
+    top : false
     under : true
+    cooldownTime : 90
+    shootY : 12
     x : 0
     y : 0
     predictTarget : false
@@ -57,17 +114,81 @@ weapons : [
       spawnUnit : mirovia-missile
       shootEffect : shootBig
       hitColor : da9595
-      smokeEffect : shootSmokeMissileColor
+      smokeEffect : none
     }
-    
   }
+  {
+      name : death-puddle
+      display : false
+      controllable : false
+      aiControllable : false
+      shootCone : 360
+      reload : 1
+      mirror : false
+      useAttackRange : false
+      shootOnDeath : true
+      shootSound : none
+      shootCone : 360
+      bullet : {
+        shootEffect : none
+        smokeEffect : none
+        type : ExplosionBulletType
+        collides : false
+        hittable : false
+        reflectable : false
+        absorbable : false
+        hitEffect : none
+        despawnEffect : massiveExplosion
+        smokeEffect : none
+        puddles : 8
+        puddleRange : 35
+        puddleAmount : 40
+        puddleLiquid : neoplasm
+        fragBullets : 1
+        fragBullet : {
+          shootEffect : none
+          smokeEffect : none
+          type : ExplosionBulletType
+          collides : false
+          hittable : false
+          reflectable : false
+          absorbable : false
+          hitEffect : none
+          despawnEffect : massiveExplosion
+          smokeEffect : none
+          puddles : 5
+          puddleRange : 20
+          puddleAmount : 68
+          puddleLiquid : neoplasm
+        }
+      }
+    }
+//    {
+//    name : mirovia-point-laser 
+//    mirror : true
+//    rotate : true
+//    x : 6
+//    y : 12
+//    type : PointDefenseWeapon
+//    reload : 5
+//    targetInterval : 10
+//    targetSwitchInterval : 12
+//    display : false
+//    bullet : {
+//      shootEffect : sparkShoot
+//      hitEffect : pointHit
+//      maxRange : 130
+//      damage : 90
+//    }
+//  }
 ]
 abilities : [
   {
     type : EnergyFieldAbility
     range : 130
+    y : 2
     shootSound : none
-    status : electrified
+    status : sprouting
     statusDuration : 360
     targetAir : true
     maxTargets : 30
@@ -75,11 +196,11 @@ abilities : [
     damage : 60
     reload : 120
     hitBuildings : false
-    color : c33e2b
-    sectorRad : 0.14
-    sectors : 4
+    color : 77bd7a
+    sectors : 8
+    sectorRad : 0.08
     blinkScl : 80
-    effectRadius : 4.1
+    effectRadius : 2.75
     sameTypeHealMult : 0.5
   }
 ]

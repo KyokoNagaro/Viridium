@@ -1,0 +1,15 @@
+effect : {
+    type : ParticleEffect
+    particles : 5
+    lifetime : 90
+    sizeTo : 0
+    sizeFrom : 4
+    colorFrom : e46b58  
+    colorTo : 720000
+    cone : 360
+    length : 18
+}
+effectChance : 0.025
+reloadMultiplier : 0.7
+speedMultiplier : 0.8
+damage : -0.2

@@ -12,6 +12,9 @@ range : 140
 payloadCapacity : 486
 itemCapacity : 80
 outlineColor : 1d1d23
+wreckHealthMultiplier : 0.2
+crashDamageMultiplier : 0.2
+drawSoftShadow : false
 engines : [
   {
     x : 13
@@ -39,6 +42,51 @@ engines : [
   }
 ]
 weapons : [
+  {
+      name : death-puddle
+      display : false
+      controllable : false
+      aiControllable : false
+      useAttackRange : false
+      shootCone : 360
+      reload : 1
+      mirror : false
+      shootOnDeath : true
+      shootSound : none
+      bullet : {
+        type : ExplosionBulletType
+        shootEffect : none
+        smokeEffect : none
+        collides : false
+        hittable : false
+        reflectable : false
+        absorbable : false
+        hitEffect : none
+        despawnEffect : massiveExplosion
+        smokeEffect : none
+        puddles : 8
+        puddleRange : 35
+        puddleAmount : 40
+        puddleLiquid : neoplasm
+        fragBullets : 1
+        fragBullet : {
+          type : ExplosionBulletType
+          shootEffect : none
+          smokeEffect : none
+          collides : false
+          hittable : false
+          reflectable : false
+          absorbable : false
+          hitEffect : none
+          despawnEffect : massiveExplosion
+          smokeEffect : none
+          puddles : 5
+          puddleRange : 20
+          puddleAmount : 68
+          puddleLiquid : neoplasm
+        }
+      }
+    }
   {
     name : lapethus-rail
     mirror : true
