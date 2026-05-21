@@ -1,0 +1,90 @@
+type : flying
+template : ErekirUnitType
+outlineColor : 1d1d23
+flying : true
+lowAltitude : false
+speed : 1.58
+accel : 0.04
+drag : 0.04
+rotateSpeed : 1
+itemCapacity : 220
+wreckHealthMultiplier : 0.2
+crashDamageMultiplier : 0.2
+drawSoftShadow : false
+hitSize : 52
+targetAir : false
+weapons : [
+    {
+      name : death-puddle
+      display : false
+      controllable : false
+      aiControllable : false
+      shootCone : 360
+      reload : 1
+      mirror : false
+      useAttackRange : false
+      shootOnDeath : true
+      shootSound : none
+      shootCone : 360
+      bullet : {
+        shootEffect : none
+        smokeEffect : none
+        type : ExplosionBulletType
+        collides : false
+        hittable : false
+        reflectable : false
+        absorbable : false
+        hitEffect : none
+        despawnEffect : massiveExplosion
+        smokeEffect : none
+        puddles : 8
+        puddleRange : 35
+        puddleAmount : 40
+        puddleLiquid : neoplasm
+        fragBullets : 1
+        fragBullet : {
+          shootEffect : none
+          smokeEffect : none
+          type : ExplosionBulletType
+          collides : false
+          hittable : false
+          reflectable : false
+          absorbable : false
+          hitEffect : none
+          despawnEffect : massiveExplosion
+          smokeEffect : none
+          puddles : 5
+          puddleRange : 20
+          puddleAmount : 68
+          puddleLiquid : neoplasm
+        }
+      }
+    }
+    {
+        name : thetis-artillery
+        rotate : true
+        mirror : true
+        alterante : true
+        reload : 120
+        rotateSpeed : 1.5
+        x : 20
+        y : 0
+        bullet : {
+            type : ArtilleyBulletType
+            hitEffects : [
+                titanExplosionSmall
+                titaSmokeSmall
+            ]
+            despawnEffect : none
+            knockback : 3
+            lifetime : 75
+            height : 24
+            width : 11
+            splashDammageRadius : 36
+            splashDamage : 480
+            scaledSplashDamge : true
+            splashDamagePierce : true
+        }
+    }
+]
+shownPlanets : [erekir]

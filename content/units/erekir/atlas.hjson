@@ -33,8 +33,8 @@ parts : [
         type : RegionPart
         suffix : -glow
         blending : additive
-        color : f15454
-        colorTo : f15454
+        color : 468464
+        colorTo : 468464
         outline : false
         progress : warmup
     }
