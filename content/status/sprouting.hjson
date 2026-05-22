@@ -13,3 +13,5 @@ effectChance : 0.025
 reloadMultiplier : 0.7
 speedMultiplier : 0.8
 damage : -2
+affinities: [blasted]
+transitionDamage : 50

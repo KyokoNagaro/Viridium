@@ -6,6 +6,8 @@ lowAltitude : false
 speed : 1.58
 accel : 0.04
 drag : 0.04
+health : 19400
+armor : 24
 rotateSpeed : 1
 itemCapacity : 220
 wreckHealthMultiplier : 0.2
@@ -14,6 +16,38 @@ drawSoftShadow : false
 hitSize : 52
 targetAir : false
 weapons : [
+  {
+    name : neoplasm-thrower
+    shoot : {
+      shots : 8
+      shotDelay : 3
+    }
+    reload : 4
+    rotate : false
+    mirror : false
+    inaccuracy : 8
+    shootY : 10
+    top : false
+    shootEffect : shootLiquid
+    loopSound : shootSublimate
+    shootSound : none
+    loopSoundVolume : 1
+    useAttackRange : false
+    velocityRnd : 0.5
+    bullet : {
+      type : LiquidBulletType
+      orbSize : 5
+      damage : 3
+      speed : 5
+      lifetime : 100
+      liquid : neoplasm
+      status : sprouting
+      statusDuration : 360
+      despawnEffect : steam
+      drag : 0.018
+      knockback : 1
+    }
+  }
     {
       name : death-puddle
       display : false
@@ -70,20 +104,158 @@ weapons : [
         x : 20
         y : 0
         bullet : {
-            type : ArtilleyBulletType
-            hitEffects : [
+            type : ArtilleryBulletType
+            hitEffect : [
                 titanExplosionSmall
-                titaSmokeSmall
+                titanSmokeSmall
             ]
             despawnEffect : none
             knockback : 3
             lifetime : 75
             height : 24
             width : 11
-            splashDammageRadius : 36
-            splashDamage : 480
+            splashDamageRadius : 36
+            damage : 80
+            splashDamage : 300
             scaledSplashDamge : true
             splashDamagePierce : true
+            backColor : 77bd7a
+            hitColor : 77bd7a
+            trailColor : 77bd7a
+            frontColor : ffffff
+            hitSound : explosionTitan
+            status : blasted
+            trailLength : 28
+            trailWidth : 1.8
+            trailSinScl : 2.5
+            trailSinMag : 0.5
+            trailEffect : disperseTrail
+            trailInterval : 2
+            despawnShake : 4
+            shootEffect : shootTitan
+            smokeEffect : shootSmokeTitan
+            trailRotation : true
+            shrink : 0.2
+            shrink : 0.1
+            fragLifeMin : 1.5
+            buildingDamageMultiplier : 0.4
+            speed : 3.25
+            fragBullets : 10
+            fragBullet : {
+              type : ArtilleryBulletType
+              splashDamage : 60
+              knockback : 2
+              splashDamageRadius : 20
+              hitEffect : [
+                titanExplosionFrag
+                titanLightSmall
+                {
+                  type : WaveEffect
+                    lifetime : 8
+                    strokeFrom : 1
+                    sizeTo : 8
+                    colorFrom : 77bd7a
+                    colorTo : 77bd7a
+                }
+              ]
+              despawnEffect : hitBulletColor
+              width : 8
+              height : 12
+              lifetime : 50
+              scaledSplashDamage : true
+              damage : 10
+              pierceArmor : true
+              backColor : 77bd7a
+              frontColor : ffffff
+              hitColor : 77bd7a
+              buildingDamageMultiplier : 0.3
+              shrinkY : 0.3
+              speed : 0.5
+            }
+        }
+    }
+    {
+        name : thetis-artillery
+        rotate : true
+        mirror : false
+        alterante : false
+        reload : 120
+        rotateSpeed : 1.5
+        x : 0
+        y : 0
+        shoot : {
+          firstShotDelay : 60
+        }
+
+        bullet : {
+            type : ArtilleryBulletType
+            hitEffect : [
+                titanExplosionSmall
+                titanSmokeSmall
+            ]
+            despawnEffect : none
+            knockback : 3
+            lifetime : 75
+            height : 24
+            width : 11
+            splashDamageRadius : 36
+            damage : 120
+            splashDamage : 300
+            scaledSplashDamge : true
+            splashDamagePierce : true
+            backColor : 77bd7a
+            hitColor : 77bd7a
+            trailColor : 77bd7a
+            frontColor : ffffff
+            hitSound : explosionTitan
+            status : blasted
+            trailLength : 28
+            trailWidth : 1.8
+            trailSinScl : 2.5
+            trailSinMag : 0.5
+            trailEffect : disperseTrail
+            trailInterval : 2
+            despawnShake : 4
+            shootEffect : shootTitan
+            smokeEffect : shootSmokeTitan
+            trailRotation : true
+            shrink : 0.2
+            shrink : 0.1
+            fragLifeMin : 1.5
+            buildingDamageMultiplier : 0.4
+            speed : 3.25
+            fragBullets : 10
+            fragBullet : {
+              type : ArtilleryBulletType
+              splashDamage : 60
+              knockback : 2
+              splashDamageRadius : 20
+              hitEffect : [
+                titanExplosionFrag
+                titanLightSmall
+                {
+                  type : WaveEffect
+                    lifetime : 8
+                    strokeFrom : 1
+                    sizeTo : 8
+                    colorFrom : 77bd7a
+                    colorTo : 77bd7a
+                }
+              ]
+              despawnEffect : hitBulletColor
+              width : 8
+              height : 12
+              lifetime : 50
+              scaledSplashDamage : true
+              damage : 10
+              pierceArmor : true
+              backColor : 77bd7a
+              frontColor : ffffff
+              hitColor : 77bd7a
+              buildingDamageMultiplier : 0.3
+              shrinkY : 0.3
+              speed : 0.5
+            }
         }
     }
 ]

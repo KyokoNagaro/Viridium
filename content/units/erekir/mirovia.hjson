@@ -110,6 +110,7 @@ weapons : [
     x : 0
     y : 0
     predictTarget : false
+    useAttackRange : false
     bullet : {
       spawnUnit : mirovia-missile
       shootEffect : shootBig
