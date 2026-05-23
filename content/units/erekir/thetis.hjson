@@ -2,8 +2,8 @@ type : flying
 template : ErekirUnitType
 outlineColor : 1d1d23
 flying : true
-lowAltitude : false
-speed : 1.58
+lowAltitude : true
+speed : 0.98
 accel : 0.04
 drag : 0.04
 health : 19400
@@ -15,7 +15,74 @@ crashDamageMultiplier : 0.2
 drawSoftShadow : false
 hitSize : 52
 targetAir : false
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : 468464
+        colorTo : 468464
+        outline : false
+        progress : warmup
+    }
+]
+engines : [
+  {
+    x : 16.8
+    y : -21
+    radius : 3
+    rotation : -90
+  }
+    {
+    x : -16.8
+    y : -21
+    radius : 3
+    rotation : -90
+  }
+  {
+    x : 26
+    y : -16.9
+    radius : 2
+    rotation : -90
+  }
+    {
+    x : -26
+    y : -16.9
+    radius : 2
+    rotation : -90
+  }
+    {
+    x : 10
+    y : -17
+    radius : 4
+    rotation : -90
+  }
+    {
+    x : -10
+    y : -17
+    radius : 4
+    rotation : -90
+  }
+]
 weapons : [
+  {
+    name : thetis-point-deff
+    mirror : true
+    rotate : true
+    x : 6
+    y : 18
+    type : PointDefenseWeapon
+    reload : 5
+    targetInterval : 10
+    targetSwitchInterval : 12
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 130
+      damage : 90
+    }
+  }
   {
     name : neoplasm-thrower
     shoot : {
@@ -26,8 +93,9 @@ weapons : [
     rotate : false
     mirror : false
     inaccuracy : 8
-    shootY : 10
-    top : false
+    shootY : 0
+    y : 0
+    x : 0
     shootEffect : shootLiquid
     loopSound : shootSublimate
     shootSound : none
@@ -36,16 +104,17 @@ weapons : [
     velocityRnd : 0.5
     bullet : {
       type : LiquidBulletType
-      orbSize : 5
+      orbSize : 3.8
       damage : 3
       speed : 5
-      lifetime : 100
+      lifetime : 105
       liquid : neoplasm
       status : sprouting
       statusDuration : 360
       despawnEffect : steam
       drag : 0.018
-      knockback : 1
+      knockback : 0.1
+      layer : 50
     }
   }
     {
@@ -101,8 +170,21 @@ weapons : [
         alterante : true
         reload : 120
         rotateSpeed : 1.5
-        x : 20
-        y : 0
+        shootStatus : slow
+        shootStatusDuration : 130
+        x : 22
+        y : 3
+        parts : [
+            {
+                type : RegionPart
+                suffix : -glow
+                blending : additive
+                color : 468464
+                colorTo : 468464
+                outline : false
+                progress : warmup
+            }
+        ]
         bullet : {
             type : ArtilleryBulletType
             hitEffect : [
@@ -116,7 +198,7 @@ weapons : [
             width : 11
             splashDamageRadius : 36
             damage : 80
-            splashDamage : 300
+            splashDamage : 240
             scaledSplashDamge : true
             splashDamagePierce : true
             backColor : 77bd7a
@@ -143,7 +225,7 @@ weapons : [
             fragBullets : 10
             fragBullet : {
               type : ArtilleryBulletType
-              splashDamage : 60
+              splashDamage : 40
               knockback : 2
               splashDamageRadius : 20
               hitEffect : [
@@ -182,11 +264,21 @@ weapons : [
         reload : 120
         rotateSpeed : 1.5
         x : 0
-        y : 0
+        y : -2
         shoot : {
           firstShotDelay : 60
         }
-
+        parts : [
+            {
+                type : RegionPart
+                suffix : -glow
+                blending : additive
+                color : 468464
+                colorTo : 468464
+                outline : false
+                progress : warmup
+            }
+        ]
         bullet : {
             type : ArtilleryBulletType
             hitEffect : [
@@ -199,8 +291,8 @@ weapons : [
             height : 24
             width : 11
             splashDamageRadius : 36
-            damage : 120
-            splashDamage : 300
+            damage : 80
+            splashDamage : 240
             scaledSplashDamge : true
             splashDamagePierce : true
             backColor : 77bd7a
@@ -227,7 +319,7 @@ weapons : [
             fragBullets : 10
             fragBullet : {
               type : ArtilleryBulletType
-              splashDamage : 60
+              splashDamage : 40
               knockback : 2
               splashDamageRadius : 20
               hitEffect : [
@@ -258,5 +350,49 @@ weapons : [
             }
         }
     }
+]
+abilities : [
+  {
+    type : EnergyFieldAbility
+    range : 180
+    y : 6
+    x : 11
+    shootSound : none
+    status : sprouting
+    statusDuration : 360
+    targetAir : true
+    maxTargets : 20
+    healPercent : 4
+    damage : 60
+    reload : 140
+    hitBuildings : false
+    color : 77bd7a
+    sectors : 8
+    sectorRad : 0.08
+    blinkScl : 80
+    effectRadius : 2.75
+    sameTypeHealMult : 0.3
+  }
+  {
+    type : EnergyFieldAbility
+    range : 180
+    y : 6
+    x : -11
+    shootSound : none
+    status : sprouting
+    statusDuration : 360
+    targetAir : true
+    maxTargets : 20
+    healPercent : 4
+    damage : 60
+    reload : 140
+    hitBuildings : false
+    color : 77bd7a
+    sectors : 8
+    sectorRad : 0.08
+    blinkScl : 80
+    effectRadius : 2.75
+    sameTypeHealMult : 0.3
+  }
 ]
 shownPlanets : [erekir]
