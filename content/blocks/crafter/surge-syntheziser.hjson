@@ -3,6 +3,42 @@ size : 3
 squareSprite : false
 itemCapacity : 20
 liquidCapacity : 40
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      padding: 3
+      drawLiquid: plasma
+      suffix: -bottom
+    }
+    {
+      type: DrawBubbles
+      color: bf92f9
+      sides: 10
+      recurence: 4
+      spread: 6
+      radius: 1.5
+      amount: 22
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 1.8
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: ffe18f
+    }
+  ]
+}
 requirements : [
     titanium/250
     aster/75

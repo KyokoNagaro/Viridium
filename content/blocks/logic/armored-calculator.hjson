@@ -1,7 +1,6 @@
 type : LogicBlock
 requirements : [
     graphite/40
-    graphite/40
     beryllium/100
 ]
 size : 1

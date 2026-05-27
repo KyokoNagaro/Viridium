@@ -6,8 +6,8 @@ liquidCapacity : 160
 liquidPadding : 1.5
 placeableLiquid : true
 requirements : [
+  titanium/50
   neodymium/25
-  platinum/50
 ]
 category : liquid
 buildCostMultiplier : 0.35

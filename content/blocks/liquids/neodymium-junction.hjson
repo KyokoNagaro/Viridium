@@ -2,8 +2,8 @@ type: LiquidJunction
 health: 300
 squareSprite : false
 requirements: [
+  titanium/5
   neodymium/5
-  platinum/5
 ]
 placeableLiquid : true
 category: liquid

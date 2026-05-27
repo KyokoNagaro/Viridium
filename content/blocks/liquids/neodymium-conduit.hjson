@@ -1,8 +1,8 @@
 type: Conduit
 health: 460
 requirements: [
+  titanium/5
   neodymium/5
-  platinum/5
 ]
 liquidCapacity : 80
 placeableLiquid : true
