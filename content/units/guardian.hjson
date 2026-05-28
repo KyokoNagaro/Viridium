@@ -1,6 +1,6 @@
 type : mech
 health : 2400
-amror : 10
+armor : 10
 hitSize : 18
 speed : 0.4
 range : 240
@@ -11,6 +11,18 @@ boostMultiplier : 2.5
 stepSoundVolume : 0.4
 flying : false
 faceTarget : true
+mechFrontSway : 0.5
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : 88a4ff
+        colorTo : 88a4ff
+        outline : false
+        progress : warmup
+    }
+]
 weapons : [
   {
   name : guardian-rail
@@ -19,7 +31,7 @@ weapons : [
   rotateSpeed : 1.7
   reload : 150
   x : 0
-  y : -5
+  y : -3
   predictTarget : false
   targetMissile : false
   rotationLimit : 80
@@ -27,7 +39,20 @@ weapons : [
   shootSoundVolume : 0.5
   shootSound : shootForeshadow
   shootStatus : slow
+  recoil : 0.5
   shootStatusDuration : 130
+  cooldownTime : 100
+  parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : 88a4ff
+        colorTo : 88a4ff
+        outline : false
+        progress : warmup
+    }
+]
   bullet : {
     type : RailBulletType
     damage : 60
@@ -85,4 +110,3 @@ weapons : [
     }
   }
 ]
-hidden : true
