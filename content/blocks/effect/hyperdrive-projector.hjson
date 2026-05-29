@@ -1,0 +1,30 @@
+type : OverdriveProjector
+size : 3
+health : 575
+range : 330
+speedBoost : 3
+hasBoost : false
+baseColor : ad043e
+itemDuration : 360
+consumes : {
+  power : 10
+  liquid : {
+    liquid : caesium-allow
+    amount : 0.2
+  }
+  items : {
+    items : [
+      neodymium/2
+      viridium/1
+    ]
+  }
+}
+requirements: [
+  titanium/125
+  surge-alloy/250
+  platinum/300
+  viridium/150
+  crest/100
+]
+category : effect
+

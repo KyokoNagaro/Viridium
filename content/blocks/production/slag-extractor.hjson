@@ -7,15 +7,24 @@ outputLiquid : slag/0.1
 drawer : {
   type : DrawMulti
   drawers : [
-        {
-            type : DrawDefault
-        }
-        {
-            type : DrawGlowRegion
-            suffix : -glow
-            color : a3b9ff
-        }
-    ]
+    {
+        type : DrawDefault
+        layer : -3
+    }
+    {
+        type : DrawGlowRegion
+        suffix : -glow
+        color : ffa200
+        layer : -2
+    }
+    {
+        type : DrawRegion
+        suffix : -rotator
+        spinSprite : true
+        rotateSpeed : 10
+        blurThresh : 0.25
+    }
+  ]
 }
 consumes : {
     power : 1

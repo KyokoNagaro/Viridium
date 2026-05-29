@@ -1,0 +1,21 @@
+type : OverdriveProjector
+size : 2
+health : 200
+range : 85
+speedBoost : 1.8
+hasBoost : false
+baseColor : ad043e
+itemDuration : 360
+consumes : {
+  power : 10
+  liquid : {
+    liquid : cryofluid
+    amount : 0.2
+  }
+}
+requirements: [
+  titanium/125
+  neodymium/75
+  aster/75
+]
+category : effect
