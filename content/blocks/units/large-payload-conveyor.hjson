@@ -8,3 +8,4 @@ requirements : [
   tungsten/200
   platinum/180
 ]
+buildVisibility : sandboxOnly

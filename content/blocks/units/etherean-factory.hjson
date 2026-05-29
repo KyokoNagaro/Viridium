@@ -3,6 +3,7 @@ size : 3
 configurable : true
 fogRadius : 3
 scaledHealth : 55
+liquidCapacity : 40
 consumes : {
     power : 1
     liquids : [

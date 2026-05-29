@@ -1,0 +1,29 @@
+type : UnitAssembler
+size : 5
+liquidCapacity : 120
+areaSize : 13
+scaledHealth : 95
+droneType : etherean-drone
+consumes : {
+    power : 1
+    liquids : [
+        sgallium/0.1
+    ]
+}
+plans : [
+    {
+        type : AssemblerUnitPlan
+        unit : guardian
+        time : 1200
+        requirements : [
+            viridium-golem/5
+        ]
+    }
+]
+requirements : [
+    titanium/800
+    aster/200
+    platinum/550
+    lithium/225
+]
+category : units
