@@ -3,6 +3,30 @@ size : 3
 squareSprite : false
 itemCapacity : 30
 liquidCapacity : 40
+drawer : {
+    type : DrawMulti
+    drawers : [
+        {
+            type : DrawRegion
+            suffix : -bottom
+        }
+        {
+            type : DrawLiquidTile
+            padding : 2
+            drawLiquid : sgallium
+            suffix : -bottom
+        }
+        {
+            type : DrawDefault
+        }
+        {
+            type : DrawGlowRegion
+            suffix : -glow
+            color : ffd37f
+            blending : additive
+        }
+    ]
+}
 requirements : [
     titanium/150
     surge-alloy/125
