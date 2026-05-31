@@ -1,0 +1,65 @@
+  type : missile
+  controller : MissileAI
+  template : MissileUnitType
+  hidden : true
+  health : 660
+  engineColor : a0a1ae
+  trailColor : a0a1ae
+  trailWidth : 1.8
+  trailLength : 6.4
+  trailEffect : missileTrail
+  engineSize : 2
+  engineLayer : 110
+  drawCell : false
+  targetMissiles : false
+  physics : false
+  useUnitCap : false
+  drawSoftShadow : true
+  homingDelay : 10
+  flying : true
+  lowAltitude : true
+  rotateSpeed : 4.1
+  lifetime : 130
+  speed : 5.35
+  targetAir : true
+  outlineColor : 2e2f34
+  outlineRadius : 2
+  parts : [
+    {
+      type : FlarePart
+      progress : {
+        type : life
+        op : curve
+        interp : pow10Out
+      }
+      color1 : a0a1ae
+      stroke : 4.8
+      radius : 0
+      radiusTo : 20
+    }
+  ]
+  weapons : [
+    {
+      shootCone : 360
+      targetMissiles : false
+      shootOnDeath : true
+      predictTarget : false
+      shootSound : none
+      reload : 1
+      mirror : false
+      shake : 1
+      useAttackRange : false
+      deathExplosionEffect : sparkExplosion
+      bullet : {
+        type : ExplosionBulletType
+        splashDamageRadius : 5
+        targetMissiles : false
+        splashDamage : 110
+        ammoMultiplier : 24
+        pierceArmor : true
+      }
+    }
+  ]
+
+
+

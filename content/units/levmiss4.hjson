@@ -1,0 +1,111 @@
+  type : missile
+  controller : MissileAI
+  template : MissileUnitType
+  hidden : true
+  health : 660
+  engineColor : bf92f9
+  trailColor : bf92f9
+  trailWidth : 1.8
+  trailLength : 6.4
+  trailEffect : missileTrail
+  engineSize : 2
+  engineLayer : 110
+  drawCell : false
+  physics : false
+  useUnitCap : false
+  drawSoftShadow : true
+  homingDelay : 10
+  flying : true
+  lowAltitude : true
+  rotateSpeed : 4.8
+  lifetime : 115
+  speed : 6
+  targetAir : true
+  targetMissiles : false
+  outlineColor : 2e2f34
+  outlineRadius : 2
+  deathExplosionEffect: none
+  parts : [
+    {
+      type : FlarePart
+      progress : {
+        type : life
+        op : curve
+        interp : pow10Out
+      }
+      color1 : bf92f9
+      stroke : 4.8
+      radius : 0
+      radiusTo : 20
+      y : -5
+    }
+  ]
+  weapons : [
+    {
+      shootCone : 360
+      shootOnDeath : true
+      predictTarget : false
+      targetMissiles : false
+      shootSound : none
+      reload : 1
+      mirror : false
+      shake : 1
+      useAttackRange : false
+      bullet : {
+        type : BulletType
+        lifetime : 0
+        targetMissile : false
+        hittable : false
+        targetMissiles : false
+        absorbable : false
+        collides : false
+        damage : 0
+        ammoMultiplier : 18
+        targetMissiles : false
+        hitEffect : none
+        shootEffect : none
+        smokeEffect : none
+        despawnEffect : {
+          type : ParticleEffect
+          particles : 4
+          lifetime : 120
+          length : 25
+          layer : 99
+          baseLength : 0
+          interp : pow10Out
+          sizeInterp : linear
+          cone : -360
+          colorFrom : e3ceff
+          colorTo : c69dff
+          region : viridium-sutaru
+          spin : 1.2
+          sizeTo : 1
+          sizeFrom : 4
+        }
+        fragBullets : 1
+        fragRandomSpread : 0
+        fragBullet : {
+          type : LaserBulletType
+          targetMissiles : false
+          length : 80
+          width : 15
+          damage : 70
+          lifetime : 30
+          colors : [
+            c69dff
+            e3ceff
+            ffffff
+          ]
+          largeHit : true
+          lightningColor : e3ceff
+          lightningLength : 8
+          lightningSpacing : 90
+          lightningDamage : 60
+          status : iradied
+        }
+      }
+    }
+  ]
+
+
+

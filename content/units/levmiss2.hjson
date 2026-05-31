@@ -1,0 +1,134 @@
+  type : missile
+  controller : MissileAI
+  template : MissileUnitType
+  hidden : true
+  health : 660
+  engineColor : 4b9c78
+  trailColor : 4b9c78
+  trailWidth : 2
+  trailLength : 5
+  trailEffect : missileTrail
+  engineSize : 2
+  engineLayer : 110
+  drawCell : false
+  targetMissiles : false
+  useUnitCap : false
+  drawSoftShadow : true
+  homingDelay : 10
+  flying : true
+  lowAltitude : true
+  rotateSpeed : 3
+  lifetime : 138
+  speed : 4.5
+  targetAir : true
+  outlineColor : 2e2f34
+  outlineRadius : 2
+  abilities : [
+    {
+      type : MoveEffectAbility
+      chance : 0.85
+      rangeLengthMin : 0.3
+      rangeLengthMax : 3.7
+      y : -7
+      effect : {
+        type : multiEffect
+        effects : [
+         {
+          type : ParticleEffect
+          particles : 3
+          baseLength : 0
+          length : 3.5
+          lifetime : 32
+          colorFrom : 7b7b7b
+          colorTo : 907f77
+          sizeFrom : 3
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 5
+          lifetime : 40
+          colorFrom : c3aea4
+          colorTo : 62524b
+          sizeFrom : 4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 2.8
+          lifetime : 35
+          colorFrom : 88766e
+          colorTo : 4c4644
+          sizeFrom : 3.4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        ]
+      }
+      rotation : 180
+      interval : 2
+    }
+  ]
+  weapons : [
+    {
+      shootCone : 360
+      shootOnDeath : true
+      predictTarget : false
+      targetMissiles : false
+      shootSound : none
+      reload : 1
+      mirror : false
+      shake : 1
+      useAttackRange : false
+      bullet : {
+        type : BulletType
+        lifetime : 0
+        targetMissile : false
+        hittable : false
+        targetMissiles : false
+        absorbable : false
+        collides : false
+        damage : 10
+        ammoMultiplier : 24
+        hitEffect : none
+        despawnEffect : none
+        shootEffect : shootBig2
+        smokeEffect : smokeCloud
+        fragBullets : 48
+        fragRandomSpread : 66
+        fragVelocityMin : 0.8
+        fragVelocityMax : 1.9
+        fragLifeMin : 0.5
+        fragBullet : {
+          speed : 17
+          lifetime : 7
+          drag : 0.05
+          damage : 8
+          sprite : viridium-shard
+          width : 4
+          height : 20
+          shrinkY : 0.25
+          shrinkX : 1
+          hitColor : ffd59e
+          hitEffect : hitBulletColor
+          despawnEffect : none
+          status : burning
+          statusDuration : 120
+          frontColor : f7d9b2
+          backColor : f19583
+          despawnHit : false
+          setDefaults : false
+          pierce : true
+        }
+      }
+    }
+  ]
+
+
+

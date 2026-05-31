@@ -17,6 +17,7 @@ plans : [
         time : 1200
         requirements : [
             viridium-golem/5
+            viridium-basic-plate/2
         ]
     }
 ]

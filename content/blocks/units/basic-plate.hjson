@@ -1,0 +1,9 @@
+type : Wall
+size : 2
+customShadow : true
+placeablePlayer : false
+requirements : [
+    aster/15
+    platinum/60
+]
+databaseTag : unitpart
