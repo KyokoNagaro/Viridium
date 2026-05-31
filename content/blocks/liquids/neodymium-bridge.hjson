@@ -1,9 +1,9 @@
 type: LiquidBridge
 hasPower : false
 health: 300
-liquidCapacity : 80
+liquidCapacity : 60
 squareSprite : false
-range : 8
+range : 6
 placeableLiquid : true
 requirements: [
   titanium/5

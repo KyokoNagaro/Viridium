@@ -1,15 +1,16 @@
 type : ItemBridge
-range : 6
-health : 80
-transportTime : 4
+range : 10
+health : 200
+transportTime : 2
 arrowPeriod : 0.9
 arrowTimeScl : 2.75
 pulse : true
 underBullet : true
 hasPower : false
 requirements : [
-    titanium/25
-    neodymium/5
+    surge-alloy/20
+    crest/10
 ]
 category : distribution
 buildVisibility : sandboxOnly
+squareSprite : false
