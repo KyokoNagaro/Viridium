@@ -6,8 +6,7 @@ liquidCapacity : 3000
 placeableLiquid : true
 liquidPadding : 2
 requirements : [
-  neodymium/50
-  platinum/200
+  001-neodymium/50
+  002-platinum/200
 ]
 category : liquid
-buildVisibility : sandboxOnly

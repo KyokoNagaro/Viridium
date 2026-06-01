@@ -1,0 +1,39 @@
+type : UnitAssembler
+size : 5
+areaSize : 13
+liquidCapacity : 90
+health : 2800
+plans : [
+    {
+        type : AssemblerUnitPlan
+        unit : 003-mirovia
+        time : 3000
+        requirements : [
+            viridium-000-comet/12
+            tungsten-wall-large/15
+        ]
+    }
+    {
+        type : AssemblerUnitPlan
+        unit : 004-thetis
+        time : 9000
+        requirements : [
+            viridium-001-atlas/8
+            reinforced-surge-wall-large/20
+        ]
+    }
+]
+consumes : {
+    power : 2.5
+    liquids : [
+        cyanogen/0.15
+    ]
+}
+category : units
+shownPlanets : [erekir]
+requirements : [
+    thorium/500
+    silicon/650
+    oxide/200
+    carbide/100
+]

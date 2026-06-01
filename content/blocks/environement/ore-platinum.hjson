@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: platinum
+itemDrop: 002-platinum
 oreDefault : false
 oreThreshold : 0.85
 oreScale : 23.180953

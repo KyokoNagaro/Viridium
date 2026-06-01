@@ -7,8 +7,7 @@ liquidPadding : 1.5
 placeableLiquid : true
 requirements : [
   titanium/50
-  neodymium/25
+  001-neodymium/25
 ]
 category : liquid
 buildCostMultiplier : 0.35
-buildVisibility : sandboxOnly

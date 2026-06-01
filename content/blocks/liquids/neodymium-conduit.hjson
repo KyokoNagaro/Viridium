@@ -2,7 +2,7 @@ type: Conduit
 health: 460
 requirements: [
   titanium/5
-  neodymium/5
+  001-neodymium/5
 ]
 liquidCapacity : 80
 placeableLiquid : true
@@ -13,4 +13,3 @@ buildCostMultiplier : 0.35
 underBullets : false
 junctionReplacement : neodymium-junction
 bridgeReplacement : neodymium-bridge
-buildVisibility : sandboxOnly

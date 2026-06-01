@@ -1,0 +1,12 @@
+type : Duct
+speed : 3
+health : 200
+underBullet : true
+bridgeReplacement : 002-surge-bridge
+junctionReplacement : 002-surge-junction
+requirements : [
+    surge-alloy/5
+    500-crest/3
+]
+category : distribution
+armored : true

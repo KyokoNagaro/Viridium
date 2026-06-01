@@ -1,0 +1,47 @@
+type : GenericCrafter
+size : 3
+squareSprite : false
+itemCapacity : 30
+liquidCapacity : 40
+drawer : {
+    type : DrawMulti
+    drawers : [
+        {
+            type : DrawRegion
+            suffix : -bottom
+        }
+        {
+            type : DrawLiquidTile
+            padding : 2
+            drawLiquid : 020-sgallium
+            suffix : -bottom
+        }
+        {
+            type : DrawDefault
+        }
+        {
+            type : DrawGlowRegion
+            suffix : -glow
+            color : ffd37f
+            blending : additive
+        }
+    ]
+}
+requirements : [
+    titanium/150
+    surge-alloy/125
+    002-platinum/275
+    010-viridium/75
+]
+craftTime : 90
+consumes : {
+    power : 1
+    items : [
+        000-aster/1
+    ]
+    liquids  : [
+        020-sgallium/0.1
+    ]
+}
+outputLiquid : 999-caesium-allow/0.2
+category : crafting

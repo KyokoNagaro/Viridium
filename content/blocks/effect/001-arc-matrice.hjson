@@ -1,0 +1,10 @@
+type : StorageBlock
+size : 3
+itemCapacity : 960
+health : 580
+requirements : [
+    titanium/450
+    001-neodymium/75
+    002-platinum/100
+]
+category : effect

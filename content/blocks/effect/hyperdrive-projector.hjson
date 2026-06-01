@@ -9,22 +9,22 @@ itemDuration : 360
 consumes : {
   power : 10
   liquid : {
-    liquid : caesium-allow
+    liquid : 999-caesium-allow
     amount : 0.2
   }
   items : {
     items : [
-      neodymium/2
-      viridium/1
+      001-neodymium/2
+      010-viridium/1
     ]
   }
 }
 requirements: [
   titanium/125
   surge-alloy/250
-  platinum/300
-  viridium/150
-  crest/100
+  002-platinum/300
+  010-viridium/150
+  500-crest/100
 ]
 category : effect
 

@@ -6,6 +6,5 @@ payloadLimit : 7
 requirements : [
   plastanium/460
   tungsten/200
-  platinum/180
 ]
 buildVisibility : sandboxOnly

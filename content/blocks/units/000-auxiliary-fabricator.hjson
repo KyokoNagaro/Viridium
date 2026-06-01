@@ -1,0 +1,22 @@
+type : UnitFactory
+size : 3
+configurable : false
+plans : [
+    {
+        unit : 000-comet
+        time : 900
+        requirements : [
+            silicon/20
+            beryllium/60
+        ]
+    }
+]
+consumes : {
+    power : 1
+}
+requirements : [
+    silicon/175
+    beryllium/200
+]
+category : units
+shownPlanets : [erekir]

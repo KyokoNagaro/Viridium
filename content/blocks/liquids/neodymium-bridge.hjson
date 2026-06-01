@@ -7,10 +7,9 @@ range : 6
 placeableLiquid : true
 requirements: [
   titanium/5
-  neodymium/5
+  001-neodymium/5
 ]
 category: liquid
 botColor : 2e2f34
 buildCostMultiplier : 0.35
 underBullets : false
-buildVisibility : sandboxOnly

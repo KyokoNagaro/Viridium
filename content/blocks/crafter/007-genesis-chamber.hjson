@@ -1,0 +1,53 @@
+type : GenericCrafter
+size : 4
+squareSprite : false
+itemCapacity : 50
+liquidCapacity : 60
+scaledHealth : 95
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawPulseShape
+      radiusScl : 0.8
+      color: d1efff
+      square : true
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawCrucibleFlame
+      flameRad: 3
+      midColor : d1efff
+      flameColor : d1efff
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -glow
+      color: d1efff
+    }
+  ]
+}
+requirements : [
+    titanium/350
+    surge-alloy/300
+    002-platinum/500
+]
+craftTime : 150
+outputItem : 500-crest/2
+consumes : {
+    power : 1
+    items : [
+        sand/24
+    ]
+    liquids : [
+        cryofluid/1.6
+        500-plasma/0.3
+    ]
+}
+category : crafting

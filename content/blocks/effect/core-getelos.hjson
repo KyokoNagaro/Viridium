@@ -4,12 +4,13 @@ armor: 2
 itemCapacity: 15000
 size: 5
 category: effect
-unitType: sachiel
+unitType: 020-sachiel
 unitCapModifier: 10
 isFirstTier : true
 requirements: [
   titanium/6000
-  aster/1000
+  000-aster/2000
+  001-neodymium/3000
+  003-lithium/4000
 ]
-buildVisibility : sandboxOnly
 category : effect

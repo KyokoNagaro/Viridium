@@ -1,0 +1,15 @@
+type : ItemBridge
+range : 10
+health : 200
+transportTime : 2
+arrowPeriod : 0.9
+arrowTimeScl : 2.75
+pulse : true
+underBullet : true
+hasPower : false
+requirements : [
+    surge-alloy/20
+    500-crest/10
+]
+category : distribution
+squareSprite : false

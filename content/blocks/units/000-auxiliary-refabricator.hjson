@@ -1,0 +1,30 @@
+type : Reconstructor
+size : 3
+health : 860
+consumes : {
+    power : 2
+    items : {
+        items :[
+            tungsten/140
+            oxide/40
+        ]
+    }
+    liquid : {
+        liquid : hydrogen
+        amount : 0.05
+    }
+}
+upgrades : [
+    [
+        000-comet
+        001-atlas
+    ]
+]
+constructTime : 2400
+requirements : [
+    silicon/120
+    beryllium/250
+    tungsten/120
+]
+category : units
+shownPlanets : [erekir]

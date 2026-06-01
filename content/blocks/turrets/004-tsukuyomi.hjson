@@ -1,0 +1,284 @@
+type: PowerTurret
+squareSprite: false
+size: 4
+shake : 3
+shootSound : shootMalign
+loopSound : loopMalign
+loopSoundVolume : 1.5
+outlineColor : 2e2f34
+canOverdrive : true
+range : 300
+reload : 270
+recoil : 0
+shootWarmupSpeed: 0.06
+minWarmup : 0.98
+targetMissile : false
+drawer : {
+  type : DrawTurret
+  parts : [
+    {
+      type : RegionPart
+      under : true
+      progress : warmup
+      name : viridium-tsukuyomi-wing1
+      x : -8.5
+      y : 5.7
+      moveY : 2.8
+      moveX : -2.8
+    }
+    {
+      type : RegionPart
+      under : true
+      progress : warmup
+      name : viridium-tsukuyomi-wing2
+      x : 8.5
+      y : 5.7
+      moveY : 2.8
+      moveX : 2.8
+    }
+   {
+    type : shapePart
+    y : -17
+    hollow : true
+    circle : true
+    layer : 110
+    color : d1efff
+    stroke : 0
+    strokeTo : 0.7
+    radiusTo : 8
+    radius : 8
+  }
+  {
+    type : shapePart
+    circle : false
+    hollow : true
+    sides : 4
+    y : -17
+    layer : 110
+    color : d1efff
+    rotateSpeed : 0.6
+    stroke : 0
+    strokeTo : 0.7
+    radius : 7.8
+    radiusTo : 7.8
+  }
+    {
+    type : shapePart
+    circle : false
+    hollow : true
+    sides : 4
+    y : -17
+    layer : 110
+    color : d1efff
+    rotateSpeed : -0.6
+    stroke : 0
+    strokeTo : 0.7
+    radius : 7.8
+    radiusTo : 7.8
+  }
+  {
+    type : HaloPart
+    y : -17
+    tri : true
+    radius : 4.3
+    layer : 110
+    color : d1efff
+    haloRotateSpeed : 1.3
+    haloRadius : 7.9
+    haloRadiusTo : 7.9
+    stroke : 0
+    strokeTo : 2
+    shapes : 2
+    triLengthTo : 8
+    triLength : 0
+  }
+  {
+    type : HaloPart
+    y : -17
+    tri : true
+    radius : 4.3
+    layer : 110
+    color : d1efff
+    haloRotateSpeed : -1
+    haloRadius : 7.9
+    haloRadiusTo : 7.9
+    stroke : 0
+    strokeTo : 2
+    shapes : 2
+    triLengthTo : 5
+    triLength : 0
+  }
+  ]
+}
+shootEffect : {
+    type : multiEffect
+    effects : [
+      {
+      type : WaveEffect
+      colorFrom : d1efff
+      colorTo : 6569c9
+      lightColor : b7d7f4
+      interp : pow2Out
+      sizeFrom : 2
+      sizeTo : 25
+      stroke : 2
+      strokeTo : 0
+      lifetime : 100
+      }
+      {
+        type : ParticleEffect
+        particles : 11
+        lifetime : 160
+        length : 30
+        baseLength : -100
+        interp : pow3In
+        sizeInterp : linear
+        cone : -360
+        colorFrom : d1efff
+        colorTo : 6569c9
+        region : viridium-sutaru
+        spin : 1.3
+        sizeTo : 2
+        sizeFrom : 6
+      }
+    ]
+}
+smokeEffect : none
+shootType : {
+  // there is an error in the type and/or sprite but it's cool and i cant reproduce it 
+  type : BasicBulletType
+  sprite : viridium-large-orb
+  lifetime : 75
+  targetMissile : false
+  frontColor : ffffffff
+  backColor : 88c1f7b2
+  width : 30
+  height : 30
+  hitSize : 7
+  speed : 4
+  damage : 1
+  splashDamage : 1
+  splashDamageRadius : 100
+  trailEffect : none
+  homingPower : 0.08
+  homingDelay : 18
+  homingRange : 150
+  hitShake : 0
+  hitEffect : {
+    type : multiEffect
+    effects : [
+      {
+        type : WaveEffect
+        colorFrom : d1efff
+        colorTo : d1efff
+        interp : pow10Out
+        sizeTo : 60
+        lifetime : 140
+        strokeFrom : 6
+        strokeTo : 0
+      }
+      {
+        type : ParticleEffect
+        particles : 8
+        lifetime : 160
+        length : 80
+        layer : 99
+        baseLength : 25
+        interp : pow10Out
+        sizeInterp : linear
+        cone : -360
+        colorFrom : d1efff
+        colorTo : d1efff
+        region : viridium-sutaru
+        spin : 1.2
+        sizeTo : 1
+        sizeFrom : 4
+      }
+       {
+        type : ParticleEffect
+        particles : 8
+        lifetime : 140
+        length : 80
+        layer : 99
+        baseLength : 30
+        interp : pow10Out
+        sizeInterp : linear
+        cone : -360
+        colorFrom : d1efff
+        colorTo : d1efff
+        region : viridium-sutaru
+        spin : 1.3
+        sizeTo : 2
+        sizeFrom : 6
+      }
+    ]
+  }
+  despawnEffect : {
+    type : multiEffect
+    effects : [
+      {
+        type : WaveEffect
+        colorFrom : d1efff
+        colorTo : d1efff
+        interp : pow10Out
+        sizeTo : 60
+        lifetime : 140
+        strokeFrom : 6
+        strokeTo : 0
+      }
+      {
+        type : ParticleEffect
+        particles : 8
+        lifetime : 160
+        length : 80
+        layer : 99
+        baseLength : 25
+        interp : pow10Out
+        sizeInterp : linear
+        cone : -360
+        colorFrom : d1efff
+        colorTo : d1efff
+        region : viridium-sutaru
+        spin : 1.2
+        sizeTo : 1
+        sizeFrom : 4
+      }
+       {
+        type : ParticleEffect
+        particles : 8
+        lifetime : 140
+        length : 80
+        layer : 99
+        baseLength : 30
+        interp : pow10Out
+        sizeInterp : linear
+        cone : -360
+        colorFrom : d1efff
+        colorTo : d1efff
+        region : viridium-sutaru
+        spin : 1.3
+        sizeTo : 2
+        sizeFrom : 6
+      }
+    ]
+  }
+  status : exposed
+  statusDuration : 600
+  fragBullets : 1
+}
+consumes : {
+  power : 1
+  liquids : [
+    020-sgallium/0.05
+  ]
+}
+health : 3150
+shootY : 20.5
+category: turret
+requirements: [
+  titanium/550
+  000-aster/200
+  002-platinum/300
+  surge-alloy/275
+]
+

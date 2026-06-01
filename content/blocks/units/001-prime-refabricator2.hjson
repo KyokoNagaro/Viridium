@@ -1,0 +1,41 @@
+type : Reconstructor
+upgrades : [
+    [
+        locus,
+        precept
+    ]
+    [
+        cleroi,
+        anthicus
+    ]
+    [
+        avert,
+        obviate
+    ]
+    [
+        001-atlas,
+        002-lapethus
+    ]
+]
+size : 5
+health : 2500
+consumes : {
+    power : 4.5
+    liquids : [
+        nitrogen/0.166666
+    ]
+    items : [
+        thorium/80
+        silicon/100
+    ]
+}
+constructTime : 3600
+requirements : [
+    thorium/250
+    oxide/200
+    tungsten/200
+    silicon/400
+]
+forceTeam : 1
+shownPlanets : [erekir]
+category : units
