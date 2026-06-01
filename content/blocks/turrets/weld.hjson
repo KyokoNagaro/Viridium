@@ -1,7 +1,7 @@
 type : ItemTurret
 size : 4
 targetAir : true
-health : 2200
+health : 2850
 reload : 320
 cooldownTime : 180
 shootCone : 40
@@ -187,7 +187,7 @@ ammoTypes : {
       lightningLength : 15
       lightningLengthRand : 6
       damage : 40
-      status : shocked
+      status : electrified
       statusDuration : 30
       collidesAir : true
       shootSound : spark
@@ -201,7 +201,7 @@ ammoTypes : {
       lightningLength : 15
       lightningLengthRand : 6
       damage : 40
-      status : shocked
+      status : electrified
       statusDuration : 30
       despawnEffect : sparkShoot
       despawnSound : shootArc

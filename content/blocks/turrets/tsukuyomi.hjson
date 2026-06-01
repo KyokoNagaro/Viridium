@@ -272,7 +272,7 @@ consumes : {
     sgallium/0.05
   ]
 }
-health : 2600
+health : 3150
 shootY : 20.5
 category: turret
 requirements: [

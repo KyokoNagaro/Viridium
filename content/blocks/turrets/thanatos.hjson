@@ -10,8 +10,8 @@ recoils : 3
 recoilTime : 65
 shake : 3
 shootY : 15
-health : 16000
-rotateSpeed : 1.5
+health : 12550
+rotateSpeed : 1.3
 ammoPerShot : 3
 consumeAmmoOnce : false
 cooldownTime : 120
@@ -65,7 +65,7 @@ drawer : {
   ]
 }
 ammoTypes : {
-  metaglass : {
+  lithium : {
     type : BulletType
     lifetime : 0
     targetMissile : false
@@ -100,78 +100,12 @@ ammoTypes : {
       backColor : f19583
       despawnHit : false
       setDefaults : false
+      status : melting
+      statusDuration : 360
+      knockback : 0
     }
   }
-  fissile-matter : {
-    type : BasicBulletType
-    damage : 630
-    sprite : viridium-shard
-    width : 8
-    height : 50
-    shrinkY : 0.25
-    shrinkX : 1
-    speed : 50
-    lifetime : 14
-    splashDamage : 630
-    splashDamageRadius : 20
-    scaledSplashDamage : true
-    ammoMultiplier : 2
-    frontColor : 6beeb3
-    backColor : 35634f
-    status : iradied
-    incendChance : 100
-    incendSpread : 10
-    hitShake : 6
-    trailRotation : true
-    trailChance : 2.1
-    trailEffect : {
-      type : ParticleEffect
-      particles : 1
-      sizeFrom : 10
-      sizeTo : 10
-      region : viridium-losange1
-      lifetime : 15
-      colorFrom : 4b9c78ff
-      colorTo : 35634f00
-      length : 0
-    }
-    hitEffect : {
-      type : ParticleEffect
-      region : viridium-railhit2
-      length : 0
-      lifetime : 15
-      sizeFrom : 35
-      sizeTo : 15
-      colorFrom : 4b9c78ff
-      colorTo : 35634f00
-    }
-    shootEffect : {
-      type : MultiEffect
-      effects : [
-        {
-        type : ParticleEffect
-        region : viridium-shootinstantrail
-        length : 0
-        lifetime : 10
-        sizeFrom : 30
-        sizeTo : 15 
-        colorFrom : 6beeb3ff
-        colorTo : 4b9c7800
-        }
-        {
-        type : ParticleEffect
-        region : viridium-losange1
-        length : 0
-        lifetime : 15
-        sizeFrom : 30
-        sizeTo : 5
-        colorFrom : 6beeb3
-        colorTo : 4b9c78
-        }
-      ]
-    }
-  }
-  aster : {
+  crest : {
     type : RailBulletType
     targetMissile : false
     length : 710
@@ -179,7 +113,7 @@ ammoTypes : {
     damage : 1460
     pierceDamageFactor : 0.5
     pierce : true
-    status : sage
+    status : consume
     statusDuration : 120
     hitShake : 6
     reloadMultiplier : 0.5
@@ -265,11 +199,11 @@ consumes: {
 ammoPerShot: 1
 category: turret
 requirements: [
-  titanium/2000
-  surge-alloy/300
-  carbide/700
-  platinum/1200
-  aster/800
-  neodymium/400
+  titanium/1600
+  neodymium/850
+  platinum/1000
+  lithium/450
+  surge-alloy/325
+  crest/500
 ]
 buildVisibility : sandboxOnly
