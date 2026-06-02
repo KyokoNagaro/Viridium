@@ -1,0 +1,146 @@
+type : flying
+template : ErekirUnitType
+health : 2150
+armor : 5
+flying : true
+lowAltitude : false
+speed : 1.6
+rotateSpeed : 1.4
+accel : 0.05
+drag : 0.021
+hitSize : 18
+range : 100
+targetAir : true
+faceTarget : false
+itemCapacity : 80
+outlineColor : 1d1d23
+weapons : [
+    {
+        name : enceladus-main-turret
+        mirror : false
+        x : 0
+        y : 0
+        reload : 60
+        shootSound : shootStell
+        rotate : true
+        rotateSpeed : 1.8
+        shoot : {
+            type : ShootBarrel
+            shots : 2
+            shotDelay : 10
+            barrels : [
+                -5, 0, 0,
+                5, 0, 0
+            ]
+        }
+        rotateSpeed : 1.7
+        cooldownTime : 40
+        bullet : {
+            type : BasicBulletType
+            speed : 8
+            damage : 50
+            pierce : true
+            pierceCap : 2
+            width : 8
+            height : 15
+            shrinkX : 0.4
+            shrinkY : 0
+            shootEffects : [
+                shootColor
+                colorSpark
+            ]
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            smokeEffect : hitLaserColor
+            backColor : feb380
+            trailColor : feb380
+            hitColor : feb380
+            frontColor : ffffff
+            ligthColor : feb380
+            lifetime : 20
+            trailWidth : 2
+            trailLength : 8
+            trailRotation : true
+            trailEffect : hitSquaresColor
+            trailInterval : 2
+        }
+    }
+    {
+        name : enceladus-mount
+        reload : 15
+        x : 2
+        y : 0
+        mirror : true
+        alternate : true
+        rotate : true
+        shootSound : shootAlpha
+        shootSoundVolume : 0.7
+        inaccuracy : 3
+        recoil : 0.07
+        shoot : {
+            type : ShootSpread
+            shots : 2
+            shotDelay : 3
+            spread : 2
+        }
+        bullet : {
+            type : LaserBoltBulletType
+            width : 1.5
+            heigth : 5
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            trailWidth : 1.2
+            trailLength : 4
+            shootEffect : shootSmallColor
+            smokeEffect : hitLaserColor
+            backColor : ffd37f
+            trailColor : ffd37f
+            hitColor : ffd37f
+            frontColor : ffffff
+            ligthColor : ffd37f
+            lifetime : 26
+            hommingPower : 0.02
+            speed : 6
+            damage : 8
+        }
+    }
+    {
+        name : enceladus-mount
+        reload : 15
+        x : 2
+        y : -2
+        mirror : true
+        alternate : true
+        rotate : true
+        shootSound : shootAlpha
+        shootSoundVolume : 0.7
+        inaccuracy : 3
+        recoil : 0.07
+        shoot : {
+            type : ShootSpread
+            shots : 2
+            shotDelay : 3
+            spread : 2
+        }
+        bullet : {
+            type : LaserBoltBulletType
+            width : 1.5
+            heigth : 5
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            trailWidth : 1.2
+            trailLength : 4
+            shootEffect : shootSmallColor
+            smokeEffect : hitLaserColor
+            backColor : ffd37f
+            trailColor : ffd37f
+            hitColor : ffd37f
+            frontColor : ffffff
+            ligthColor : ffd37f
+            lifetime : 28
+            hommingPower : 0.02
+            speed : 6
+            damage : 8
+        }
+    }
+]

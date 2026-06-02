@@ -47,6 +47,7 @@ weapons : [
         alternate : true
         rotate : true
         shootSound : shootAlpha
+        shootSoundVolume : 0.7
         inaccuracy : 3
         recoil : 0.07
         shoot : {
