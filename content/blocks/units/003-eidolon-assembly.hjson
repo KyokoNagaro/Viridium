@@ -7,17 +7,17 @@ droneType : etherean-drone
 consumes : {
     power : 1
     liquids : [
-        500-plasma/0.15
+        020-sgallium/0.1
     ]
 }
 plans : [
     {
         type : AssemblerUnitPlan
-        unit : 010-uriel
-        time : 2400
+        unit : 006-guardian
+        time : 1200
         requirements : [
-            viridium-009-sofiel/4
-            viridium-001-horizon/2
+            viridium-005-golem/5
+            viridium-basic-plate/2
         ]
     }
 ]

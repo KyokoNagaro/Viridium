@@ -193,7 +193,7 @@ coolantMultiplier : 1.4
 consumes: {
   power: 35
   coolant : {
-    amount : 1.2
+    amount : 0.6
   }
 }
 ammoPerShot: 1

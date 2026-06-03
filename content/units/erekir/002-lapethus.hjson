@@ -93,7 +93,7 @@ weapons : [
     x : 10
     y : 0
     alternate : true
-    reload : 55
+    reload : 60
     targetMissile : false
     rotate : true
     shake : 1
@@ -117,7 +117,7 @@ weapons : [
       }
       type : BasicBulletType
       speed : 6 
-      damage : 50
+      damage : 42
       width : 16
       heigth : 28
       hitSize : 7
@@ -145,8 +145,8 @@ weapons : [
         type : LightningBulletType
         lightningLength : 3
         lightningLengthRand : 7
-        lightningDamage : 15
-        damage : 15
+        lightningDamage : 10
+        damage : 10
         lightningColor : 77bd7a
       }
       fragBullets : 3
@@ -168,8 +168,8 @@ weapons : [
           type : LightningBulletType
           lightningLength : 3
           lightningLengthRand : 7
-          lightningDamage : 15
-          damage : 15
+          lightningDamage : 10
+          damage : 10
           lightningColor : 77bd7a
         }
         shootEffects : [
@@ -181,7 +181,7 @@ weapons : [
         pierceCap : 3
         trailLength : 9
         trailWidth : 2.4
-        damage : 80
+        damage : 60
         frontColor : ffffff
         trailColor : 77bd7a
         backColor : 77bd7a

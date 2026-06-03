@@ -3,111 +3,103 @@ template : ErekirUnitType
 health : 2150
 armor : 5
 flying : true
-lowAltitude : false
+lowAltitude : true
 speed : 1.6
 rotateSpeed : 1.4
 accel : 0.05
 drag : 0.021
 hitSize : 18
-range : 100
+range : 140
 targetAir : true
 faceTarget : false
 itemCapacity : 80
 outlineColor : 1d1d23
+drawSoftShadow : false
+omniMovement : false
 weapons : [
     {
-        name : enceladus-main-turret
-        mirror : false
-        x : 0
-        y : 0
-        reload : 60
-        shootSound : shootStell
-        rotate : true
-        rotateSpeed : 1.8
-        shoot : {
-            type : ShootBarrel
-            shots : 2
-            shotDelay : 10
-            barrels : [
-                -5, 0, 0,
-                5, 0, 0
-            ]
-        }
-        rotateSpeed : 1.7
-        cooldownTime : 40
-        bullet : {
-            type : BasicBulletType
-            speed : 8
-            damage : 50
-            pierce : true
-            pierceCap : 2
-            width : 8
-            height : 15
-            shrinkX : 0.4
-            shrinkY : 0
-            shootEffects : [
-                shootColor
-                colorSpark
-            ]
-            hitEffect : hitBulletColor
-            despawnEffect : hitBulletColor
-            smokeEffect : hitLaserColor
-            backColor : feb380
-            trailColor : feb380
-            hitColor : feb380
-            frontColor : ffffff
-            ligthColor : feb380
-            lifetime : 20
-            trailWidth : 2
-            trailLength : 8
-            trailRotation : true
-            trailEffect : hitSquaresColor
-            trailInterval : 2
-        }
-    }
-    {
-        name : enceladus-mount
-        reload : 15
-        x : 2
-        y : 0
+        name : engine
+        x : 3.8
+        y : -7
         mirror : true
-        alternate : true
-        rotate : true
-        shootSound : shootAlpha
-        shootSoundVolume : 0.7
-        inaccuracy : 3
-        recoil : 0.07
-        shoot : {
-            type : ShootSpread
-            shots : 2
-            shotDelay : 3
-            spread : 2
-        }
+        alternate : false
+        top : false
+        display : false
+        rotate : false
+        baseRotation : 180
+        shootY : 0
+        shootSound : none
+        alwaysShooting : true
+        alwaysContinuous : true
+        continuous : true
         bullet : {
-            type : LaserBoltBulletType
-            width : 1.5
-            heigth : 5
-            hitEffect : hitBulletColor
-            despawnEffect : hitBulletColor
-            trailWidth : 1.2
-            trailLength : 4
-            shootEffect : shootSmallColor
-            smokeEffect : hitLaserColor
-            backColor : ffd37f
-            trailColor : ffd37f
-            hitColor : ffd37f
-            frontColor : ffffff
-            ligthColor : ffd37f
-            lifetime : 26
-            hommingPower : 0.02
-            speed : 6
-            damage : 8
+            type : ContinuousFlameBulletType
+            hitEffect : none
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            damage : 1
+            layer : 89
+            drawFlare : false
+            collides : false
+            width : 2
+            division : 28
+            length : 8
+            intervalBullets : 1
+            intervalRandomSpread : 1
+            bulletInterval : 6
+            intervalBullet : {
+                despawnHit : true
+                despawnEffect : none
+                shootEffect : none 
+                speed : 0
+                lifetime : 0
+                instantDisappear : true
+                collides : false
+                hitEffect : {
+                    type : MultiEffect
+                    effects : [
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 20
+                            cone : 20
+                            lenFrom : 2
+                            lenTo : 0
+                            baseLength : 8
+                            strokeFrom : 1.2
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 30
+                            cone : 20
+                            lenFrom : 3
+                            lenTo : 1
+                            baseLength : 10
+                            strokeFrom : 1
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                    ]
+                }
+            }
         }
     }
     {
         name : enceladus-mount
-        reload : 15
-        x : 2
+        reload : 20
+        x : 7
         y : -2
         mirror : true
         alternate : true
@@ -137,10 +129,103 @@ weapons : [
             hitColor : ffd37f
             frontColor : ffffff
             ligthColor : ffd37f
-            lifetime : 28
+            lifetime : 27
             hommingPower : 0.02
             speed : 6
-            damage : 8
+            damage : 7
+        }
+    }
+    {
+        name : enceladus-mount
+        reload : 20
+        x : 5
+        y : 0
+        mirror : true
+        alternate : true
+        rotate : true
+        shootSound : shootAlpha
+        shootSoundVolume : 0.7
+        inaccuracy : 3
+        recoil : 0.07
+        shoot : {
+            type : ShootSpread
+            shots : 2
+            shotDelay : 3
+            spread : 2
+        }
+        bullet : {
+            type : LaserBoltBulletType
+            width : 1.5
+            heigth : 5
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            trailWidth : 1.2
+            trailLength : 4
+            shootEffect : shootSmallColor
+            smokeEffect : hitLaserColor
+            backColor : ffd37f
+            trailColor : ffd37f
+            hitColor : ffd37f
+            frontColor : ffffff
+            ligthColor : ffd37f
+            lifetime : 27
+            hommingPower : 0.02
+            speed : 6
+            damage : 7
+        }
+    }
+     {
+        name : enceladus-main-turret
+        mirror : false
+        x : 0
+        y : 0
+        reload : 40
+        shootSound : shootStell
+        rotate : true
+        rotateSpeed : 1.8
+        layer : 101
+        recoil : 0.1
+        shootY : 3
+        shoot : {
+            type : ShootBarrel
+            shots : 2
+            shotDelay : 20
+            barrels : [
+                -2, 0, 0,
+                2, 0, 0
+            ]
+        }
+        rotateSpeed : 1.7
+        cooldownTime : 40
+        bullet : {
+            type : BasicBulletType
+            speed : 8
+            damage : 30
+            //pierce : true
+            //pierceBuilding : true
+            //pierceCap : 2
+            width : 8
+            height : 15
+            shrinkX : 0.4
+            shrinkY : 0
+            shootEffects : [
+                shootColor
+                colorSpark
+            ]
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            smokeEffect : hitLaserColor
+            backColor : feb380
+            trailColor : feb380
+            hitColor : feb380
+            frontColor : ffffff
+            ligthColor : feb380
+            lifetime : 19
+            trailWidth : 2
+            trailLength : 8
+            trailRotation : true
+            trailEffect : hitSquaresColor
+            trailInterval : 2
         }
     }
 ]

@@ -164,24 +164,6 @@ weapons : [
         }
       }
     }
-//    {
-//    name : mirovia-point-laser 
-//    mirror : true
-//    rotate : true
-//    x : 6
-//    y : 12
-//    type : PointDefenseWeapon
-//    reload : 5
-//    targetInterval : 10
-//    targetSwitchInterval : 12
-//    display : false
-//    bullet : {
-//      shootEffect : sparkShoot
-//      hitEffect : pointHit
-//      maxRange : 130
-//      damage : 90
-//    }
-//  }
 ]
 abilities : [
   {

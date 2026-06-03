@@ -1,10 +1,10 @@
 type : Wall
-size : 2
+size : 3
 customShadow : true
 placeablePlayer : false
 requirements : [
-    titanium/60
-    000-aster/30
-    002-platinum/30
+    002-platinum/120
+    003-lithium/150
+    surge-alloy/60
 ]
 databaseTag : unitpart

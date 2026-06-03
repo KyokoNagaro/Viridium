@@ -13,3 +13,4 @@ engineOffset: 7
 engineSize: 3
 hidden: true
 health : 350
+useUnitCap : false

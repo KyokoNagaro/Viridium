@@ -1,0 +1,46 @@
+type : LaserTurret
+size : 2
+health : 860
+shootCone : 40
+recoil : 1
+shake : 0.5
+range : 150
+reload : 40
+firingMoveFract : 0.5
+shootDuration : 230
+shootSound : shootMeltdown
+loopSound : beamMeltdown
+shootType : 
+{
+    type : ContinuousLaserBulletType
+    length : 190
+    hitEffect : hitMeltdown
+    hitColor : 8ca9e8
+    status : melting
+    drawSize : 380
+    timeScaleDamage : true
+    incendChance : 0.4
+    incendSpread : 5
+    incendAmmount : 1
+    width : 4
+    ammoMultiplier : 1
+    damage : 18
+    colors : [
+        6569c955
+        8ca9e8aa
+        d1efffff
+        ffffffff
+    ]
+}
+liquidCapacity : 20
+consumes : {
+    power : 1
+    coolant : {
+        amount : 0.1
+    }
+}
+requirements : [
+    titanium/100
+]
+category : turret
+buildVisibility : sandboxOnly
