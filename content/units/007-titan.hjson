@@ -10,21 +10,120 @@ stepSound : walkerStep
 stepSoundVolume : 1.2
 stepSoundPitch : 0.9
 legCount : 4
-legLength : 14
-legBaseOffset : 11
+legLength : 16
+legBaseOffset : 9
 legMoveSpace : 1.5
 legForwardScl : 0.58
 hovering : true
 shadowElevation : 0.2
-groundLayer : 75
 speed : 0.29
+range : 80
+outlineColor : 1d1d23
+rotateSpeed : 0.6
+groundLayer : 87
+softShadowScl : 0.2
+parts : [
+    {
+        type : RegionPart
+        suffix : -glow
+        blending : additive
+        color : 8ca9e8
+        colorTo : 8ca9e8
+        outline : false
+        progress : warmup
+    }
+    {
+      type : RegionPart
+      name : viridium-bouclifeur
+      outline : false
+      blending : additive
+      color : eab67840
+      layer : 95
+      xScl : 0.9
+      yScl : 0.9
+    }
+    {
+      type : shapePart 
+      circle : true
+      hollow : true
+      layer : 110
+      lightColor : ffd37f
+      color : ffd37f
+      radius : 56
+      radiusTo : 56
+      stroke : 1
+      strokeTo : 1
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : ffd37f
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : 0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+        shapeRotation : 180
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : ffd37f
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : 0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 14
+        triLength : 14
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : ffd37f
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : -0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+        shapeRotation : 180
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : ffd37f
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : -0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+    }
+]
 weapons : [
     {
         name : titan-tractor-beam
         mirror : true
         alternate : false
-        x : 10
-        y : 0
+        x : 8.6
+        y : -1.2
         rotate : true
         rotateSpeed : 0.9
         continuous : true
@@ -39,16 +138,110 @@ weapons : [
         targetSwitchInterval : 60
         targetInterval : 10
         shootCone : 160
+        useAttackRange : false
+        rotationLimit : 130
         bullet : {
             type : PointLaserBulletType
             damage : 5
             length : 230
             maxRange :  220
-            knockback : -4
+            knockback : -4.5
             color : ffd37f
             sprite : viridium-point-laser-true
             status : freezing
-            statusDuration : 10
+            statusDuration : 20
         }
     }
+    {
+        name : titan-shootgun
+        layerOffset : -0.001
+        parts : [
+            {
+                type : RegionPart
+                suffix : -glow
+                blending : additive
+                color : 8ca9e8
+                colorTo : 8ca9e8
+                outline : false
+                progress : warmup
+            }
+        ]
+        mirror : true
+        rotationLimit : 40
+        rotateSpeed : 0.7
+        rotate : true
+        top : false
+        alternate : true
+        reload : 60
+        x : 14
+        y : 0
+        shootY : 15
+        shootSound : shootFuse
+        shoot : {
+            type : ShootSpread
+            shots : 2
+            spread : 8
+        }
+        shake : 1
+        bullet : {
+            type : ShrapnelBulletType
+            damage : 120
+            pierce : true
+            lifetime : 18
+            width : 20
+            serration : 2
+            serrationWidth : 10
+            fromColor : ffd37f
+            toColor : eab678
+            length : 70
+            status : blasted
+            shootEffect : none
+            dispawnEffect : none
+            smokeEffect : none
+            hitEffect : {
+                type : ParticleEffect
+                line : true
+                particles : 7
+                lifetime : 10
+                length : 25
+                cone : -360
+                lenFrom : 5
+                lenTo : 0
+                colorFrom : ffd37f
+                colorTo : eab678
+            }
+        }
+    }
+]
+abilities : [
+    {
+        type : EnergyFieldAbility
+        range : 100
+        shootSound : none
+        status : consume
+        statusDuration : 16.65
+        reload : 120
+        maxTarget : 40
+        damage : 60
+        hitBuildings : false
+        healPercent : 0
+        healEffect : none
+        displayHeal : false
+        color : ffd37f
+        y : 5
+        effectRadius : 2.75
+    }
+    {
+    type : ShieldArcAbility
+    angle : 380
+    radius : 30
+    max : 100
+    regen : 1.6
+    cooldown : 30
+    whenShooting : false
+    width : 50
+    color : ffd37f
+    drawArc : false
+    lightOpacity : 0.2
+  }
 ]

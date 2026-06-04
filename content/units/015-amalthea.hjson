@@ -298,6 +298,7 @@ weapons : [
         mirror : true
         reload : 240
         alternate : false
+        predictTarget : false
         x : 8.5
         y : 10
         shoot : {
