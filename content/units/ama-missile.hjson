@@ -19,7 +19,7 @@
   flying : true
   lowAltitude : true
   rotateSpeed : 4.1
-  lifetime : 63
+  lifetime : 66
   speed : 5.35
   targetAir : true
   outlineColor : 2e2f34

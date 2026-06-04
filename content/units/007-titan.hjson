@@ -1,0 +1,54 @@
+type : legs
+template  : LegsUnitType
+controller : GroundAI
+hitSize  : 28
+health : 10500
+armor : 15
+stepShake : 1.4
+drownTimeMultiplier : 1.5
+stepSound : walkerStep
+stepSoundVolume : 1.2
+stepSoundPitch : 0.9
+legCount : 4
+legLength : 14
+legBaseOffset : 11
+legMoveSpace : 1.5
+legForwardScl : 0.58
+hovering : true
+shadowElevation : 0.2
+groundLayer : 75
+speed : 0.29
+weapons : [
+    {
+        name : titan-tractor-beam
+        mirror : true
+        alternate : false
+        x : 10
+        y : 0
+        rotate : true
+        rotateSpeed : 0.9
+        continuous : true
+        alwaysContinuous : true
+        cooldownTime : 90
+        recoil : 0.6
+        predictTarget : false
+        targetMissile : false
+        loopSound : laserbeam
+        shootSound : none
+        aimchangeSpeed : 1.26
+        targetSwitchInterval : 60
+        targetInterval : 10
+        shootCone : 160
+        bullet : {
+            type : PointLaserBulletType
+            damage : 5
+            length : 230
+            maxRange :  220
+            knockback : -4
+            color : ffd37f
+            sprite : viridium-point-laser-true
+            status : freezing
+            statusDuration : 10
+        }
+    }
+]
