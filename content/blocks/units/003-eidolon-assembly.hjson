@@ -20,6 +20,16 @@ plans : [
             viridium-basic-plate/2
         ]
     }
+    {
+        type : AssemblerUnitPlan
+        unit : 007-titan
+        time : 2400
+        requirements : [
+            viridium-005-golem/15
+            viridium-basic-plate/10
+            viridium-energy-crystal/10
+        ]
+    }
 ]
 requirements : [
     titanium/800

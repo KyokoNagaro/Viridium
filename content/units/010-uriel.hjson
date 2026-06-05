@@ -5,8 +5,8 @@ armor : 6
 flying : true
 lowAltitude : true
 loopSound : loopHover
-speed : 1.08
-rotateSpeed : 1.5
+speed : 1.2
+rotateSpeed : 2
 hitSize : 20
 faceTarget : true
 itemCapacity : 50
@@ -27,13 +27,22 @@ parts : [
         outline : false
         progress : warmup
     }
+    {
+        type : flarePart
+        color1 : ffd37fff   
+        color2 : ffffff
+        y : 8
+        stroke : 2
+        radius : 7
+        layer : 110
+    }
 ]
 weapons : [
     {
         name : uriel-laser
         x : 0
         y : 0
-        shootY : 10
+        shootY : 13.35
         rotate : false
         alternate : false
         mirror : false
@@ -112,23 +121,8 @@ abilities : [
         type : StatusFieldAbility
         effect : blessed
         duration : 16.65
-        reload : 300
+        reload : 600
         range : 60
         color : ffd37f
-    }
-    {
-        type : SuppressionFieldAbility
-        reload : 999999
-        range : 1
-        display : false
-        orbRadius : 4
-        particleSize : 1.8
-        particleLen : 2.5
-        rotateScl : 2
-        y : 8
-        particles : 7
-        color : ffd37f
-        effectColor : ffd37f
-        particleColor : ffd37f
     }
 ]

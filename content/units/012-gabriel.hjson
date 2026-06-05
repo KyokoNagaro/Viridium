@@ -1,0 +1,80 @@
+type: flying
+controller: FlyingAI
+flying: true
+accel : 0.2
+speed: 1.2
+drag: 0.03
+itemCapacity: 120
+rotateSpeed: 2
+baseRotateSpeed : 2
+hitSize: 44
+health: 38000
+armor: 100
+lowAltitude : true
+engineSize : 0
+buildSpeed : 1
+weapons: [
+{
+  name : gabriel-rail
+  reload : 300
+  cooldownTime : 300
+  mirror : false
+  top : true
+  x : 0
+  y : 0
+  shootSound : laserblast
+  accurateDellay : true
+  shootSoundVolume : 1.5
+  shake : 20
+  chargeSound : lasercharge
+  recoil : 0
+  parentizeEffects : true
+  shootStatusDuration : 130
+  shootStatus : slow
+  shoot : {
+    firstShotDelay : 110
+  }
+  bullet : {
+    type : LaserBulletType
+    length : 500
+    width : 70
+    damage : 120
+    pierceCap : 10
+    pierceDamageFactor : -0.5
+    splashDamage : 400
+    splashDamagePierce : true
+    splashDamageRadius : 40
+    pierceArmor : true
+    lifetime : 75
+    largeHit : true
+    hitEffect : railHit
+    pierceEffect : railHit
+    chargeEffect : [
+      {
+      type : ParticleEffect
+      particle : 1
+      length : 0
+      sizeFrom : 0
+      sizeTo : 25
+      lifetime : 115
+      colorFrom : f7b750
+      colorTo : ffffa3
+      interp : pow2Out
+    }
+    {
+      type : WaveEffect
+      sizeFrom : 180
+      sizeTo : 6
+      lifetime : 120
+      colorFrom : f7b750
+      colorTo : ffffa3
+    }
+    ]
+    colors : [
+        ffcd66
+        ffffa3
+        ffffff
+      ]
+  }
+}
+]

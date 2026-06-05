@@ -122,6 +122,8 @@ weapons : [
         name : titan-tractor-beam
         mirror : true
         alternate : false
+        loopSound : beamLustre
+        loopSoundVolume : 1
         x : 8.6
         y : -1.2
         rotate : true
@@ -137,9 +139,8 @@ weapons : [
         aimchangeSpeed : 1.26
         targetSwitchInterval : 60
         targetInterval : 10
-        shootCone : 160
+        shootCone : 40
         useAttackRange : false
-        rotationLimit : 130
         bullet : {
             type : PointLaserBulletType
             damage : 5
@@ -235,8 +236,8 @@ abilities : [
     type : ShieldArcAbility
     angle : 380
     radius : 30
-    max : 100
-    regen : 1.6
+    max : 180
+    regen : 3
     cooldown : 30
     whenShooting : false
     width : 50

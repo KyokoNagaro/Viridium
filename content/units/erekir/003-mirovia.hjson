@@ -69,6 +69,8 @@ engines : [
 weapons : [
   {
     name : mirovia-laser
+    loopSound : beamLustre
+    loopSoundVolume : 1
     shootStatus : slow
     shootStatusDuration : 130
     miror : true
