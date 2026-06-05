@@ -1,0 +1,142 @@
+type : flying
+health : 3400
+controller : RepairAI
+armor : 7
+flying : true
+lowAltitude : true
+speed : 1.75
+rotateSpeed : 1.4
+accel : 0.05
+drag : 0.021
+hitSize : 18
+range : 140
+targetAir : true
+faceTarget : false
+itemCapacity : 20
+outlineColor : 1d1d23
+drawSoftShadow : false
+omniMovement : false
+playerControllable : false
+defaultCommand : repair
+commands : [repair]
+weapons : [
+    {
+        name : engine
+        x : 3.8
+        y : -7
+        mirror : true
+        alternate : false
+        top : false
+        display : false
+        rotate : false
+        baseRotation : 180
+        shootY : 0
+        shootSound : none
+        alwaysShooting : true
+        alwaysContinuous : true
+        continuous : true
+        bullet : {
+            type : ContinuousFlameBulletType
+            hitEffect : none
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            damage : 1
+            layer : 89
+            drawFlare : false
+            collides : false
+            width : 2
+            division : 28
+            length : 8
+            intervalBullets : 1
+            intervalRandomSpread : 1
+            bulletInterval : 6
+            intervalBullet : {
+                despawnHit : true
+                despawnEffect : none
+                shootEffect : none 
+                speed : 0
+                lifetime : 0
+                instantDisappear : true
+                collides : false
+                hitEffect : {
+                    type : MultiEffect
+                    effects : [
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 20
+                            cone : 20
+                            lenFrom : 2
+                            lenTo : 0
+                            baseLength : 8
+                            strokeFrom : 1.2
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 30
+                            cone : 20
+                            lenFrom : 3
+                            lenTo : 1
+                            baseLength : 10
+                            strokeFrom : 1
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    {
+        name : phoebe-heal-beam
+        type : RepairBeamWeapon
+        targetBuildings : true
+        targetUnits : false
+        repairSpeed : 1
+        mirror : true
+        alternate : false
+        x : 5.8
+        y : -3
+        bullet : {
+            maxRange : 140
+        }
+    }
+    {
+        name : phoebe-point-laser 
+        mirror : false
+        rotate : true
+        x : 0
+        y : 0
+        type : PointDefenseWeapon
+        reload : 5
+        cooldownTime : 60
+        targetInterval : 5
+        recoil : 0.2
+        targetSwitchInterval : 5
+        display : false
+        bullet : {
+        shootEffect : sparkShoot
+        hitEffect : pointHit
+        maxRange : 130
+        damage : 90
+        }
+    }
+]
+abilities : [
+    {
+        type : RegenAbility
+        amount : 1
+    }
+]

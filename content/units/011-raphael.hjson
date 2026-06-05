@@ -10,7 +10,7 @@ speed: 1.08
 drag: 0.03
 rotateSpeed : 1.3
 faceTarget : true
-hitSize : 26
+hitSize : 29
 itemCapacity : 50
 lowAltitude : true
 flying : true

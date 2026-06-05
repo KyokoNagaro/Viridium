@@ -1,0 +1,24 @@
+type : UnitCargoLoader
+size : 3
+scaledHealth : 75
+requirements : [
+    titanium/450
+    000-aster/250
+    002-platinum/500
+    003-lithium/400
+    
+]
+buildTime : 3600
+unitType : 017-phoebe
+polyColor : 84f491ff
+polySides : 6
+polyRadius : 8.4
+itemCapacity : 0
+squareSprite : false
+consumes : {
+    power : 1
+    liquids : [
+        020-sgallium/0.02
+    ]
+}
+category : units

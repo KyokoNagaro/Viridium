@@ -1303,12 +1303,12 @@ abilities : [
   {
     type : ShieldArcAbility
     angle : 380
-    radius : 120
+    radius : 80
     max : 9999
     regen : 5
     cooldown : 600
     whenShooting : false
-    width : 250
+    width : 180
     color : dd9ad0
     drawArc : false
     lightOpacity : 0.2
