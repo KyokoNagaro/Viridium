@@ -16,4 +16,4 @@ effect : {
 }
 effectChance : 0.045
 affinities: [exposed, incapacitated]
-damage : -7
+damage : -4

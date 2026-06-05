@@ -20,6 +20,16 @@ plans : [
             viridium-001-horizon/2
         ]
     }
+    {
+        type : AssemblerUnitPlan
+        unit : 011-raphael
+        time : 3600
+        requirements : [
+            viridium-009-sofiel/15
+            viridium-cathalyst-stone/4
+            viridium-003-weld/2
+        ]
+    }
 ]
 requirements : [
     titanium/800

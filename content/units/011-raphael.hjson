@@ -3,7 +3,7 @@ template : ErekirUnitType
 outlineColor :  1d1d23
 drawSoftShadow : false
 loopSound : loopHover
-health : 7100
+health : 6600
 armor : 9
 accel : 0.2
 speed: 1.08
@@ -14,7 +14,7 @@ hitSize : 26
 itemCapacity : 50
 lowAltitude : true
 flying : true
-range : 150
+range : 140
 engineSize : 0
 parts : [
     {
@@ -125,7 +125,7 @@ weapons : [
         chargeSound : chargeCorvus
         shootStatus :  slow
         shootStatusDuration : 150
-        reload : 360
+        reload : 420
         bullet : {
             chargeEffect : {
                 type : MultiEffect
@@ -180,7 +180,7 @@ weapons : [
             damage : 1
             despawnEffect : lightningShoot
             shootEffect : none
-            speed : 5
+            speed : 7
             drag : 0.044
             parts : [
                 {
@@ -205,7 +205,7 @@ weapons : [
                 type : LightningBulletType
                 lightningLength : 15
                 lightningLengthRand : 6
-                damage : 40
+                damage : 30
                 status : shocked
                 collidesAir : true
                 shootSound : spark
@@ -219,7 +219,7 @@ weapons : [
                 type : LightningBulletType
                 lightningLength : 15
                 lightningLengthRand : 6
-                damage : 40
+                damage : 30
                 status : shocked
                 despawnEffect : sparkShoot
                 despawnSound : shootArc
