@@ -1,6 +1,5 @@
 reloadMultiplier: 0.70
-healthMultiplier: 1.15
-speedMultiplier: 0.60
+speedMultiplier: 0.5
 transitionDamage: 1000
 color: dd9ad0
 applyColor : dd9ad0

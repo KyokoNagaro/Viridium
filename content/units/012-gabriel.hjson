@@ -1,80 +1,63 @@
-type: flying
-controller: FlyingAI
-flying: true
-accel : 0.2
-speed: 1.2
-drag: 0.03
-itemCapacity: 120
-rotateSpeed: 2
-baseRotateSpeed : 2
-hitSize: 44
-health: 38000
-armor: 100
+type : flying
+controller : FlyingAI
+flying : true
+accel : 0.3
+speed : 0.98
+drag : 0.05
+itemCapacity : 70
+rotateSpeed : 1.4
+hitSize : 33
+health : 21700
+armor : 13
 lowAltitude : true
 engineSize : 0
 buildSpeed : 1
-weapons: [
-{
-  name : gabriel-rail
-  reload : 300
-  cooldownTime : 300
-  mirror : false
-  top : true
-  x : 0
-  y : 0
-  shootSound : laserblast
-  accurateDellay : true
-  shootSoundVolume : 1.5
-  shake : 20
-  chargeSound : lasercharge
-  recoil : 0
-  parentizeEffects : true
-  shootStatusDuration : 130
-  shootStatus : slow
-  shoot : {
-    firstShotDelay : 110
-  }
-  bullet : {
-    type : LaserBulletType
-    length : 500
-    width : 70
-    damage : 120
-    pierceCap : 10
-    pierceDamageFactor : -0.5
-    splashDamage : 400
-    splashDamagePierce : true
-    splashDamageRadius : 40
-    pierceArmor : true
-    lifetime : 75
-    largeHit : true
-    hitEffect : railHit
-    pierceEffect : railHit
-    chargeEffect : [
-      {
-      type : ParticleEffect
-      particle : 1
-      length : 0
-      sizeFrom : 0
-      sizeTo : 25
-      lifetime : 115
-      colorFrom : f7b750
-      colorTo : ffffa3
-      interp : pow2Out
-    }
+range : 240
+parts : [
     {
-      type : WaveEffect
-      sizeFrom : 180
-      sizeTo : 6
-      lifetime : 120
-      colorFrom : f7b750
-      colorTo : ffffa3
+        type : flarePart
+        color1 : ffd37fff   
+        color2 : ffffff
+        y : 0
+        stroke : 5
+        radius : 20
+        layer : 110
     }
-    ]
-    colors : [
-        ffcd66
-        ffffa3
-        ffffff
+]
+weapons: [
+  {
+    name : utirel-flame
+    rotate : false
+    mirror : false
+    x : 0
+    y : 0
+    alternate : false
+    continuous : true
+    alwaysContinuous : true
+    shootSound : none
+    loopSound : shootSublimate
+    bullet : {
+      type : ContinuousFlameBulletType
+      damage : 28
+      length : 260
+      width : 5.5
+      drawFlare : false
+      colors : [
+        feb3808c
+        f8c266b2
+        ffd37fcc
+        ffe0a5ff
+        ffffffff
       ]
+      knockback : 1
+      timescaleDamage : true
+      pierceCap : 3
+      ligthColor : eab678
+      hitColor : eab678
+      status : sage
+      statusDuration : 30
+      shootStatus : unmoving
+      shootStatusDuration : 120
+    }
   }
-}
 ]

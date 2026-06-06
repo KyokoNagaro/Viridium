@@ -1,0 +1,156 @@
+  type : missile
+  controller : MissileAI
+  template : MissileUnitType
+  hidden : true
+  health : 660
+  engineColor : a0a1ae
+  trailColor : a0a1ae
+  trailWidth : 1.8
+  trailLength : 6.4
+  trailEffect : missileTrail
+  engineSize : 2
+  engineLayer : 110
+  drawCell : false
+  targetMissiles : false
+  physics : false
+  useUnitCap : false
+  drawSoftShadow : true
+  homingDelay : 10
+  flying : true
+  lowAltitude : true
+  rotateSpeed : 1.3
+  lifetime : 125
+  speed : 5.3
+  maxRange : 6
+  targetAir : true
+  outlineColor : 2e2f34
+  outlineRadius : 2
+  loopSound : loopMissileTrail
+  loopSounfVolume : 0.6
+  deathSound : explosionMissile
+  missileAccelTime : 80
+  abilities : [
+    {
+      type : MoveEffectAbility
+      chance : 0.95
+      rangeLengthMin : 0.3
+      rangeLengthMax : 3.7
+      y : -7
+      effect : {
+        type : multiEffect
+        effects : [
+         {
+          type : ParticleEffect
+          particles : 3
+          baseLength : 0
+          length : 3.5
+          lifetime : 32
+          colorFrom : 7b7b7b
+          colorTo : 907f77
+          sizeFrom : 3
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 5
+          lifetime : 40
+          colorFrom : 7b6761
+          colorTo : 463835
+          sizeFrom : 4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        {
+          type : ParticleEffect
+          particles : 2
+          baseLength : 0
+          length : 2.8
+          lifetime : 35
+          colorFrom : 88766e
+          colorTo : 4c4644
+          sizeFrom : 3.4
+          sizeTo : 0
+          sizeInterp : pow3In
+        }
+        ]
+      }
+      rotation : 180
+      interval : 2
+    }
+  ]
+  weapons : [
+    {
+      shootCone : 360
+      shootOnDeath : true
+      predictTarget : false
+      targetMissiles : false
+      shootSound : none
+      reload : 1
+      mirror : false
+      shake : 1
+      useAttackRange : false
+      bullet : {
+        type : BulletType
+        lifetime : 0
+        targetMissile : false
+        hittable : false
+        targetMissiles : false
+        absorbable : false
+        collides : false
+        damage : 0
+        ammoMultiplier : 18
+        targetMissiles : false
+        hitEffect : none
+        shootEffect : none
+        smokeEffect : none
+        despawnEffect : {
+          type : ParticleEffect
+          particles : 8
+          lifetime : 120
+          length : 35
+          layer : 99
+          baseLength : 0
+          interp : pow10Out
+          sizeInterp : linear
+          cone : -360
+          colorFrom : f2a3a3
+          colorTo : e53636s
+          region : viridium-sutaru
+          spin : 1.2
+          sizeTo : 1.4
+          sizeFrom : 4.2
+        }
+        fragBullets : 1
+        fragRandomSpread : 0
+        fragBullet : {
+          type : LaserBulletType
+          targetMissiles : false
+          length : 96
+          width : 30
+          damage : 50
+          pierceDamageFactor : -4
+          splashDamage : 20
+          splashDamagePierce : true
+          splashDamageRadius : 40
+          lifetime : 60
+          colors : [
+            c21a1a
+            f2a3a3
+            ffffff
+          ]
+          largeHit : true
+          lightningColor : c21a1a
+          lightningLength : 8
+          lightningSpacing : 120
+          lightningDamage : 60
+          status : iradied
+        }
+      }
+    }
+  ]
+
+
+

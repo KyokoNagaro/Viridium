@@ -1,0 +1,757 @@
+type : flying
+flying : true
+lowAltitude : true
+speed : 0.94
+rotateSpeed : 0.75
+accel : 0.03
+drag : 0.05
+health : 32600
+armor : 18
+hitSize : 41
+loopSound : loopHover
+drawSoftShadow : false
+faceTarget : false
+outlineColor : 1d1d23
+itemCapacity : 320
+range : 220
+autoDropBombs : true
+omniMovement : false
+weapons : [
+    {
+        name : engine
+        x : 12.8
+        y : -15
+        mirror : true
+        alternate : false
+        top : false
+        display : false
+        rotate : false
+        baseRotation : 180
+        shootY : 0
+        shootSound : none
+        alwaysShooting : true
+        alwaysContinuous : true
+        continuous : true
+        bullet : {
+            type : ContinuousFlameBulletType
+            hitEffect : none
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            damage : 1
+            layer : 89
+            drawFlare : false
+            collides : false
+            width : 2
+            division : 28
+            length : 8
+            intervalBullets : 1
+            intervalRandomSpread : 1
+            bulletInterval : 6
+            intervalBullet : {
+                despawnHit : true
+                despawnEffect : none
+                shootEffect : none 
+                speed : 0
+                lifetime : 0
+                instantDisappear : true
+                collides : false
+                hitEffect : {
+                    type : MultiEffect
+                    effects : [
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 20
+                            cone : 20
+                            lenFrom : 2
+                            lenTo : 0
+                            baseLength : 8
+                            strokeFrom : 1.2
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 30
+                            cone : 20
+                            lenFrom : 3
+                            lenTo : 1
+                            baseLength : 10
+                            strokeFrom : 1
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    {
+        name : engine
+        x : 2.5
+        y : -30.8
+        mirror : true
+        alternate : false
+        top : false
+        display : false
+        rotate : false
+        baseRotation : 180
+        shootY : 0
+        shootSound : none
+        alwaysShooting : true
+        alwaysContinuous : true
+        continuous : true
+        bullet : {
+            type : ContinuousFlameBulletType
+            hitEffect : none
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            damage : 1
+            layer : 89
+            drawFlare : false
+            collides : false
+            width : 1.8
+            division : 28
+            length : 5
+            intervalBullets : 1
+            intervalRandomSpread : 1
+            bulletInterval : 6
+            intervalBullet : {
+                despawnHit : true
+                despawnEffect : none
+                shootEffect : none 
+                speed : 0
+                lifetime : 0
+                instantDisappear : true
+                collides : false
+                hitEffect : {
+                    type : MultiEffect
+                    effects : [
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 20
+                            cone : 20
+                            lenFrom : 2
+                            lenTo : 0
+                            baseLength : 8
+                            strokeFrom : 1.2
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 30
+                            cone : 20
+                            lenFrom : 3
+                            lenTo : 1
+                            baseLength : 10
+                            strokeFrom : 1
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                    ]
+                }
+            }
+        }
+    }
+    {
+        name : engine
+        x : 7
+        y : -15.6
+        mirror : true
+        alternate : false
+        top : false
+        display : false
+        rotate : false
+        baseRotation : 180
+        shootY : 0
+        shootSound : none
+        alwaysShooting : true
+        alwaysContinuous : true
+        continuous : true
+        bullet : {
+            type : ContinuousFlameBulletType
+            hitEffect : none
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            damage : 1
+            layer : 89
+            drawFlare : false
+            collides : false
+            width : 3.5
+            division : 28
+            length : 11
+            intervalBullets : 1
+            intervalRandomSpread : 1
+            bulletInterval : 6
+            intervalBullet : {
+                despawnHit : true
+                despawnEffect : none
+                shootEffect : none 
+                speed : 0
+                lifetime : 0
+                instantDisappear : true
+                collides : false
+                hitEffect : {
+                    type : MultiEffect
+                    effects : [
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 20
+                            cone : 20
+                            lenFrom : 2
+                            lenTo : 0
+                            baseLength : 8
+                            strokeFrom : 1.2
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                        {
+                            type : ParticleEffect
+                            line : true
+                            layer : 89
+                            particles : 1
+                            lifetime : 30
+                            cone : 20
+                            lenFrom : 3
+                            lenTo : 1
+                            baseLength : 10
+                            strokeFrom : 1
+                            colorFrom : ffda9e
+                            colorTo : ec7458
+                        }
+                    ]
+                }
+            }
+        }
+    }
+     {
+        name : galatea-bomb
+        x : 0
+        y : -4
+        mirror : false
+        reload : 480
+        soundPitchMin : 0.01
+        shootSound : shootQuad
+        shootEffect : none
+        targetInterval : 1
+        targetSwitchInterval : 1
+        shootCone : 360
+        shoot : {
+            type : ShootBarrel
+            shots : 8
+            shotDelay : 25
+            barrels : [
+                -4, 0, 0,
+                4, 0, 0
+            ]
+        }
+        bullet : {
+            type : BasicBulletType
+            sprite : large-bomb
+            width : 20
+            height : 20
+            ignoreRotation : true
+            backColor : feb380
+            frontColor : ffffff
+            mixColorTo : ffffff
+            hitSound : explosionQuad
+            shootCone : 360
+            shootEffect : none
+            smokeEffect : none
+            ejectEffect : none
+            hitShake : 4
+            colidesAir : false
+            lifetime : 95
+            layer : 89
+            despawnEffect : {
+                type : multiEffect 
+                effects : [
+                    {
+                        type : ParticleEffect
+                        particles : 1
+                        sizeFrom : 48
+                        sizeTo : 18
+                        length : 0
+                        lightColor : ea8878
+                        lifetime : 50
+                        layer : 110
+                        region : viridium-sutarux
+                        colorFrom : feb380
+                        colorTo : ea8878
+                        useRotation : false
+                        offset : 45
+                    }
+                    {
+                        type : ParticleEffect
+                        particles : 1
+                        sizeFrom : 22
+                        sizeTo : 0
+                        length : 0
+                        lightColor : ea8878
+                        lifetime : 30
+                        layer : 110
+                        region : viridium-sutarux
+                        colorFrom : feb380
+                        colorTo : feb380
+                        useRotation : false
+                        offset : 45
+                    }
+                    {
+                        type : WaveEffect
+                        sizeFrom : 4
+                        sizeTo : 60
+                        strokeFrom : 4
+                        strokeTo : 0
+                        lifetime : 120
+                        colorFrom : feb380
+                        colorTo : feb380
+                        interp : pow10Out
+                    }
+                ]
+            }
+            hitEffect : massiveExplosion
+            keepVelocity : false
+            spin : 2
+            shrinkX : 0.65
+            shrinkY : 0.65
+            speed : 0
+            collides : false
+            splashDamage : 180
+            splashDamageRadius : 80
+        }
+    }
+    {
+        name : galatea-launcher
+        rotate : false
+        baseRotation : 0
+        useAttackRange : false
+        shootCone : 360
+        rotateSpeed : 1
+        shootY : 0
+        inacuracy : 5
+        top : true
+        mirror : true
+        reload : 300
+        alternate : true
+        predictTarget : false
+        x : 8.5
+        y : 18
+        shoot : {
+            type : ShootBarrel
+            shots : 1
+            shotDelay : 6
+            barrels : [
+                -3, 0, 0,
+                3, 0, 0
+            ]
+        }
+        shootSound : shootMissileLong
+        bullet : {
+            shootEffect : {
+                type : MultiEffect
+                effects : [
+                    {
+                        type : ParticleEffect
+                        length : 25
+                        particle : 14
+                        interp : pow5Out
+                        sizeInterp : pow3In
+                        lifetime : 20
+                        cone : 15
+                        sizeFrom : 3
+                        sizeTo : 0
+                        colorFrom : 989aa4
+                        colorTo : 989aa4
+                    }
+                    {
+                        type : ParticleEffect
+                        length : 20
+                        particle : 14
+                        interp : pow5Out
+                        sizeInterp : pow3In
+                        lifetime : 27
+                        cone : 19
+                        sizeFrom : 1.2
+                        sizeTo : 0
+                        colorFrom : 8b999b
+                        colorTo : 8b999b
+                    }
+                ]
+            }
+            type : BasiBulletType
+            spawnUnit : viridium-gala-missile
+        }
+    }
+    {
+    name : galatea-point-laser 
+    mirror : true
+    rotate : true
+    x : 11
+    y : 1.9
+    type : PointDefenseWeapon
+    reload : 5
+    cooldownTime : 60
+    targetInterval : 5
+    recoil : 0.2
+    targetSwitchInterval : 5
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 130
+      damage : 90
+    }
+  }
+  {
+    name : galatea-point-laser 
+    mirror : true
+    rotate : true
+    x : 8.7
+    y : 10.6
+    type : PointDefenseWeapon
+    reload : 5
+    cooldownTime : 60
+    recoil : 0.2
+    targetInterval : 5
+    targetSwitchInterval : 5
+    display : false
+    bullet : {
+      shootEffect : sparkShoot
+      hitEffect : pointHit
+      maxRange : 130
+      damage : 90
+    }
+  }
+  {
+    name : galatea-broadside
+    rotate : false
+    baseRotation : -90
+    alternate : false
+    inacuracy : 0
+    mirror : true
+    display : false
+    x : 12
+    y : 7
+    shootCone : 60
+    reload : 60
+    bullet : {
+        type : LaserBulletType
+        length : 90
+        width : 10
+        damage : 120    
+    }
+  }
+  {
+    name : galatea-broadside
+    rotate : false
+    baseRotation : -90
+    alternate : false
+    inacuracy : 0
+    mirror : true
+    display : false
+    x : 12
+    y : 3
+    shootCone : 60
+    reload : 60
+    bullet : {
+        type : LaserBulletType
+        length : 90
+        width : 10
+        damage : 120
+    }
+  }
+  {
+    name : galatea-broadside
+    rotate : false
+    baseRotation : -90
+    alternate : false
+    inacuracy : 0
+    mirror : true
+    display : false
+    x : 12
+    y : -1
+    shootCone : 60
+    reload : 60
+    bullet : {
+        type : LaserBulletType
+        length : 90
+        width : 10
+        damage : 120
+    }
+  }
+  {
+    name : galatea-broadside
+    rotate : false
+    baseRotation : -90
+    inacuracy : 0
+    alternate : false
+    mirror : true
+    display : false
+    x : 12
+    y : -5
+    shootCone : 60
+    reload : 60
+    bullet : {
+        type : LaserBulletType
+        length : 90
+        width : 10
+        damage : 120
+    }
+  }
+  {
+        name : galatea-turret
+        mirror : true
+        alternate : true
+        x : 11.7
+        y : -10
+        reload : 40
+        shootSound : shootStell
+        rotate : true
+        rotateSpeed : 1.8
+        layer : 101
+        recoil : 0.1
+        shootY : 3
+        shoot : {
+            type : ShootBarrel
+            shots : 2
+            shotDelay : 20
+            barrels : [
+                -2, 0, 0,
+                2, 0, 0
+            ]
+        }
+        rotateSpeed : 1.7
+        cooldownTime : 40
+        bullet : {
+            type : BasicBulletType
+            speed : 8
+            damage : 30
+            pierce : true
+            pierceBuilding : true
+            pierceCap : 2
+            width : 8
+            height : 15
+            shrinkX : 0.4
+            shrinkY : 0
+            shootEffects : [
+                shootColor
+                colorSpark
+            ]
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            smokeEffect : hitLaserColor
+            backColor : feb380
+            trailColor : feb380
+            hitColor : feb380
+            frontColor : ffffff
+            ligthColor : feb380
+            lifetime : 28
+            trailWidth : 2
+            trailLength : 8
+            trailRotation : true
+            trailEffect : hitSquaresColor
+            trailInterval : 2
+        }
+    }
+    {
+        name : galatea-turret
+        mirror : false
+        alternate : false
+        x : 0
+        y : 17
+        reload : 40
+        shootSound : shootStell
+        rotate : true
+        rotateSpeed : 1.8
+        layer : 101
+        recoil : 0.1
+        shootY : 3
+        shoot : {
+            type : ShootBarrel
+            shots : 2
+            shotDelay : 20
+            barrels : [
+                -2, 0, 0,
+                2, 0, 0
+            ]
+        }
+        rotateSpeed : 1.7
+        cooldownTime : 40
+        bullet : {
+            type : BasicBulletType
+            speed : 8
+            damage : 30
+            pierce : true
+            pierceBuilding : true
+            pierceCap : 2
+            width : 8
+            height : 15
+            shrinkX : 0.4
+            shrinkY : 0
+            shootEffects : [
+                shootColor
+                colorSpark
+            ]
+            hitEffect : hitBulletColor
+            despawnEffect : hitBulletColor
+            smokeEffect : hitLaserColor
+            backColor : feb380
+            trailColor : feb380
+            hitColor : feb380
+            frontColor : ffffff
+            ligthColor : feb380
+            lifetime : 28
+            trailWidth : 2
+            trailLength : 8
+            trailRotation : true
+            trailEffect : hitSquaresColor
+            trailInterval : 2
+        }
+    }
+    {
+        name : galatea-maingun
+        mirror : false
+        x : 0
+        y : 6
+        shootY : 10
+        rotateSpeed : 1.4
+        shootCone : 2
+        cooldownTime : 40
+        rotate : true
+        shootSounf : explosionDull
+        reload : 90
+        recoil : 1
+        bullet : {
+            type : BasicBulletType
+            width : 7
+            heigth : 11
+            lifetime : 35
+            hitSize : 6
+            speed : 7
+            pierceCap : 2
+            pierce : true
+            pierceBuilding : true
+            hitColor : feb380
+            backColor : feb380
+            trailColor : feb380
+            frontColor : ffffff
+            trailWidth : 2.7
+            trailLength : 7
+            damage : 80
+            splashDamage : 60
+            splashDamageRadius : 20
+            trailEffect : hitSquaresColor
+            trailRotation : true
+            trailInterval : 4
+            fragbullets : 6
+            fragBullet : {
+                type : BasicBulletType
+                width : 3
+                height : 5
+                lifetime : 10
+                hitSize : 4
+                speed : 3.5
+                pierce : true
+                pierceCap : 3
+                pierceBuilding : true
+                hitColor : feb380
+                backColor : feb380
+                trailColor : feb380
+                frontColor : ffffff
+                trailWidth : 1.7
+                trailLength : 3
+                drag : 0.01
+                despawnEffect : hitBulletColor
+                hitEffect : hitBulletColor
+            }
+        }
+    }
+    {
+        name : galatea-maingun
+        mirror : false
+        x : 0
+        y : -5
+        shootY : 10
+        rotateSpeed : 1.4
+        rotate : true
+        shootCone : 2
+        cooldownTime : 40
+        shootSounf : explosionDull
+        reload : 90
+        recoil : 1
+        bullet : {
+            type : BasicBulletType
+            width : 7
+            heigth : 11
+            lifetime : 35
+            hitSize : 6
+            speed : 7
+            pierceCap : 2
+            pierce : true
+            pierceBuilding : true
+            hitColor : feb380
+            backColor : feb380
+            trailColor : feb380
+            frontColor : ffffff
+            trailWidth : 2.7
+            trailLength : 7
+            damage : 80
+            splashDamage : 60
+            splashDamageRadius : 20
+            trailEffect : hitSquaresColor
+            trailRotation : true
+            trailInterval : 4
+            fragbullets : 6
+            fragBullet : {
+                type : BasicBulletType
+                width : 3
+                height : 5
+                speed : 3.5
+                lifetime : 10
+                hitSize : 4
+                pierce : true
+                pierceCap : 3
+                pierceBuilding : true
+                hitColor : feb380
+                backColor : feb380
+                trailColor : feb380
+                frontColor : ffffff
+                trailWidth : 1.7
+                trailLength : 3
+                drag : 0.01
+                despawnEffect : hitBulletColor
+                hitEffect : hitBulletColor
+            }
+        }
+    }
+]

@@ -114,7 +114,7 @@ weapons : [
       despawnEffect : steam
       drag : 0.018
       knockback : 0.1
-      layer : 50
+      layer : 60
     }
   }
     {
@@ -222,7 +222,7 @@ weapons : [
             fragLifeMin : 1.5
             buildingDamageMultiplier : 0.4
             speed : 3.25
-            fragBullets : 10
+            fragBullets : 8
             fragBullet : {
               type : ArtilleryBulletType
               splashDamage : 40
@@ -316,7 +316,7 @@ weapons : [
             fragLifeMin : 1.5
             buildingDamageMultiplier : 0.4
             speed : 3.25
-            fragBullets : 10
+            fragBullets : 8
             fragBullet : {
               type : ArtilleryBulletType
               splashDamage : 40

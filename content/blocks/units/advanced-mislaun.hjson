@@ -1,0 +1,10 @@
+type : Wall
+size : 3
+customShadow : true
+placeablePlayer : false
+requirements : [
+    002-platinum/170
+    010-viridium/120
+    500-crest/60
+]
+databaseTag : unitpart
