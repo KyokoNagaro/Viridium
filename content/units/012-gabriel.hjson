@@ -2,17 +2,19 @@ type : flying
 controller : FlyingAI
 flying : true
 accel : 0.3
-speed : 0.98
+speed : 0.88
 drag : 0.05
 itemCapacity : 70
 rotateSpeed : 1.4
-hitSize : 33
+hitSize : 35
 health : 21700
 armor : 13
 lowAltitude : true
 engineSize : 0
-buildSpeed : 1
 range : 240
+drawSoftShadow : false
+lowAltitude : true
+outlineColor : 1d1d23
 parts : [
     {
         type : flarePart
@@ -23,10 +25,146 @@ parts : [
         radius : 20
         layer : 110
     }
+    {
+        type : shapePart
+        hollow : true
+        circle : true
+        y : -22
+        color : ffd37f
+        stroke : 1
+        strokeTo : 1
+        radius : 7
+        radiusTo : 7
+        layer : 110
+    }
+    {
+        type : shapePart
+        hollow : true
+        circle : true
+        y : -22
+        color : ffd37f
+        stroke : 0.8
+        strokeTo : 0.8
+        radius : 5.2
+        radiusTo : 5.2
+        layer : 110
+    }
+    {
+        type : HaloPart
+        y : -22
+        radius : 3
+        tri : true
+        layer : 110
+        color : ffd37f
+        haloRadius : 7
+        haloRadiusTo : 7
+        haloRotateSpeed : 1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 2
+        triLength : 6
+        triLengthTo : 6
+    }
+    {
+        type : HaloPart
+        y : -22
+        radius : 3
+        tri : true
+        layer : 110
+        color : ffd37f
+        haloRadius : 7
+        haloRadiusTo : 7
+        haloRotateSpeed : 1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 2
+        triLength : 3
+        triLengthTo : 3
+        shapeRotation : 180
+    }
+    {
+        type : HaloPart
+        y : -22
+        radius : 3
+        tri : true
+        layer : 110
+        color : ffd37f
+        haloRadius : 10
+        haloRadiusTo : 10
+        haloRotateSpeed : -1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 2
+        shapeRotation : 180
+        triLength : 3
+        triLengthTo : 3
+    }
+    {
+        type : HaloPart
+        y : -22
+        radius : 3
+        tri : true
+        layer : 110
+        color : ffd37f
+        haloRadius : 10
+        haloRadiusTo : 10
+        haloRotateSpeed : -1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 2
+        triLength : 6
+        triLengthTo : 6
+    }
+    {
+        type : HaloPart
+        y : -22
+        radius : 3
+        tri : true
+        layer : 110
+        color : ffd37f
+        haloRadius : 7
+        haloRadiusTo : 7
+        haloRotateSpeed : -1
+        haloRotation : 90
+        shapeRotation : 0
+        stroke : 0 
+        strokeTo : 2
+        shapes : 4
+        triLength : 3
+        triLengthTo : 3
+    }
+]
+engines : [
+    {
+        x : 9
+        y : -23.1
+        radius : 3.6
+        rotation : -90
+    }
+    {
+        x : -9
+        y : -23.1
+        radius : 3.6
+        rotation : -90
+    }
+    {
+        x : 0
+        y : -23.1
+        radius : 4.1
+        rotation : -90
+    }
 ]
 weapons: [
   {
-    name : utirel-flame
+    name : gabriel-flame
     rotate : false
     mirror : false
     x : 0
@@ -36,6 +174,10 @@ weapons: [
     alwaysContinuous : true
     shootSound : none
     loopSound : shootSublimate
+    cooldownTime : 120
+    heatRegion : viridium-012-gabril-heatRegion
+    heatColor : ab3400ff
+    recoil : 0
     bullet : {
       type : ContinuousFlameBulletType
       damage : 28
@@ -60,4 +202,44 @@ weapons: [
       shootStatusDuration : 120
     }
   }
+]
+abilities : [
+  {
+        type : EnergyFieldAbility
+        range : 510
+        shootSound : none
+        status : iradied
+        statusDuration : 16.65
+        reload : 360
+        maxTarget : 40
+        damage : 10
+        hitBuildings : false
+        healPercent : 0
+        healEffect : none
+        displayHeal : false
+        color : ffd37f
+        y : 5
+        effectRadius : 2.75
+        sectors : 4
+        sectorRad : 0.18
+        effectRadius : 0.5
+        layer : 70
+        targetGround : false
+    }
+    {
+        type : StatusFieldAbility
+        effect : overdrive
+        duration : 120
+        reload : 120
+        range : 120
+        color : ffd37f
+    }
+    {
+        type : StatusFieldAbility
+        effect : blessed
+        duration : 16.65
+        reload : 120
+        range : 120
+        color : ffd37f
+    }
 ]

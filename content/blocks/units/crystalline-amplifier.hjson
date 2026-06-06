@@ -1,0 +1,10 @@
+type : Wall
+size : 3
+customShadow : true
+placeablePlayer : false
+requirements : [
+    000-aster/100
+    002-platinum/200
+    500-crest/100
+]
+databaseTag : unitpart

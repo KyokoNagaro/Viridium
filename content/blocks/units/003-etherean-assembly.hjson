@@ -30,6 +30,16 @@ plans : [
             viridium-003-weld/2
         ]
     }
+    {
+        type : AssemblerUnitPlan
+        unit : 012-gabriel
+        time : 12600
+        requirements : [
+            viridium-009-sofiel/20
+            viridium-cathalyst-stone/8
+            viridium-crystalline-amplifier/5
+        ]
+    }
 ]
 requirements : [
     titanium/800
