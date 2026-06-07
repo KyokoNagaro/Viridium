@@ -1,0 +1,15 @@
+type : UnitAssemblerModule
+size : 5
+tier : 2
+consumes : {
+    power : 1
+}
+category : units
+requirements : [
+    titanium/625
+    000-aster/450
+    002-platinum/850
+    010-viridium/500
+    500-crest/500
+]
+conductivePower : true

@@ -1,0 +1,14 @@
+type : UnitAssemblerModule
+size : 4
+tier : 1
+consumes : {
+    power : 1
+}
+category : units
+requirements : [
+    titanium/550
+    001-neodymium/325
+    002-platinum/550
+    surge-alloy/400
+]
+conductivePower : true
