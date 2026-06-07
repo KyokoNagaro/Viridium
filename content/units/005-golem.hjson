@@ -10,6 +10,7 @@ range : 100
 canBoost : true
 boostMultiplier : 2.2
 stepSoundVolume : 0.4
+itemCapacity : 20
 weapons : [
     {
         name : golem-missile

@@ -3,8 +3,8 @@ size : 2
 customShadow : true
 placeablePlayer : false
 requirements : [
-    000-aster/30
-    002-platinum/40
-    surge-alloy/60
+    titanium/50
+    000-aster/20
+    002-platinum/30
 ]
 databaseTag : unitpart

@@ -178,6 +178,8 @@ weapons: [
     heatRegion : viridium-012-gabril-heatRegion
     heatColor : ab3400ff
     recoil : 0
+    shootStatus : slow
+    shootStatusDuration : 120
     bullet : {
       type : ContinuousFlameBulletType
       damage : 28
@@ -198,8 +200,7 @@ weapons: [
       hitColor : eab678
       status : sage
       statusDuration : 30
-      shootStatus : unmoving
-      shootStatusDuration : 120
+      lifetime : 90
     }
   }
 ]

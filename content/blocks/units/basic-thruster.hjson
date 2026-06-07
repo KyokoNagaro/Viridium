@@ -4,6 +4,6 @@ customShadow : true
 placeablePlayer : false
 requirements : [
     002-platinum/40
-    003-lithium/30
+    003-lithium/20
 ]
 databaseTag : unitpart

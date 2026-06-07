@@ -25,9 +25,9 @@ plans : [
         unit : 015-amalthea
         time : 4200
         requirements : [
-            viridium-013-chthonian/15
-            viridium-advancedbattery/5
-            viridium-005-leviathan/2
+            viridium-013-chthonian/20
+            viridium-basic-thruster/10
+            viridium-advancedbattery/10
         ]
     }
     {

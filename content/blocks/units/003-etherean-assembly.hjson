@@ -17,7 +17,7 @@ plans : [
         time : 2400
         requirements : [
             viridium-009-sofiel/4
-            viridium-001-horizon/2
+            viridium-energy-crystal/2
         ]
     }
     {
@@ -25,9 +25,9 @@ plans : [
         unit : 011-raphael
         time : 3600
         requirements : [
-            viridium-009-sofiel/15
-            viridium-cathalyst-stone/4
-            viridium-003-weld/2
+            viridium-009-sofiel/10
+            viridium-energy-crystal/8
+            viridium-accelerator/8
         ]
     }
     {
@@ -35,9 +35,9 @@ plans : [
         unit : 012-gabriel
         time : 12600
         requirements : [
-            viridium-009-sofiel/20
-            viridium-cathalyst-stone/8
-            viridium-crystalline-amplifier/5
+            viridium-009-sofiel/15
+            viridium-cathalyst-stone/10
+            viridium-crystalline-amplifier/4
         ]
     }
 ]

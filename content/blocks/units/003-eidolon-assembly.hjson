@@ -27,7 +27,17 @@ plans : [
         requirements : [
             viridium-005-golem/15
             viridium-basic-plate/10
-            viridium-energy-crystal/10
+            viridium-cathalyst-stone/8
+        ]
+    }
+    {
+        type : AssemblerUnitPlan
+        unit : 008-colossus
+        time : 13200
+        requirements : [
+            viridium-005-golem/20
+            viridium-advancedbattery/10
+            viridium-advanced-joint/3
         ]
     }
 ]

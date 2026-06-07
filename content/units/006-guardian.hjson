@@ -12,6 +12,7 @@ stepSoundVolume : 0.4
 flying : false
 faceTarget : true
 mechFrontSway : 0.5
+itemCapacity : 60
 parts : [
     {
         type : RegionPart

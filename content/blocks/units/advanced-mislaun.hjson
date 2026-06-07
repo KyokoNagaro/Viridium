@@ -3,8 +3,8 @@ size : 3
 customShadow : true
 placeablePlayer : false
 requirements : [
-    002-platinum/170
-    010-viridium/120
-    500-crest/60
+    002-platinum/300
+    010-viridium/60
+    500-crest/160
 ]
 databaseTag : unitpart

@@ -1,28 +1,32 @@
 type : legs
-template  : LegsUnitType
+template : LegsUnitType
 controller : GroundAI
-hitSize  : 28
-health : 10500
-armor : 15
+outlineColor : 1d1d23
+hitSize : 36
+health : 40000
+armor : 22
 stepShake : 1.4
-drownTimeMultiplier : 1.5
+drownTimeMultiplier : 2
 stepSound : walkerStep
-stepSoundVolume : 1.2
-stepSoundPitch : 0.9
-legCount : 4
-legLength : 16
-legBaseOffset : 9
-legMoveSpace : 1.5
+stepSoundVolume : 1.1
+stepSoundPitch : 1.1
+legCount : 6
+legMoveSpace : 1.6
 legForwardScl : 0.58
+legPairOffset : 3
+legLength : 34
+legBaseOffset : 10.8
+rippleScale : 2
+legSpeed : 0.2
+legSplashDamage : 120
+legSplashRange : 40
 hovering : true
 shadowElevation : 0.65
-speed : 0.29
-range : 75
-outlineColor : 1d1d23
-rotateSpeed : 0.6
 groundLayer : 87
-softShadowScl : 0.2
-itemCapacity : 110
+range : 90
+speed : 0.24
+rotateSpeed : 0.55
+itemCapacity : 140
 immunities : [
   burning,
   melting 
@@ -44,8 +48,8 @@ parts : [
       blending : additive
       color : eab67840
       layer : 95
-      xScl : 0.9
-      yScl : 0.9
+      xScl : 1.2
+      yScl : 1.2
     }
     {
       type : shapePart 
@@ -54,8 +58,8 @@ parts : [
       layer : 110
       lightColor : ffd37f
       color : ffd37f
-      radius : 56
-      radiusTo : 56
+      radius : 74.5
+      radiusTo : 74.5
       stroke : 1
       strokeTo : 1
     }
@@ -68,8 +72,8 @@ parts : [
         strokeTo : 3
         radius : 4
         haloRotateSpeed : 0.2
-        haloRadius : 56
-        haloRadiusTo : 56
+        haloRadius : 74.5
+        haloRadiusTo : 74.5
         shapes : 2
         triLengthTo : 8
         triLength : 8
@@ -84,8 +88,8 @@ parts : [
         strokeTo : 3
         radius : 4
         haloRotateSpeed : 0.2
-        haloRadius : 56
-        haloRadiusTo : 56
+        haloRadius : 74.5
+        haloRadiusTo : 74.5
         shapes : 2
         triLengthTo : 14
         triLength : 14
@@ -99,8 +103,8 @@ parts : [
         strokeTo : 3
         radius : 4
         haloRotateSpeed : -0.2
-        haloRadius : 56
-        haloRadiusTo : 56
+        haloRadius : 74.5
+        haloRadiusTo : 74.5
         shapes : 2
         triLengthTo : 8
         triLength : 8
@@ -115,8 +119,8 @@ parts : [
         strokeTo : 3
         radius : 4
         haloRotateSpeed : -0.2
-        haloRadius : 56
-        haloRadiusTo : 56
+        haloRadius : 74.5
+        haloRadiusTo : 74.5
         shapes : 2
         triLengthTo : 8
         triLength : 8
@@ -124,13 +128,13 @@ parts : [
 ]
 weapons : [
     {
-        name : titan-tractor-beam
+        name : colossus-tractor-beam
         mirror : true
         alternate : false
         loopSound : beamLustre
         loopSoundVolume : 1
-        x : 8.6
-        y : -1.2
+        x : 14.2
+        y : -4.7
         rotate : true
         rotateSpeed : 0.9
         continuous : true
@@ -146,12 +150,14 @@ weapons : [
         targetInterval : 10
         shootCone : 40
         useAttackRange : false
+        shootY : 4
+        recoilTime : 80
         bullet : {
             type : PointLaserBulletType
-            damage : 5
-            length : 230
-            maxRange :  220
-            knockback : -4.5
+            damage : 10
+            length : 250
+            maxRange :  240
+            knockback : -6
             color : ffd37f
             sprite : viridium-point-laser-true
             status : freezing
@@ -159,7 +165,7 @@ weapons : [
         }
     }
     {
-        name : titan-shootgun
+        name : colossus-flame
         layerOffset : -0.001
         parts : [
             {
@@ -177,52 +183,49 @@ weapons : [
         rotateSpeed : 0.7
         rotate : true
         top : false
-        alternate : true
-        reload : 60
-        x : 14
-        y : 0
-        shootY : 15
-        shootSound : shootFuse
-        shoot : {
-            type : ShootSpread
-            shots : 2
-            spread : 8
-        }
-        shake : 1
+        alternate : false
+        x : 21
+        y : -2
+        shootY : 22
+        continuous : true
+        alwaysContinuous : true
+        shootSound : none
+        loopSound : shootSublimate
+        cooldownTime : 120
+        recoil : 0
         bullet : {
-            type : ShrapnelBulletType
-            damage : 120
-            pierce : true
-            lifetime : 18
-            width : 20
-            serration : 2
-            serrationWidth : 10
-            fromColor : ffd37f
-            toColor : eab678
-            length : 80
-            status : blasted
-            shootEffect : none
-            dispawnEffect : none
-            smokeEffect : none
-            hitEffect : {
-                type : ParticleEffect
-                line : true
-                particles : 7
-                lifetime : 10
-                length : 25
-                cone : -360
-                lenFrom : 5
-                lenTo : 0
-                colorFrom : ffd37f
-                colorTo : eab678
-            }
+            type : ContinuousFlameBulletType
+            damage : 36
+            colors : [
+                ec74588c
+                f2a964b2
+                ffda9ecc
+                9ebeffff
+                ffffffff
+            ]
+            knockback : 0
+            timescaleDamage : true
+            ligthColor : eab678
+            hitColor : eab678
+            status : melting
+            statusDuration : 120
+            flareColor : f2a964
+            hitColor : f2a964
+            lightColor : 6569c9
+            length : 95
+            width : 5
+            drawSize : 350
+            lifetime : 30
+            flareWidth : 5.5
+            flareLength : 28
+            layer : 108
         }
     }
 ]
 abilities : [
     {
         type : EnergyFieldAbility
-        range : 100
+        range : 120
         shootSound : none
         status : consume
         statusDuration : 16.65
@@ -234,20 +237,37 @@ abilities : [
         healEffect : none
         displayHeal : false
         color : ffd37f
-        y : 5
+        y : 0.5
         effectRadius : 2.75
     }
     {
-    type : ShieldArcAbility
-    angle : 380
-    radius : 30
-    max : 180
-    regen : 3
-    cooldown : 30
-    whenShooting : false
-    width : 50
-    color : ffd37f
-    drawArc : false
-    lightOpacity : 0.2
+        type : EnergyFieldAbility
+        range : 120
+        shootSound : none
+        status : neutralized
+        statusDuration : 240
+        reload : 120
+        maxTarget : 40
+        damage : 60
+        hitBuildings : false
+        healPercent : 0
+        healEffect : none
+        displayHeal : false
+        color : ffd37f
+        y : 0.5
+        effectRadius : 2.75
+    }
+    {
+        type : ShieldArcAbility
+        angle : 380
+        radius : 35
+        max : 360
+        regen : 6
+        cooldown : 30
+        whenShooting : false
+        width : 80
+        color : ffd37f
+        drawArc : false
+        lightOpacity : 0.2
   }
 ]

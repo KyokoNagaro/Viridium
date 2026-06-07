@@ -3,8 +3,8 @@ size : 3
 customShadow : true
 placeablePlayer : false
 requirements : [
-    002-platinum/90
-    003-lithium/90
-    surge-alloy/60
+    001-neodymium/180
+    010-viridium/180
+    500-crest/120
 ]
 databaseTag : unitpart
