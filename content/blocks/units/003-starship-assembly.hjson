@@ -26,8 +26,8 @@ plans : [
         time : 4200
         requirements : [
             viridium-013-chthonian/20
-            viridium-basic-thruster/10
-            viridium-advancedbattery/10
+            viridium-basic-thruster/8
+            viridium-advancedbattery/8
         ]
     }
     {
@@ -36,8 +36,8 @@ plans : [
         time : 12000
         requirements : [
             viridium-013-chthonian/25
-            viridium-advancedbattery/10
-            viridium-advanced-mislaun/5
+            viridium-accelerator/8
+            viridium-advanced-mislaun/4
         ]
     }
 ]

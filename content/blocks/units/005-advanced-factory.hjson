@@ -1,0 +1,28 @@
+type : Constructor
+size : 4
+requirements : [
+    titanium/350
+    002-platinum/300
+    003-lithium/150
+    surge-alloy/200
+    010-viridium/150
+]
+hasPower : true
+filter : [
+    advanced-joint,
+    advanced-mislaun,
+    crystalline-amplifier
+]
+consumes : {
+    power : 1
+    liquids : [
+        999-caesium-allow/0.1
+    ]
+}
+buildSpeed : 6
+itemCapacity : 150
+squareSprite : false
+conductivePower : true
+maxBlockSize : 3
+category : units
+scaledHealth : 65

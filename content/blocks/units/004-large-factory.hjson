@@ -1,0 +1,27 @@
+type : Constructor
+size : 4
+requirements : [
+    titanium/350
+    002-platinum/300
+    003-lithium/150
+    surge-alloy/125
+]
+hasPower : true
+filter : [
+    accelerator,
+    advancedbattery,
+    cathalyst-stone
+]
+consumes : {
+    power : 1
+    liquids : [
+        020-sgallium/0.05
+    ]
+}
+buildSpeed : 4
+squareSprite : false
+itemCapacity : 120
+conductivePower : true
+maxBlockSize : 3
+category : units
+scaledHealth : 65
