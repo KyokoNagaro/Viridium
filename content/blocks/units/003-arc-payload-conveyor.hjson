@@ -1,0 +1,11 @@
+type : PayloadConveyor
+size : 3
+moveTime : 60
+moveForce : 20
+category : units
+payloadLimit : 3
+requirements : [
+  001-neodymium/15
+  002-platinum/20
+]
+canOverdrive : false
