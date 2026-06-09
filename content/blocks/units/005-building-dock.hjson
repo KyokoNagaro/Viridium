@@ -8,7 +8,7 @@ requirements : [
     surge-alloy/150
     010-viridium/425
 ]
-buildTime : 7200
+buildTime : 10800
 unitType : 018-pluto
 polyColor : 80ccf4ff
 polySides : 6

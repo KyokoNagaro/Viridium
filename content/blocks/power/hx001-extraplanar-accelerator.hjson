@@ -16,6 +16,7 @@ explosinDamage : 9999
 explodeEffect : impactReactorExplosion
 explodeSound : explosionReactorNeoplasm
 unitCapModifier : 2
+rebuildable : false
 drawer : {
   type : DrawMulti
   drawers : [
@@ -25,15 +26,15 @@ drawer : {
     }
     {
       type : DrawPulseShape
-      color : d1efff
+      color : ffd37f
       radiusScl : 0.85
       stroke : 3
     }
     {
       type : DrawPlasma
       suffix : -plasma-
-      plasma1 : 6569c9
-      plasma2 : d1efff
+      plasma1 : feb380
+      plasma2 : ffd37f
     }
     {
       type : DrawDefault

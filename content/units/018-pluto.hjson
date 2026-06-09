@@ -1,8 +1,7 @@
 type : legs
-template : LegsUnitType
 controller : BuilderAI
-buildSpeed : 50
-health : 17500
+buildSpeed : 0.5
+health : 8500
 armor : 8
 outlineColor : 1d1d23
 stepSound : walkerStep
@@ -17,7 +16,7 @@ legMoveSpace : 1
 legPairOffset : 3
 legLength : 30
 legExtension : -15
-legBaseOffset : 9
+legBaseOffset : 4
 stepShake : 0.8
 legLengthScl : 0.96
 rippleScale : 2
@@ -29,6 +28,95 @@ immunities : [freezing]
 range : 320
 buildBeamOffset : 10
 buildRange : 300
+playerControllable : false
+defaultCommand : assist
+commands : [assist]
+parts : [
+    {
+      type : RegionPart
+      name : viridium-bouclifeur
+      outline : false
+      blending : additive
+      color : 6569c950
+      layer : 95
+      xScl : 0.9
+      yScl : 0.9
+    }
+    {
+      type : shapePart 
+      circle : true
+      hollow : true
+      layer : 110
+      lightColor : 8ca9e8
+      color : 8ca9e8
+      radius : 56
+      radiusTo : 56
+      stroke : 1
+      strokeTo : 1
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : 8ca9e8
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : 0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+        shapeRotation : 180
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : 8ca9e8
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : 0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 14
+        triLength : 14
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : 8ca9e8
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : -0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+        shapeRotation : 180
+    }
+    {
+        type : HaloPart
+        tri : true
+        layer : 110
+        color : 8ca9e8
+        stroke : 0
+        strokeTo : 3
+        radius : 4
+        haloRotateSpeed : -0.2
+        haloRadius : 56
+        haloRadiusTo : 56
+        shapes : 2
+        triLengthTo : 8
+        triLength : 8
+    }
+]
 weapons : [
     {
         name : pluto-laser
@@ -36,8 +124,8 @@ weapons : [
         alternate : false
         loopSound : beamLustre
         loopSoundVolume : 1
-        x : 8.6
-        y : -1.2
+        x : 5.9
+        y : -1.8
         rotate : true
         rotateSpeed : 0.9
         continuous : true
@@ -55,7 +143,7 @@ weapons : [
         useAttackRange : false
         bullet : {
             type : PointLaserBulletType
-            damage : 12
+            damage : 20
             length : 330
             maxRange :  340
             color : 94daff
@@ -72,6 +160,19 @@ abilities : [
         duration : 300
         reload : 120
         range : 60
-        color : ffd37f
+        color : d1efff
+    }
+    {
+        type : ShieldArcAbility
+        angle : 380
+        radius : 30
+        max : 4000
+        regen : 1.5
+        cooldown : 1800
+        whenShooting : false
+        width : 50
+        color : 6569c9
+        drawArc : false
+        lightOpacity : 0.2
     }
 ]

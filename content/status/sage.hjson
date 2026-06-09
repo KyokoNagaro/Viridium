@@ -3,7 +3,7 @@ damageMultiplier : 0.7
 speedMultiplier : 0.85
 dragMultiplier : 1.2
 color : 8ca9e8
-effectChance : 0.04
+effectChance : 0.008
 effect : {
     type : WaveEffect
     colorFrom : d1efff

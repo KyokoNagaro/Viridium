@@ -1,0 +1,10 @@
+type: Wall
+health: 780
+size: 1
+armor : 10
+requirements: [
+  titanium/6
+  002-platinum/8
+]
+category: defense
+
