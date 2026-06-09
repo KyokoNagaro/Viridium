@@ -1,0 +1,7 @@
+type : PayloadRouter
+canOverdrive : false
+requirements : [
+  001-neodymium/25
+  002-platinum/25
+]
+category : units

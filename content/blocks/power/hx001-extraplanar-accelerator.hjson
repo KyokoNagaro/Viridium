@@ -1,0 +1,67 @@
+type: ImpactReactor
+size: 5
+ambientSound : loopPulse
+ambientSoundVolume : 0.1
+liquidCapacity : 120
+powerProduction : 10
+warmupSpeed : 0.001
+itemDuration : 300
+health : 4450
+unitCapModifier : 2
+baseExplosiveness : 5
+explosivenessScale : 3
+baseShake : 6
+explosionRadius : 16
+explosinDamage : 9999
+explodeEffect : impactReactorExplosion
+explodeSound : explosionReactorNeoplasm
+unitCapModifier : 2
+drawer : {
+  type : DrawMulti
+  drawers : [
+    {
+      type : DrawRegion
+      suffix : -bottom
+    }
+    {
+      type : DrawPulseShape
+      color : d1efff
+      radiusScl : 0.85
+    }
+    {
+      type : DrawPlasma
+      suffix : -plasma-
+      plasma1 : 6569c9
+      plasma2 : d1efff
+    }
+    {
+      type : DrawDefault
+    }
+    {
+      type : DrawGlowRegion
+      suffix : -glow
+      color : d1efff
+    }
+  ]
+}
+consumes : {
+    power : 1
+    liquids : [
+        500-plasma/0.45
+    ]
+    items : [
+        surge-alloy/2
+    ]
+}
+squareSprite: false
+requirements: [
+    titanium/3000
+    001-neodymium/2500
+    002-platinum/3000
+    003-lithium/1500
+    surge-alloy/2000
+    500-crest/850
+]
+category: power
+buildTime : 18000
+squareSprite : false
