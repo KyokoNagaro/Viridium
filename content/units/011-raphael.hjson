@@ -233,7 +233,7 @@ abilities : [
     {
         type : StatusFieldAbility
         effect : blessed
-        duration : 16.65
+        duration : 59940
         reload : 240
         range : 120
         color : ffd37f

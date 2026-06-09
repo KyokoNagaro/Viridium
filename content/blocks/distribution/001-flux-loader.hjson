@@ -7,7 +7,7 @@ requirements : [
     001-neodymium/40
 ]
 unitType : flux
-polyColor : 8ca9e8ff
+polyColor : ffd37fff
 polySides : 4
 polyRadius : 8.4
 itemCapacity : 400

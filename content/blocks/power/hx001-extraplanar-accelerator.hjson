@@ -27,6 +27,7 @@ drawer : {
       type : DrawPulseShape
       color : d1efff
       radiusScl : 0.85
+      stroke : 3
     }
     {
       type : DrawPlasma

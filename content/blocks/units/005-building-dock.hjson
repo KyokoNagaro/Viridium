@@ -1,0 +1,24 @@
+type : UnitCargoLoader
+size : 3
+scaledHealth : 85
+requirements : [
+    titanium/200
+    002-platinum/550
+    003-lithium/350
+    surge-alloy/150
+    010-viridium/425
+]
+buildTime : 7200
+unitType : 018-pluto
+polyColor : 80ccf4ff
+polySides : 6
+polyRadius : 8.4
+itemCapacity : 0
+squareSprite : false
+consumes : {
+    power : 1
+    liquids : [
+        999-caesium-allow/0.02
+    ]
+}
+category : units

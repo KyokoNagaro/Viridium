@@ -1,0 +1,77 @@
+type : legs
+template : LegsUnitType
+controller : BuilderAI
+buildSpeed : 50
+health : 17500
+armor : 8
+outlineColor : 1d1d23
+stepSound : walkerStep
+stepSoundVolume : 0.85
+tepSoundPitch : 1.1
+rotateSpeed : 1
+hitSize : 23
+drag : 0.1
+speed : 0.65
+legCount : 6
+legMoveSpace : 1
+legPairOffset : 3
+legLength : 30
+legExtension : -15
+legBaseOffset : 9
+stepShake : 0.8
+legLengthScl : 0.96
+rippleScale : 2
+legSpeed : 0.2
+hovering : true
+shadowElevation : 0.65
+itemCapacity : 180
+immunities : [freezing]
+range : 320
+buildBeamOffset : 10
+buildRange : 300
+weapons : [
+    {
+        name : pluto-laser
+        mirror : true
+        alternate : false
+        loopSound : beamLustre
+        loopSoundVolume : 1
+        x : 8.6
+        y : -1.2
+        rotate : true
+        rotateSpeed : 0.9
+        continuous : true
+        alwaysContinuous : true
+        cooldownTime : 90
+        recoil : 0.6
+        predictTarget : false
+        targetMissile : false
+        loopSound : laserbeam
+        shootSound : none
+        aimchangeSpeed : 1.26
+        targetSwitchInterval : 60
+        targetInterval : 10
+        shootCone : 40
+        useAttackRange : false
+        bullet : {
+            type : PointLaserBulletType
+            damage : 12
+            length : 330
+            maxRange :  340
+            color : 94daff
+            sprite : viridium-point-laser-true
+            status : incapacitated
+            statusDuration : 20
+        }
+    }
+]
+abilities : [
+    {
+        type : StatusFieldAbility
+        effect : sage
+        duration : 300
+        reload : 120
+        range : 60
+        color : ffd37f
+    }
+]
