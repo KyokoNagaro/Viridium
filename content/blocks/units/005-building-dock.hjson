@@ -18,7 +18,7 @@ squareSprite : false
 consumes : {
     power : 1
     liquids : [
-        999-caesium-allow/0.02
+        999-caesium-allow/0.2
     ]
 }
 category : units

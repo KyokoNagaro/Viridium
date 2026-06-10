@@ -1,0 +1,61 @@
+type : tether
+flying : true
+buildSpeed : 4
+controller : builderAI
+logicControllable  : false
+playerControllable : false
+flying : true
+hitSize : 1
+physics : false
+lowAltitude : false
+health : 100000
+hidden : true
+engineSize : 0
+useUnitCap : false
+buildRange : 640
+speed : 0
+rotateSpeed : 40
+faceTarget : false
+targetable : false
+payloadCapacity : 0
+intemCapacity : 0
+parts : [
+    {
+        type : flarePart
+        color1 : ffd37fff   
+        color2 : ffffff
+        y : 0
+        stroke : 11
+        radius : 25
+        layer : 110
+    }
+]
+buildBeamOffset : 0
+abilities : [
+  {
+        type : EnergyFieldAbility
+        range : 620
+        shootSound : none
+        status : neutralized
+        statusDuration : 60
+        reload : 60
+        maxTarget : 30
+        damage : 5
+        hitBuildings : false
+        healPercent : 0
+        healEffect : none
+        displayHeal : false
+        color : ffd37f
+        y : 0
+        effectRadius : 0
+        sectors : 0
+        sectorRad : 0
+        effectRadius : 0
+        layer : 70
+        targetGround : false
+    }
+        {
+        type : RegenAbility
+        amount : 100
+    }
+]

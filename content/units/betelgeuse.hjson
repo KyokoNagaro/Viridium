@@ -1,0 +1,67 @@
+type : tether
+flying : true
+controller : repairAI
+logicControllable  : false
+playerControllable : false
+flying : true
+hitSize : 1
+physics : false
+lowAltitude : false
+health : 100000
+hidden : true
+engineSize : 0
+useUnitCap : false
+speed : 0
+rotateSpeed : 40
+faceTarget : false
+targetable : false
+payloadCapacity : 0
+intemCapacity : 0
+defaultCommand : repair
+commands : [repair]
+parts : [
+    {
+        type : flarePart
+        color1 : 84f491ff   
+        color2 : 84f491
+        y : 0
+        stroke : 11
+        radius : 25
+        layer : 110
+        rotation : 45
+    }
+]
+weapons : [
+        {
+        name : betelgeuse-heal
+        type : RepairBeamWeapon
+        targetBuildings : false
+        targetUnits : true
+        repairSpeed : 5
+        mirror : true
+        alternate : false
+        beamWidth : 1.3
+        laserColor : 9ef7a8
+        shootY : 0
+        x : 0
+        y : 0
+        bullet : {
+            maxRange : 640
+        }
+    }
+]
+buildBeamOffset : 0
+abilities : [
+    {
+        type : StatusFieldAbility
+        effect : rejuvenating
+        duration : 120
+        reload : 120
+        range : 640
+        color : 84f491
+    }
+    {
+        type : RegenAbility
+        amount : 100
+    }
+]

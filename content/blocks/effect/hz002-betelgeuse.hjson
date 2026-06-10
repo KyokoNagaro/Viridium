@@ -3,18 +3,20 @@ health : 850
 type : UnitCargoLoader
 requirements : [
     titanium/600
+    000-aster/375
     001-neodymium/225
     002-platinum/650
-    500-crest/300
+    surge-alloy/250
+    010-viridium/400
 ]
-unitType : sol
+unitType : betelgeuse
 polyColor : 80ccf4ff
 polySides : 6
 polyRadius : 1
 polyStroke : 0
 itemCapacity : 0
 squareSprite : false
-itemCapacity : 1000
+itemCapacity : 2000
 liquidCapacity : 10
 unloadable : false
 consumes : {
@@ -25,8 +27,8 @@ consumes : {
   }
   items : {
     items : [
-      010-viridium/1000
+      010-viridium/2000
     ]
   }
 }
-category : effect
+category : units

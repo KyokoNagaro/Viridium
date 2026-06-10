@@ -210,7 +210,7 @@ abilities : [
         range : 510
         shootSound : none
         status : iradied
-        statusDuration : 16.65
+        statusDuration : 9500
         reload : 360
         maxTarget : 40
         damage : 10
