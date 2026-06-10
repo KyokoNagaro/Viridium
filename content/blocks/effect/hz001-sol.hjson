@@ -1,0 +1,33 @@
+type : BuildTurret
+range : 600
+buildSpeed : 4
+buildBeamOffset : 0
+rotateSpeed : 20
+size : 4
+health : 3500
+drawer : {
+    type : DrawTurret
+    parts : [
+    {
+        type : flarePart
+        color1 : ffd37fff   
+        color2 : ffffff
+        stroke : 8
+        radius : 20
+        layer : 110
+        progress : cooldown
+    }
+]
+}
+consumes : {
+    power : 700
+    liquids : [
+        020-sgallium/0.2
+    ]
+}
+requirements : [
+    titanium/600
+    001-neodymium/225
+    002-platinum/650
+    500-crest/300
+]

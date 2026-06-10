@@ -10,7 +10,7 @@ drag : 0.017
 engineSize : 4
 engineOffset : 12
 hitSize : 24
-buildSpeed : 3
+buildSpeed : 2.5
 buildBeamOffset : 10
 range : 140
 targetAir : false
