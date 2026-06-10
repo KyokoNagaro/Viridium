@@ -17,7 +17,7 @@ polyStroke : 0
 itemCapacity : 0
 squareSprite : false
 itemCapacity : 2000
-liquidCapacity : 10
+liquidCapacity : 27
 unloadable : false
 consumes : {
   power : 700

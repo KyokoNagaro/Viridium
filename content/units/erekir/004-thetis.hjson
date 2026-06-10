@@ -293,7 +293,7 @@ weapons : [
             splashDamageRadius : 36
             damage : 80
             splashDamage : 240
-            scaledSplashDamge : true
+            scaledSplashDamage : true
             splashDamagePierce : true
             backColor : 77bd7a
             hitColor : 77bd7a

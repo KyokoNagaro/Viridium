@@ -1,0 +1,195 @@
+type: ItemTurret
+squareSprite: false
+size: 3
+range : 200
+shake : 1
+shootSound : explosionDull
+shootY : -2
+reload : 30
+recoil : 1.5
+shootCone : 3
+scaledHealth : 145
+rotateSpeed : 1.2
+ammoPerShot : 1
+outlineColor : 2e2f34
+shoot : {
+    type : ShootAlternate
+    barrels : 2
+    spread : 10
+}
+ammoTypes : {
+  titanium : {
+    type : BasicBulleType
+    speed : 7.5
+    damage : 30
+    width : 12
+    hitSize : 7
+    height : 20
+    shootEffects : [
+      shootBigColor
+      colorSparkBig
+    ]
+    smokeEffect : shootBigSmoke
+    ammoMultiplier : 1
+    pierceCap : 2
+    pierce : true
+    pierceBuilding : true
+    hitColor : 6f80e8
+    backColor : 6f80e8
+    trailColor : 6f80e8
+    frontColor : ffffff
+    trailWidth : 2.1
+    trailLength : 10
+    hitEffect : hitBulletColor
+    despawnEffect : hitBulletColor
+    trailRotation : true
+    trailEffect : hitSquaresColor
+    trailInterval : 2
+  }
+  002-platinum : {
+    type : BasicBulleType
+    speed : 6
+    damage : 70
+    width : 12
+    hitSize : 7
+    height : 20
+    shootEffects : [
+      shootBigColor
+      colorSparkBig
+    ]
+    smokeEffect : shootBigSmoke
+    ammoMultiplier : 1
+    pierceCap : 10
+    pierce : true
+    rangeChange : 60
+    pierceBuilding : true
+    hitColor : 989aa4
+    backColor : 989aa4
+    trailColor : 989aa4
+    frontColor : ffffff
+    trailWidth : 2.1
+    trailLength : 10
+    hitEffect : hitBulletColor
+    despawnEffect : hitBulletColor
+    weaveMag : 7
+    weaveScale : 2
+    intervalBullet : 1
+    intervalRandomSpread : 60
+    bulletInterval : 3
+    intervalBullet : {
+      type : LightningBulletType
+      lightningLength : 3
+      lightningLengthRand : 7
+      lightningDamage : 10
+      damage : 10
+      lightningColor : 989aa4
+    }
+  }
+    003-lithium : {
+    type : BasicBulleType
+    speed : 10
+    damage : 90
+    width : 12
+    hitSize : 7
+    height : 20
+    shootEffects : [
+      shootBigColor
+      colorSparkBig
+    ]
+    smokeEffect : shootBigSmoke
+    ammoMultiplier : 1
+    pierce : true
+    pierceBuilding : true
+    hitColor : 6a7969
+    backColor : 6a7969
+    trailColor : 6a7969
+    frontColor : ffffff
+    trailWidth : 2.1
+    trailLength : 10
+    trailRotation : true
+    trailEffect : hitSquaresColor
+    trailInterval : 2
+    despawnEffect : [
+      titanExplosionSmall
+      titanSmokeSmall
+    ]
+    hitEffect : [
+      titanExplosionSmall
+      titanSmokeSmall
+    ]
+    rangeChange : 45
+    reloadMultiplier : 0.7
+    splashDamage : 90
+    splashDamageRadius : 40
+    status : blasted
+    fragBullets : 6
+    fragBullet : {
+      type : LightningBulletType
+      damage : 20
+      lightningLength : 10
+      lightningColor : 6a7969
+    }
+  }
+    surge-alloy: {
+    type : BasicBulleType
+    speed : 10
+    damage : 240
+    width : 12
+    hitSize : 7
+    height : 24
+    shootEffects : [
+      shootBigColor
+      colorSparkBig
+    ]
+    smokeEffect : shootBigSmoke
+    ammoMultiplier : 1
+    pierce : true
+    pierceBuilding : true
+    hitColor : f3e979
+    backColor : f3e979
+    trailColor : f3e979
+    frontColor : ffffff
+    trailWidth : 2.1
+    trailLength : 10
+    hitEffect : hitBulletColor
+    despawnEffect : hitBulletColor
+    rangeChange : 90
+    reloadMultiplier : 0.6
+    trailRotation : true
+    trailEffect : hitSquaresColor
+    trailInterval : 2
+    intervalBullet : 1
+    intervalRandomSpread : 60
+    bulletInterval : 3
+    intervalBullet : {
+      type : LightningBulletType
+      lightningLength : 3
+      lightningLengthRand : 7
+      lightningDamage : 10
+      damage : 10
+      lightningColor : f3e979
+    }
+    fragBullets : 6
+    fragBullet : {
+      type : LightningBulletType
+      damage : 40
+      lightningLength : 10
+      status : shocked
+      statusDuration : 240
+      lightningColor : f3e979
+    }
+  }
+}
+coolantMultiplier : 4
+consumes: {
+  coolant : {
+    amount : 0.15
+  }
+}
+ammoPerShot: 1
+category: turret
+requirements: [
+  beryllium/150
+  silicon/150
+  graphite/250
+]

@@ -188,7 +188,7 @@ ammoTypes : {
     pierceDamageFactor : 0.5
     pierce : true
     status : consume
-    statusDuration : 120
+    statusDuration : 59900
     hitShake : 6
     reloadMultiplier : 0.5
     ammoMultiplier : 1

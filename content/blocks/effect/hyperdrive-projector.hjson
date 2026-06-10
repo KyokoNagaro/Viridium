@@ -2,7 +2,7 @@ type : OverdriveProjector
 size : 3
 health : 575
 range : 330
-speedBoost : 3
+speedBoost : 2.75
 hasBoost : false
 baseColor : ad043e
 itemDuration : 360
