@@ -118,8 +118,7 @@
           hitColor : ffd59e
           hitEffect : hitBulletColor
           despawnEffect : none
-          status : melting
-          statusDuration : 120
+          status : blasted
           frontColor : f7d9b2
           backColor : f19583
           despawnHit : false

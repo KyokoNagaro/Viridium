@@ -143,7 +143,6 @@ weapons : [
         recoil : 0.6
         predictTarget : false
         targetMissile : false
-        loopSound : laserbeam
         shootSound : none
         aimchangeSpeed : 1.26
         targetSwitchInterval : 60

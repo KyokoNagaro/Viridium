@@ -89,7 +89,6 @@ weapons : [
     targetInterval : 20
     shootCone : 160
     shootSound : none
-    loopSound : laserbeam
     aimChangeSpeed : 1.26
     bullet : {
       type : PointLaserBulletType

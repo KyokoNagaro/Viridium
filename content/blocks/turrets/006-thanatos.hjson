@@ -174,8 +174,7 @@ ammoTypes : {
       backColor : f19583
       despawnHit : false
       setDefaults : false
-      status : melting
-      statusDuration : 360
+      status : blasted
       knockback : 0
     }
   }

@@ -4,7 +4,7 @@ size: 3
 range : 200
 shake : 1
 shootSound : explosionDull
-shootY : -2
+shootY : 8
 reload : 30
 recoil : 1.5
 shootCone : 3
@@ -15,13 +15,13 @@ outlineColor : 2e2f34
 shoot : {
     type : ShootAlternate
     barrels : 2
-    spread : 10
+    spread : 9
 }
 ammoTypes : {
   titanium : {
     type : BasicBulleType
     speed : 7.5
-    damage : 30
+    damage : 28
     width : 12
     hitSize : 7
     height : 20
@@ -32,6 +32,7 @@ ammoTypes : {
     smokeEffect : shootBigSmoke
     ammoMultiplier : 1
     pierceCap : 2
+    reloadMultiplier : 1.2
     pierce : true
     pierceBuilding : true
     hitColor : 6f80e8
@@ -48,7 +49,7 @@ ammoTypes : {
   }
   002-platinum : {
     type : BasicBulleType
-    speed : 6
+    speed : 8
     damage : 70
     width : 12
     hitSize : 7
@@ -87,7 +88,7 @@ ammoTypes : {
   }
     003-lithium : {
     type : BasicBulleType
-    speed : 10
+    speed : 6
     damage : 90
     width : 12
     hitSize : 7
@@ -98,8 +99,6 @@ ammoTypes : {
     ]
     smokeEffect : shootBigSmoke
     ammoMultiplier : 1
-    pierce : true
-    pierceBuilding : true
     hitColor : 6a7969
     backColor : 6a7969
     trailColor : 6a7969
@@ -109,23 +108,18 @@ ammoTypes : {
     trailRotation : true
     trailEffect : hitSquaresColor
     trailInterval : 2
-    despawnEffect : [
-      titanExplosionSmall
-      titanSmokeSmall
-    ]
-    hitEffect : [
-      titanExplosionSmall
-      titanSmokeSmall
-    ]
+    despawnEffect : hitBulletBig
+    hitEffect : hitBulletBig
     rangeChange : 45
     reloadMultiplier : 0.7
-    splashDamage : 90
+    splashDamage : 60
     splashDamageRadius : 40
     status : blasted
+    fragRandomSpread : 100
     fragBullets : 6
     fragBullet : {
       type : LightningBulletType
-      damage : 20
+      damage : 15
       lightningLength : 10
       lightningColor : 6a7969
     }
@@ -189,7 +183,6 @@ consumes: {
 ammoPerShot: 1
 category: turret
 requirements: [
-  beryllium/150
-  silicon/150
-  graphite/250
+  titanium/250
+  001-neodymium/150
 ]

@@ -1,0 +1,57 @@
+type : LiquidTurret
+squareSprite : false
+liquidCapacity : 60
+size : 3
+rotateSpeed : 0.8
+outlineColor : 2e2f34
+recoil : 1
+recoilTime : 120
+canOverdrive : false
+range : 240
+shootSound : none
+loopSound : beamLustre
+loopSoundVolume : 1
+ammoTypes : {
+    cryofluid : {
+            type : PointLaserBulletType
+            damage : 10
+            length : 250
+            color : a5bef4
+            sprite : viridium-point-laser-true
+            status : freezing
+            statusDuration : 20
+    }
+    slag : {
+            type : PointLaserBulletType
+            damage : 22
+            length : 250
+            color : ffd37f
+            sprite : viridium-point-laser-true
+            status : melting
+            statusDuration : 20
+    }
+    020-sgallium : {
+            type : PointLaserBulletType
+            damage : 2
+            length : 250
+            knockback : 3
+            color : fcb7ef
+            sprite : viridium-point-laser-true
+            status : sage
+            statusDuration : 20
+    }
+    500-plasma : {
+            type : PointLaserBulletType
+            damage : 40
+            length : 250
+            knockback : 3
+            color : ff8181
+            sprite : viridium-point-laser-true
+    }
+}
+requirements : [
+    titanium/300
+    000-aster/100
+    001-neodymium/125
+]
+category : turret
