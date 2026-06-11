@@ -21,3 +21,4 @@ maxBlockSize : 2
 category : units
 scaledHealth : 50
 itemCapacity : 60
+forceTeam : 5

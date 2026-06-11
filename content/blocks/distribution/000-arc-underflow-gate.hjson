@@ -4,5 +4,5 @@ requirements : [
     titanium/5
 ]
 category : distribution
-buildVisibility : sandboxOnly
+forceTeam : 5
 health : 80

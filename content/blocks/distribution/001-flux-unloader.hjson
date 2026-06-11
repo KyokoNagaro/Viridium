@@ -6,4 +6,4 @@ requirements : [
 ]
 squareSprite : false
 scaledHealth : 60
-buildVisibility : sandboxOnly
+forceTeam : 5

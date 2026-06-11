@@ -222,3 +222,4 @@ requirements : [
  003-lithium/75
 ]
 category : turret
+forceTeam : 5

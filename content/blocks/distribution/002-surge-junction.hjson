@@ -9,4 +9,4 @@ requirements : [
     500-crest/3
 ]
 category : distribution
-buildVisibility : sandboxOnly
+forceTeam : 5

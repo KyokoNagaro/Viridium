@@ -12,3 +12,4 @@ requirements : [
     surge-alloy/400
 ]
 conductivePower : true
+forceTeam : 5

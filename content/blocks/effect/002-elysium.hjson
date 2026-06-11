@@ -24,3 +24,4 @@ consumeCoolant : false
 size : 4
 health : 3250
 squareSprite : false
+forceTeam : 5

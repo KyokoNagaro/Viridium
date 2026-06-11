@@ -49,3 +49,4 @@ requirements : [
     002-platinum/100
 ]
 category : production
+forceTeam : 5

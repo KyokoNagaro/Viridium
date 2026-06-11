@@ -11,3 +11,4 @@ requirements : [
 ]
 category : liquid
 buildCostMultiplier : 0.35
+forceTeam : 5

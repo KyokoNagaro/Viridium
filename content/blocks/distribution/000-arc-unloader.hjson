@@ -10,3 +10,4 @@ requirements : [
 ]
 category : distribution
 health : 80
+forceTeam : 5

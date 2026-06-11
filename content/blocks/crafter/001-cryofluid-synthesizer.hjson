@@ -64,3 +64,4 @@ requirements : [
     001-neodymium/50
 ]
 category : crafting
+forceTeam : 5

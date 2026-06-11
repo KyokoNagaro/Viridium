@@ -42,3 +42,4 @@ plans : [
         time : 900
     }
 ]
+forceTeam : 5

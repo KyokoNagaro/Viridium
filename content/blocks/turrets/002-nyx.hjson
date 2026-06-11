@@ -1,4 +1,4 @@
-type : LiquidTurret
+type : ContinuousLiquidTurret
 squareSprite : false
 liquidCapacity : 60
 size : 3
@@ -8,6 +8,8 @@ recoil : 1
 recoilTime : 120
 canOverdrive : false
 range : 240
+shootY : 3
+cooldownTime : 120
 shootSound : none
 loopSound : beamLustre
 loopSoundVolume : 1
@@ -49,9 +51,13 @@ ammoTypes : {
             sprite : viridium-point-laser-true
     }
 }
+consumes : {
+        power : 1
+}
 requirements : [
     titanium/300
     000-aster/100
     001-neodymium/125
 ]
 category : turret
+forceTeam : 5

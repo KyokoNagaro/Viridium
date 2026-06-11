@@ -63,4 +63,4 @@ requirements : [
     titanium/225
 ]
 category : crafting
-buildVisibility : sandboxOnly
+forceTeam : 5

@@ -67,3 +67,4 @@ requirements: [
 category: power
 buildTime : 18000
 squareSprite : false
+forceTeam : 5

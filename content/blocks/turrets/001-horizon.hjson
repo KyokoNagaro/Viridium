@@ -44,4 +44,4 @@ requirements : [
     titanium/100
 ]
 category : turret
-buildVisibility : sandboxOnly
+forceTeam : 5

@@ -13,3 +13,4 @@ buildCostMultiplier : 0.35
 underBullets : false
 junctionReplacement : neodymium-junction
 bridgeReplacement : neodymium-bridge
+forceTeam : 5

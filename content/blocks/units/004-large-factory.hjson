@@ -25,3 +25,4 @@ conductivePower : true
 maxBlockSize : 3
 category : units
 scaledHealth : 65
+forceTeam : 5

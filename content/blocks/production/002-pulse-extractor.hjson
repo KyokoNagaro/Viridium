@@ -32,4 +32,4 @@ requirements : [
     titanium/150
 ]
 category : production
-buildVisibility : sandboxOnly
+forceTeam : 5

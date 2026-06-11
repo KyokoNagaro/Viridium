@@ -61,3 +61,4 @@ outputLiquids : [
     500-plasma/0.15
 ]
 category : crafting
+forceTeam : 5

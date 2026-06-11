@@ -9,3 +9,4 @@ requirements : [
   002-platinum/20
 ]
 canOverdrive : false
+forceTeam : 5

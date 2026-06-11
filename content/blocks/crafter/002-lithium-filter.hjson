@@ -51,3 +51,4 @@ consumes :{
   ]
 }
 category : crafting
+forceTeam : 5

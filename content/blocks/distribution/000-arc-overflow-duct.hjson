@@ -4,4 +4,4 @@ requirements : [
 ]
 category : distribution
 health : 80
-buildVisibility : sandboxOnly
+forceTeam : 5

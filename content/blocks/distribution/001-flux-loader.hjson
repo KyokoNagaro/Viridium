@@ -18,3 +18,4 @@ consumes : {
         water/0.2
     ]
 }
+forceTeam : 5

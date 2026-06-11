@@ -45,3 +45,4 @@ consumes : {
 }
 outputLiquid : 999-caesium-allow/0.2
 category : crafting
+forceTeam : 5

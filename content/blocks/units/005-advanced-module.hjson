@@ -13,3 +13,4 @@ requirements : [
     500-crest/500
 ]
 conductivePower : true
+forceTeam : 5

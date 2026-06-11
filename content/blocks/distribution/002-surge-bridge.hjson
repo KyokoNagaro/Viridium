@@ -13,3 +13,4 @@ requirements : [
 ]
 category : distribution
 squareSprite : false
+forceTeam : 5
