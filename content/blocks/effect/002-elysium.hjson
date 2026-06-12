@@ -1,15 +1,12 @@
 type : ForceProjector
 shieldHealth : 12500
 radius : 408.6
-cooldownNormal : 4
-cooldownLiquid : 4
+cooldownNormal : 0.5
+cooldownLiquid : 2
 cooldownBrokenBase : 2.95
 liquidCapacity : 60
 consumes : {
-    power : 100
-    liquids : [
-        020-sgallium/0.15
-    ]
+    power : 800
 }
 requirements : [
     titanium/350
@@ -19,8 +16,7 @@ requirements : [
     surge-alloy/200
 ]
 category : effect
-coolantConsumption : 0
-consumeCoolant : false
+coolantConsumption : 0.3
 size : 4
 health : 3250
 squareSprite : false

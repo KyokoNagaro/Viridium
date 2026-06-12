@@ -7,11 +7,11 @@ hasLiquids : true
 liquidCapacity : 40
 itemCapacity : 80
 scaledHealth : 105
-drillTime : 60
+drillTime : 120
 blockedItems : [copper, coal, thorium, tungsten, beryllium, lead, scrap]
 liquidBoostIntensity : 1.5
 updateEffectChance : 0.02
-hardnessDrillMultiplier : 0 
+hardnessDrillMultiplier : 20
 rotateSpeed : 9
 updateEffect : {
   type : ParticleEffect

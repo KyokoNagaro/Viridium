@@ -34,7 +34,7 @@ buildBeamOffset : 0
 abilities : [
   {
         type : EnergyFieldAbility
-        range : 620
+        range : 520
         shootSound : none
         status : neutralized
         statusDuration : 60

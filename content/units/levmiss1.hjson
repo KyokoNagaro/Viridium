@@ -2,7 +2,7 @@
   controller : MissileAI
   template : MissileUnitType
   hidden : true
-  health : 660
+  health : 340
   engineColor : ffcd66
   trailColor : fc8e6c
   trailWidth : 2

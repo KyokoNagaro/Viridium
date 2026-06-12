@@ -4,7 +4,7 @@ size: 6
 range : 540
 shootSound : shootSmite
 outlineColor : 2e2f34
-reload : 260
+reload : 360
 recoil : 6
 recoils : 3
 recoilTime : 65
@@ -144,6 +144,7 @@ ammoTypes : {
     lifetime : 0
     targetMissile : false
     hittable : false
+    rangeChange : -250
     absorbable : false
     collides : false
     damage : 1500
@@ -159,7 +160,7 @@ ammoTypes : {
     fragLifeMin : 0.5
     fragBullet : {
       speed : 30
-      lifetime : 30
+      lifetime : 20
       drag : 0.035
       damage : 100
       sprite : viridium-shard
@@ -181,8 +182,7 @@ ammoTypes : {
   500-crest : {
     type : RailBulletType
     targetMissile : false
-    length : 710
-    rangeChange : 120
+    length : 540
     damage : 1460
     pierceDamageFactor : 0.5
     pierce : true

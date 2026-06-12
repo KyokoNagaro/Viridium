@@ -1,9 +1,9 @@
 type : Liquid
 gas : true
-temperature : 10
+temperature : 5
 flammability : 0.9
 coolant : false
-explosiveness : 10
+explosiveness : 5
 color : ae92ff
 gasColor : ae92ff
 viscosity : 0.7

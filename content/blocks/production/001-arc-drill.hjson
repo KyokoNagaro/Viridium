@@ -1,7 +1,7 @@
 type : BurstDrill
 squareSprite : false
 shake : 1
-drillTime : 68
+drillTime : 240
 size : 3
 hasPower : true
 itemCapacity : 30
