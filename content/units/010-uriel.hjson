@@ -62,7 +62,7 @@ weapons : [
         shootStatusDuration : 180
         bullet : {
             type : ContinuousLaserBulletType
-            damage : 18
+            damage : 16
             length : 140
             hitEffect : hitMeltdown
             drawSize : 380

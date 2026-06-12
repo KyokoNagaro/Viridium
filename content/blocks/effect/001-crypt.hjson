@@ -8,3 +8,4 @@ requirements : [
 ]
 category : effect
 forceTeam : 5
+squareSprite : false

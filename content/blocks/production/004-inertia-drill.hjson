@@ -9,7 +9,7 @@ itemCapacity : 80
 scaledHealth : 105
 drillTime : 120
 blockedItems : [copper, coal, thorium, tungsten, beryllium, lead, scrap]
-liquidBoostIntensity : 1.5
+liquidBoostIntensity : 1.8
 updateEffectChance : 0.02
 hardnessDrillMultiplier : 20
 rotateSpeed : 9

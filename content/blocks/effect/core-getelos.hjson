@@ -1,7 +1,7 @@
 squareSprite: false
 health: 4400
 armor: 2
-itemCapacity: 15000
+itemCapacity: 7000
 size: 5
 category: effect
 unitType: 020-sachiel
