@@ -7,7 +7,7 @@ rotate : false
 outlineIcon : false
 canOverdrive : true
 range : 340
-reload : 80
+reload : 120
 maxAmmo : 40
 ammoPerShot : 8
 shootSound : explosionObviate

@@ -54,8 +54,8 @@
         type : ExplosionBulletType
         splashDamageRadius : 8
         targetMissiles : false
-        splashDamage : 110
-        damage : 110
+        splashDamage : 90
+        damage : 60
         ammoMultiplier : 24
         pierceArmor : true
       }

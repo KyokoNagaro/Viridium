@@ -102,13 +102,13 @@
         type : BulletType
         status : sage
         statusDuration : 240
-        damage : 80
+        damage : 60
         speed : 0
         width : 0
         height : 0
         keepVelocity : false
         splashDamageRadius : 10
-        splashDamage : 180
+        splashDamage : 80
         lifeTime : 0
       }
     }

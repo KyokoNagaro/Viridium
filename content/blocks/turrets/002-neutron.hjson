@@ -148,7 +148,7 @@ ammoTypes : {
     hitEffect : hitBulletColor
     despawnEffect : hitBulletColor
     rangeChange : 90
-    reloadMultiplier : 0.6
+    reloadMultiplier : 0.4
     trailRotation : true
     trailEffect : hitSquaresColor
     trailInterval : 2
@@ -166,7 +166,7 @@ ammoTypes : {
     fragBullets : 6
     fragBullet : {
       type : LightningBulletType
-      damage : 40
+      damage : 30
       lightningLength : 10
       status : shocked
       statusDuration : 240

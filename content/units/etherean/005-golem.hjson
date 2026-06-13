@@ -19,7 +19,7 @@ weapons : [
         rotate : false
         recoil : 0
         mirror : false
-        reload : 120
+        reload : 100
         x  : 0
         y : 0
         shootSound : shootLancer

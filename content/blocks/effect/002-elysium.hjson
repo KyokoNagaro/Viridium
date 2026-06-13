@@ -4,7 +4,7 @@ radius : 408.6
 cooldownNormal : 0.5
 cooldownLiquid : 0.5
 cooldownBrokenBase : 2.95
-liquidCapacity : 60
+liquidCapacity : 0
 consumes : {
     power : 900
 }
