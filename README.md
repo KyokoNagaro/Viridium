@@ -5,7 +5,7 @@ A HJSON (at least for now) mod that make tech trees separated and unique to a te
  - Green : Serpulo
  - Crux (red) :
  - Malis (violet) :
- - Blue :
+ - Blue : Etherean
 
 You have to join on the right team, for 1v1 it's easy but for more than that, you might need to use console (press F8)
 A nice memo : "Vars.player.team(Team.derelict)" (derelict is the team's name, and don't use it, it can't be played)
