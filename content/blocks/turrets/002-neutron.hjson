@@ -9,7 +9,7 @@ reload : 30
 recoil : 1.5
 shootCone : 3
 scaledHealth : 145
-rotateSpeed : 1.2
+rotateSpeed : 1.8
 ammoPerShot : 1
 outlineColor : 2e2f34
 shoot : {
@@ -21,7 +21,7 @@ ammoTypes : {
   titanium : {
     type : BasicBulleType
     speed : 7.5
-    damage : 28
+    damage : 38
     width : 12
     hitSize : 7
     height : 20
