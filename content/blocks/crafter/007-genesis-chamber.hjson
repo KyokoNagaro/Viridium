@@ -46,7 +46,7 @@ consumes : {
         sand/24
     ]
     liquids : [
-        cryofluid/1.6
+        cryofluid/0.8
         500-plasma/0.3
     ]
 }

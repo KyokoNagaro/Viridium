@@ -1,7 +1,7 @@
 health : 600
 laserRange : 42
 size : 3
-maxNodes : 200
+maxNodes : 240
 hasPower : true
 outputsPower : true
 laserScale : 0.6
