@@ -34,6 +34,7 @@ ammoTypes : {
             sprite : viridium-point-laser-true
             status : melting
             statusDuration : 20
+            knockback : 0.5
             buildingDamageMultiplier : 0.5
     }
     020-sgallium : {
