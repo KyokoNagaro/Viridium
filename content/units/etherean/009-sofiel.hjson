@@ -9,7 +9,7 @@ itemCapacity: 10
 rotateSpeed: 8
 baseRotateSpeed : 8
 hitSize: 12
-health: 450
+health: 300
 armor: 1
 lowAltitude : false
 engineSize : 3

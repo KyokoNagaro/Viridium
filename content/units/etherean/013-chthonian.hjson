@@ -2,7 +2,7 @@ type : mech
 outlineColor : 1d1d23
 mechLegColor : 2e2f34
 armor : 1
-health : 620
+health : 490
 hitSize : 9
 flying : false
 speed : 0.39

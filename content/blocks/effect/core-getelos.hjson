@@ -7,6 +7,9 @@ category: effect
 unitType: 020-sachiel
 unitCapModifier: 10
 isFirstTier : true
+baseExplosiveness : 0
+explosivenessScale : 0
+flammabilityScale : 0
 requirements: [
   titanium/6000
   000-aster/2000
