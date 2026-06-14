@@ -2,7 +2,7 @@
   controller : MissileAI
   template : MissileUnitType
   hidden : true
-  health : 660
+  health : 200
   engineColor : a0a1ae
   trailColor : a0a1ae
   trailWidth : 1.8
@@ -55,7 +55,7 @@
         type : ExplosionBulletType
         splashDamageRadius : 8
         targetMissiles : false
-        splashDamage : 120
+        splashDamage : 100
         damage : 20
         ammoMultiplier : 24
         status : neutralized

@@ -130,11 +130,7 @@
           targetMissiles : false
           length : 96
           width : 30
-          damage : 50
-          pierceDamageFactor : -4
-          splashDamage : 20
-          splashDamagePierce : true
-          splashDamageRadius : 40
+          damage : 350
           lifetime : 60
           colors : [
             c21a1a

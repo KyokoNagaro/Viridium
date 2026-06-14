@@ -1,7 +1,7 @@
 type : flying
 flying : true
 lowAltitude : true
-speed : 0.94
+speed : 0.48
 rotateSpeed : 0.75
 accel : 0.03
 drag : 0.05
@@ -259,7 +259,7 @@ weapons : [
         x : 0
         y : -4
         mirror : false
-        reload : 480
+        reload : 520
         soundPitchMin : 0.01
         shootSound : shootQuad
         shootEffect : none
@@ -346,7 +346,7 @@ weapons : [
             shrinkY : 0.65
             speed : 0
             collides : false
-            splashDamage : 180
+            splashDamage : 90
             splashDamageRadius : 80
         }
     }
@@ -468,7 +468,7 @@ weapons : [
         type : LaserBulletType
         length : 90
         width : 10
-        damage : 120    
+        damage : 90   
     }
   }
   {
@@ -487,7 +487,7 @@ weapons : [
         type : LaserBulletType
         length : 90
         width : 10
-        damage : 120
+        damage : 90
     }
   }
   {
@@ -506,7 +506,7 @@ weapons : [
         type : LaserBulletType
         length : 90
         width : 10
-        damage : 120
+        damage : 90
     }
   }
   {
@@ -525,7 +525,7 @@ weapons : [
         type : LaserBulletType
         length : 90
         width : 10
-        damage : 120
+        damage : 90
     }
   }
   {
@@ -649,7 +649,7 @@ weapons : [
         cooldownTime : 40
         rotate : true
         shootSounf : explosionDull
-        reload : 90
+        reload : 120
         recoil : 1
         bullet : {
             type : BasicBulletType
@@ -682,7 +682,7 @@ weapons : [
                 hitSize : 4
                 speed : 3.5
                 pierce : true
-                pierceCap : 3
+                pierceCap : 2
                 pierceBuilding : true
                 hitColor : feb380
                 backColor : feb380
@@ -707,7 +707,7 @@ weapons : [
         shootCone : 2
         cooldownTime : 40
         shootSounf : explosionDull
-        reload : 90
+        reload : 120
         recoil : 1
         bullet : {
             type : BasicBulletType
@@ -740,7 +740,7 @@ weapons : [
                 lifetime : 10
                 hitSize : 4
                 pierce : true
-                pierceCap : 3
+                pierceCap : 2
                 pierceBuilding : true
                 hitColor : feb380
                 backColor : feb380
