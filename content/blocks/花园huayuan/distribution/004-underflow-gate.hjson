@@ -1,0 +1,8 @@
+type : OverflowGate
+invert : true
+buildCostMultiplier : 3
+requirements : [
+    copper/5
+    sand/5
+]
+category : distribution

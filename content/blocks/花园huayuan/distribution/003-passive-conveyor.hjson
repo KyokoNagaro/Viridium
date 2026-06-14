@@ -1,0 +1,10 @@
+type : Conveyor
+health : 40
+speed : 0.02
+displayedSpeed : 4
+buildCostMultiplier : 2
+itemCapacity : 4
+requirements : [
+    copper/1
+]
+category : distribution

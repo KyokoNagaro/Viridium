@@ -46,3 +46,4 @@ coolant : {
 }
 category : turret
 shownPlanets : [erekir]
+forceTeam : 1

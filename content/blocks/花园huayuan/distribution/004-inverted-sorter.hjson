@@ -1,0 +1,8 @@
+type : Sorter
+invert : true
+buildCostMultiplier : 3
+requirements : [
+    copper/3
+    sand/5
+]
+category : distribution

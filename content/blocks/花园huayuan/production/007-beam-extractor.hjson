@@ -1,0 +1,18 @@
+type : BeamDrill
+size : 1
+drillTime : 160
+tier : 3
+blockedItems : [beryllium]
+range : 4
+liquidCapacity : 10
+itemCapacity : 5
+consumes : {
+    liquids :[
+        water/0.05
+    ]
+}
+requirements : [
+    copper/20
+    sand/20
+]
+category : production

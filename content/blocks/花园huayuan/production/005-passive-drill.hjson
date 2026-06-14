@@ -1,0 +1,17 @@
+type : Drill
+tier : 2
+size : 2
+blockedItems : [lead]
+drillTime : 400
+consumes : {
+  liquid : {
+    liquid : 400-carbon
+    optional : true
+    booster : true
+    amount : 0.05
+  }
+}
+requirements : [
+    copper/15
+]
+category : production

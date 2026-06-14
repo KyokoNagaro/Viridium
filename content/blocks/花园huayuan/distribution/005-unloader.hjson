@@ -1,0 +1,7 @@
+type : Unloader
+speed : 5
+category : distribution
+requirements : [
+    copper/20
+    graphite/20
+]

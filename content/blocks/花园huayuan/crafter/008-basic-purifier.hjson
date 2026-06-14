@@ -1,0 +1,19 @@
+type : GenericCrafter
+squareSprite : false
+size : 1
+outputLiquid :400-carbon/0.1
+ambiantSound : loopSmelter
+ambientSoundVolume : 0.1
+craftTime : 120
+liquidCapacity : 10
+itemCapacity : 5
+consumes : {
+    power : 0.5
+    items : [
+        coal/1
+    ]
+}
+requirements : [
+    copper/20
+]
+category : crafting

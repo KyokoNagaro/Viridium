@@ -1,0 +1,19 @@
+type : Drill
+tier : 3
+size : 2
+blockedItems : [lead, titanium]
+drillTime : 200
+consumes : {
+    power : 1
+    liquid : {
+        liquid : 400-carbon
+        optional : true
+        booster : true
+        amount : 0.05
+    }
+}
+requirements : [
+    copper/17
+    sand/10
+]
+category : production

@@ -1,0 +1,7 @@
+type : Liquid
+gas : true
+coolant : false
+flammability : 0
+explosiveness : 0
+color : a6ada0
+gasColor : a6ada0

@@ -1,0 +1,6 @@
+type : Router
+buildCostMultiplier : 4
+requirements : [
+    copper/4
+]
+category : distribution
