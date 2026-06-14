@@ -11,6 +11,7 @@ recoil : 1
 recoilTime : 120
 canOverdrive : false
 range : 240
+health : 1500
 shootY : 3
 cooldownTime : 120
 shootSound : none
