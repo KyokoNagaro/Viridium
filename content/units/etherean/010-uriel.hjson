@@ -15,7 +15,7 @@ drawSoftShadow : false
 engineSize : 4
 engineOffset : 10
 range : 130
-buildSpeed : 0.1
+buildSpeed : 0.15
 buildBeamOffset : 8
 parts : [
     {

@@ -1,0 +1,15 @@
+healthMultiplier : 3
+speedMultiplier: 0
+color : 82a467
+effect : {
+    type : ParticleEffect
+    region : viridium-sutaru
+    colorFrom : 82a467
+    colorTo : 82a467
+    spin : 0.5
+    particles : 1
+    sizeFrom : 6
+    sizeTo : 1
+    lifetime : 55
+}
+effectChance : 0.045

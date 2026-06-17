@@ -1,0 +1,10 @@
+type : GenericCrafter
+size : 2
+outputItem : sand/1
+craftTime : 240
+itemCapacity : 20
+consumes : {
+    power : 0.5
+}
+category : production
+buildVisibility : sandboxOnly

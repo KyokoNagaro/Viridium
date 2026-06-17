@@ -1,0 +1,9 @@
+type: Wall
+health: 240
+size: 1
+requirements: [
+  sand/6
+  copper/2
+]
+category: defense
+buildVisibility : sandboxOnly
