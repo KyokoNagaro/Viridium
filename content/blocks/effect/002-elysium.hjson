@@ -1,7 +1,7 @@
 type : ForceProjector
 shieldHealth : 8500
 radius : 408.6
-cooldownNormal : 0.5
+cooldownNormal : 1.5
 cooldownLiquid : 0.5
 cooldownBrokenBase : 2.95
 liquidCapacity : 0
