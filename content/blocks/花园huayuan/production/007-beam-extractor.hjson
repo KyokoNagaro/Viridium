@@ -16,4 +16,5 @@ requirements : [
     sand/20
 ]
 category : production
+squareSprite : false
 buildVisibility : sandboxOnly

@@ -6,4 +6,5 @@ requirements : [
     sand/5
 ]
 category : distribution
+squareSprite : false
 buildVisibility : sandboxOnly

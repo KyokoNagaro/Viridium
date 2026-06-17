@@ -5,4 +5,5 @@ requirements : [
     copper/20
     graphite/20
 ]
+squareSprite : false
 buildVisibility : sandboxOnly

@@ -1,0 +1,14 @@
+type : GenericCrafter
+size : 2
+squareSprite : false
+hasLiquid : true
+liquidCapacity : 20
+outputLiquid : water/0.1
+consumes : {
+    power : 1
+}
+requirements : [
+    copper/50
+]
+category : production
+buildVisibility : sandboxOnly

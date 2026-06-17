@@ -15,4 +15,5 @@ requirements : [
     copper/15
 ]
 category : production
+squareSprite : false
 buildVisibility : sandboxOnly

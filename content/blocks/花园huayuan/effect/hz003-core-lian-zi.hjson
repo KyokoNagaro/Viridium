@@ -1,0 +1,18 @@
+type : CoreBlock
+squareSprite : false
+health : 1800
+armor : 10
+itemCapacity : 1000
+size : 2
+unitCapModifier : 6
+isFirstTier : true
+baseExplosiveness : 0
+explosivenessScale : 0
+flammabilityScale : 0
+incinerateNonBuildable : false
+requirements: [
+  copper/600
+  graphite/400
+  sand/1000
+]
+category : effect

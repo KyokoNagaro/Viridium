@@ -6,4 +6,5 @@ requirements : [
     sand/30
 ]
 category : power
+squareSprite : false
 buildVisibility : sandboxOnly
