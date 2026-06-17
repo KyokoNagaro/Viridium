@@ -144,7 +144,7 @@ ammoTypes : {
     lifetime : 0
     targetMissile : false
     hittable : false
-    rangeChange : -250
+    rangeChange : -150
     absorbable : false
     collides : false
     damage : 1500
@@ -160,7 +160,7 @@ ammoTypes : {
     fragLifeMin : 0.5
     fragBullet : {
       speed : 30
-      lifetime : 20
+      lifetime : 26
       drag : 0.035
       damage : 100
       sprite : viridium-shard
@@ -264,7 +264,7 @@ ammoTypes : {
 }
 coolantMultiplier : 1.4
 consumes: {
-  power: 35
+  power: 1
   coolant : {
     amount : 0.6
   }

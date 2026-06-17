@@ -4,3 +4,4 @@ requirements : [
     copper/4
 ]
 category : distribution
+buildVisibility : sandboxOnly

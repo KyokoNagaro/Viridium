@@ -17,3 +17,4 @@ requirements : [
     sand/10
 ]
 category : production
+buildVisibility : sandboxOnly

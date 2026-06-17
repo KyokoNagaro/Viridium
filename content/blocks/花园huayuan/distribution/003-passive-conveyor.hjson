@@ -8,3 +8,4 @@ requirements : [
     copper/1
 ]
 category : distribution
+buildVisibility : sandboxOnly

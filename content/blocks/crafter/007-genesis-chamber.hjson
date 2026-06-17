@@ -38,8 +38,8 @@ requirements : [
     surge-alloy/300
     002-platinum/500
 ]
-craftTime : 150
-outputItem : 500-crest/2
+craftTime : 180
+outputItem : 500-crest/3
 consumes : {
     power : 1
     items : [

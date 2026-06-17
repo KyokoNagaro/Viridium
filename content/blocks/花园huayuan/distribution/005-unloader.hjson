@@ -5,3 +5,4 @@ requirements : [
     copper/20
     graphite/20
 ]
+buildVisibility : sandboxOnly

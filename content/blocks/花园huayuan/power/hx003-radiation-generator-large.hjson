@@ -6,3 +6,4 @@ requirements : [
     sand/30
 ]
 category : power
+buildVisibility : sandboxOnly

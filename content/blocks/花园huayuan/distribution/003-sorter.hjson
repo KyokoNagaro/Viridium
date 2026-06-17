@@ -5,3 +5,4 @@ requirements : [
     sand/5
 ]
 category : distribution
+buildVisibility : sandboxOnlys

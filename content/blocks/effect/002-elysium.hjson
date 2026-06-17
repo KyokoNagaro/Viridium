@@ -6,7 +6,7 @@ cooldownLiquid : 0.5
 cooldownBrokenBase : 2.95
 liquidCapacity : 0
 consumes : {
-    power : 600
+    power : 420
 }
 requirements : [
     titanium/350

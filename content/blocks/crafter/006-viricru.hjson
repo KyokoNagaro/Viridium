@@ -77,7 +77,7 @@ drawer : {
     }
   ]
 }
-craftTime: 180
+craftTime: 160
 consumes: {
   power: 1
   items: [

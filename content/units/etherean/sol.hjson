@@ -1,6 +1,6 @@
 type : tether
 flying : true
-buildSpeed : 4
+buildSpeed : 50
 controller : builderAI
 logicControllable  : false
 playerControllable : false

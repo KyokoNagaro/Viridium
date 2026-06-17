@@ -5,3 +5,4 @@ requirements : [
     copper/20
 ]
 category : power
+buildVisibility : sandboxOnly
