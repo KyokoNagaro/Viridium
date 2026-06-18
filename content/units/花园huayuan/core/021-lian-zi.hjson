@@ -4,42 +4,41 @@ controller : BuilderAI
 lowAltitude : true
 flying : true
 isEnemy : false
-mineSpeed : 300
+mineSpeed : 3
+coreUnitDock : true
+speed : 2.8
+drag : 0.05
+accel : 0.1
+rotateSpeed : 15
 mineTier : 1
 buildSpeed : 0.5
-health : 300
+health : 200
 itemCapacity : 40
-range : 140
+range : 60
 weapons : [
     {
-    name : beam
-    loopSound : beamLustre
-    loopSoundVolume : 1
-    miror : false
-    rotate : false
-    x : 0
-    y : 4.5
-    continuous : true
-    alwaysContinuous : true
-    targetMissile : false
-    predictTarget : false
-    targetSwitchInterval : 60
-    targetInterval : 20
-    shootCone : 160
-    shootSound : none
-    aimChangeSpeed : 1.26
-    bullet : {
-      type : PointLaserBulletType
-      damage : 1
-      length : 160
-      width : 5
-      maxRange : 160
-      color : a3ec99
-      sprite : viridium-point-laser-true
-      status : rooted
-      statusDuration : 20
+      name : lian-zi-weapon
+      reload : 12
+      x : 0
+      y : 0
+      rotate : false
+      shootSound : shootSap
+      bullet : {
+        type : SapBulletType
+        sapStrength : 0
+        damage : 8
+        shootEffect : shootSmallSmoke
+        hitColor : 82a467
+        color : 82a467
+        despawnEffect : none
+        lifetime : 30
+        status : rooted
+        statusDuration : 16
+        pierce : false
+        pierceArmor : false
+        length : 60
+      }
     }
-  }
 ]
 abilities : [
     {

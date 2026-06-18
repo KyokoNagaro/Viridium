@@ -9,6 +9,7 @@ accel : 0.05
 drag : 0.017
 alwaysUnlocked: true
 isEnemy: false
+coreUnitDock : true
 engineSize : 4
 engineOffset : 12
 hitSize : 24

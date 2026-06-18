@@ -3,6 +3,7 @@ squareSprite : false
 health : 1800
 armor : 10
 itemCapacity : 1000
+unitType : 021-lian-zi
 size : 2
 unitCapModifier : 6
 isFirstTier : true
